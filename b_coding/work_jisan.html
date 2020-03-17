@@ -2,7 +2,7 @@
 <html lang="ko=KR">
   <head>
     <meta charset="UTF-8">
-    <meta  http-equiv="X-TU-compitable" content="IE=edge">
+    <meta  http-equiv="X-UA-compitable" content="IE=edge">
       <!--[iF IE]>
         <script src="./ie/html5shiv/dist/html5shiv.min.js"></script>
 
@@ -20,25 +20,34 @@
    		<!-- popupBox : 임시로 추가/삭제처리가능하도록 처리-->
    		<section id="popupBox"></section>
 
-
+      <!-- // #headBox -->
    		<header id="headBox">
 
    	     <h1>지산포레스트</h1>
    	     <nav id="gnbBox">
          </nav>
+
    	     <nav id="naviBox">
    	     	<h2>navigation 영역</h2>
+          </nav>
 
-   	     	<div class="gnb">
+   	     	  <div class="gnb">
    	           <h3>웹페이지 전체 메뉴</h3>
    	        </div>
 
    	        <div class="unb">
    	           <h3>사용자 설정관련 메뉴</h3>
+               <ul>
+                 <li class="unb_box01">로그인</li>
+                 <li class="unb_box02">회원가입</li>
+                 <li class="unb_box03">회원권</li>
+                 <li class="unb_box04">고객센터</li>
+               </ul>
    	        </div>
-   	      </nav>
+             
+                
    	    </header>
-   	    <!-- // #headBox -->
+   	    <!-- // #headBox =============-->
 
 
         
@@ -53,7 +62,13 @@
         <!-- //#guideBox -->
    	    <article id="guideBox" class="full_size">
           <div class="guide_area">
-   	    	<h2>지산리조트 19<span aria-hidden="true"> &sol; </span>20 시즌 가이드</h2>
+   	    	 <h2 class="h2_01">지산리조트 19<span aria-hidden="true"> &sol; </span>20 시즌 가이드</h2>
+           
+             <ul class="guideBox_01">
+               <li class="jsguide_01">통합예약</li>     
+               <li class="jsguide_02">서비스 바로가기</li>     
+           </ul>
+           
           </div>
    	    </article>
    	    <!-- //#guideBox ============================================ -->
@@ -63,6 +78,13 @@
    	    <article id="saleBox" class="full_size">
           <div class="guide_area">
    	    	<h2>지산만의 특별한 할인 및 서비스 혜택</h2>
+
+            <ul id="saleBox_01">
+              <li class="saleBox1_01">카드결제<br />
+                                        할인
+      </li>
+              <li class="saleBox1_02">시즌권자할인</li>
+              <li class="saleBox1_03">장비회수</li>
           </div>
    	    </article>
    	    <!-- //#saleBox ============================================ -->
@@ -72,6 +94,10 @@
    	    <article id="newsBox" class="full_size">
           <div class="guide_area">
    	    	 <h2>지산 news</h2>
+              <ul id="newsBox"></ul>
+                 <li></li>
+                 <li></li>
+                 <li></li>
           </div>
    	    </article>
    	    <!-- //#newsBox ============================================ -->
@@ -100,4 +126,3 @@
    </body>
        
 </html>
-   	       
