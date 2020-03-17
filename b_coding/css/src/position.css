@@ -21,7 +21,7 @@ main, figure, figcaption{display:none;}
 
 h1{width:100%; height:40px;
    font-size:1.2rem; text-align:center;}
-   
+
  .position{margin:auto;
           width:90%; height:400px;
           background-color:#fff;
@@ -39,7 +39,7 @@ li{float:left; width:100px; height: 100px;
 li:nth-child(2n){background-color: #afc;}
 
 /* ==================================*/
-/* position: static | fixed | absolut | relative | sticky;
+/* position: static | fixed | absolute | relative | sticky;
 z-index: 단위는 없고 수치만으로 사용하는 기능 위치값(z축)을 파악
 top, left, right, bottom와 함께 사용한다.
 
