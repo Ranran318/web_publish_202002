@@ -1,61 +1,65 @@
 <!DOCTYPE html>
+<!-- a_basic_ex_jisan_result.html -->
 <html lang="ko=KR">
-  <head>
-    <meta charset="UTF-8">
-    <meta  http-equiv="X-UA-compitable" content="IE=edge">
-      <!--[iF IE]>
-        <script src="./ie/html5shiv/dist/html5shiv.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compitable" content="IE=edge">
+<!--[iF IE]>
+  <script src="./ie/html5shiv/dist/html5shiv.min.js"></script>
+  <script src="./ie/PIE/PIE.js"></script>
 
-      <![endif]-->
-      
-       <link rel="stylesheet" href="./css/src/jisan_result.css">
+<![endif]-->
 
-    <title>지산포레스트</title>
+  <link rel="stylesheet" href="./css/src/jisan_result.css">
 
-  </head>
-   <body>
-   	  <!-- layout -->
-    <div id="wrap">
-   		<!-- popupBox : 임시로 추가/삭제처리가능하도록 처리-->
-   		<section id="popupBox">
-       <h2>지산 포레스트 관련 이벤트</h2> 
+  <title>jisan forest</title>
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+   	<!-- popupBox : 임시로 추가/삭제처리가능하도록 처리-->
+   	<section id="popupBox">
+        <h2>지산 포레스트 관련 이벤트</h2> 
       </section>
+      <!-- // #popupBox ==================================== -->
 
       <!-- // #headBox -->
    		<header id="headBox">
         <h1><a href="./index.html">jisan forest</a></h1>
-         <nav id="naviBox">
+        <nav id="naviBox">
    	     	<h2>navigation 영역</h2>
           
-   	     	  <div class="gnb header_navi">
-   	           <h3 class="hidden">웹페이지 전체 메뉴</h3>
-               <ul>
-                 <li><a href="#">지산가이드</a></li>
-                 <li><a href="#">콘도</a></li>
-                 <li><a href="#">식음 &amp; 부대시설</a></li>
-                 <li><a href="#">지산아카데미</a></li>
-                 <li><a href="#">할인 &amp; 이벤트</a></li>
-                 <li><a href="#">통합예약</a></li>
-               </ul>
-   	        </div>
+   	     	<div class="gnb header_navi">
+   	        <h3 class="hidden">웹페이지 전체 메뉴</h3>
+            <ul>
+              <li><a href="#">지산가이드</a></li>
+              <li><a href="#">콘도</a></li>
+              <li><a href="#">식음 &amp; 부대시설</a></li>
+              <li><a href="#">지산아카데미</a></li>
+              <li><a href="#">할인 &amp; 이벤트</a></li>
+              <li><a href="#">통합예약</a></li>
+            </ul>
+   	      </div>
 
-   	        <div class="unb header_navi">
-   	           <h3 class="hidden">사용자 설정관련 메뉴</h3>
-               <ul>
-                 <li><a href="#"><i></i>로그인</a></li>
-                 <li><a href="#"><i></i>회원가입</a></li>
-                 <li><a href="#"><i></i>회원권</a></li>
-                 <li><a href="#"><i></i>고객센터</a></li>
-                 <li><a href="#">Korean</a></li>
-               </ul>
-             </div>
-          </nav>  
+   	      <div class="unb header_navi">
+   	        <h3 class="hidden">사용자 설정관련 메뉴</h3>
+            <ul>
+              <li><a href="#"><i></i>로그인</a></li>
+              <li><a href="#"><i></i>회원가입</a></li>
+              <li><a href="#"><i></i>회원권</a></li>
+              <li><a href="#"><i></i>고객센터</a></li>
+              <li><a href="#">Korean</a></li>
+            </ul>
+           </div>
+        </nav>  
       </header>
    	    <!-- // #headBox =============-->
 
 
         
         <!-- // #viewBox -->
+
    	    <section id="viewBox" class="full_size">
           <div class="guide_area">
    	    	  <h2 aria-hidden="ture">
@@ -74,9 +78,25 @@
    	    <article id="guideBox" class="full_size">
           <div class="guide_area">
    	    	 <h2>지산리조트 19<span aria-hidden="true"> &sol; </span>20 시즌 가이드</h2>
-               <p> 지산리조트에서 하얀겨울을 즐기세요~</p>  
-             <div class="guide_cont"></div>
-            
+            <p> 지산리조트에서 하얀겨울을 즐기세요~</p>  
+            <div class="guide_cont guide_part">
+              <div class="guide_part_01">
+               <h3>통합예약</h3>
+               <p>예약을 신속하게 처리해 드리겠습니다.</p>
+               <ul>
+                  <li><a href="#"><i></i><span>무료 셔틀</span></a></li>
+                  <li><a href="#"><i></i><span>리프트 예약</span></a></li>
+                  <li><a href="#"><i></i><span>강습 예약</span></a></li>
+                  <li><a href="#"><i></i><span>예약 확인</span></a></li>
+                </ul>
+             </div>
+              <div class="guide_part_02">
+                <a href="#">
+                 <h3>서비스 바로가기</h3>
+                 <p>지산과 함께 하얀 겨울을 즐겨 보세요.</p>
+                </a>
+              </div>
+            </div>
           </div>
    	    </article>
    	    <!-- //#guideBox ============================================ -->
@@ -85,14 +105,13 @@
    	    <!-- //#saleBox -->
    	    <article id="saleBox" class="full_size">
           <div class="guide_area">
-   	    	<h2>지산만의 특별한 할인 및 서비스 혜택</h2>
-          <p>나에게 맞춘 스마트한 할인 정보</p>
-           <div class="guide_area"></div>
-            <ul id="saleBox_01">
-              <li class="saleBox1_01">카드결제<br />
-                                        할인 </li>
-              <li class="saleBox1_02">시즌권자할인</li>
-              <li class="saleBox1_03">장비회수</li>
+   	    	  <h2>지산만의 특별한 할인 및 서비스 혜택</h2>
+            <p>나에게 맞춘 스마트한 할인 정보</p>
+            <div class="guide_cont sale_part">
+             <div class="sale_part_01"></div>
+             <div class="sale_part_02"></div>
+             <div class="sale_part_03"></div>
+           </div>
           </div>
    	    </article>
    	    <!-- //#saleBox ============================================ -->
@@ -102,25 +121,23 @@
    	    <article id="newsBox" class="full_size">
           <div class="guide_area">
    	    	 <h2>지산 news</h2>
-           <p>신나고 즐거운 지산리조트 winter story소문자로 써야 정확히읽어줌</p>
-           <div class="guide_area"></div>
-              <ul id="newsBox">
-                 <li></li>
-                 <li></li>
-                 <li></li>
-               </ul>
+           <p>신나고 즐거운 지산리조트 winter story 소문자로 써야 정확히읽어줌 </p>
+           <div class="guide_cont news_part"></div>
+             <div class="news_part_01"></div>
+             <div class="news_part_02"></div>
+             <div class="news_part_03"></div>
+             <div class="news_part_04"></div>
+             <div class="news_part_05"></div>
+           </div>
           </div>
    	    </article>
    	    <!-- //#newsBox ============================================ -->
 
    	    
         <!-- //#jisanSideBox -->
-    	<aside id="jisanSideBox" class="full_size">
-        <div class="guide_area">
-   	       <h2>지산 팝업 내용 <abbr title= "Social Network Service">SNS</abbr><span></span></h2>
-
-            </div>
-   	    </aside>
+    	<aside id="jisanSideBox">
+   	       <h2>지산 팝업 내용 <abbr title= "Social Network Service">SNS</abbr> 소식 안내</h2>
+      </aside>
    	    <!-- //#jisansideBox ============================================ -->
 
 
@@ -143,24 +160,28 @@
 
            <div class="foot_part_02">
             <div class="foot_area">
-              <address class="company_address">
-                <h3 >회사 주소 및 정보</h3>
-
-              </address>
+              <div class="company_address">
+                <h3 >지산리조트 주소 및 정보</h3>
+                 <address>
+                   <p>경기도 이천시 마장면....</p>
+                   <p><em>tel</em><span>:031-644-1200</span><p>
+                 </address>
+              </div>
               <div class="family_site">
                 <h3>지산리조트 계열사</h3>
 
               </div>
               <div class="certification_mark">
                 <h3 class="hidden">사이트 공식 인증 마크</h3>
+
               </div>
             </div>
            </div>
    	    </footer>
    	    <!-- //#footBox ============================================ -->
+      </div>
             
-   	  </div>
+    <!-- script -->
    	<script></script>
-   </body>
-       
+</body>
 </html>
