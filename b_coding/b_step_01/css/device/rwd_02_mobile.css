@@ -4,10 +4,30 @@
 
 @media screen 
      and (max-width:639px) {
+/* 가로브라우저 320 기준 */
+
+
+#viewBox {height:120px;
+          height:37.5vw;
+          /* 120 / 320* 100 */
+          min-height: 7.5rem;
+          max-height: 405px;
+          max-height:25.3125rem;
+        }
+
+#noticeBox {
+            height: 324px;
+            height: 101.25vw;
+            /* 324 /320* 100 */
+            min-height:; 
+            max-height:;
+            max-height:;
+}
 
 /*#viewBox {width:120px; height:7.5rem;}*/
-#viewBox {width:18.75vw; height:18.75vw;
+
+/*#viewBox {width:18.75vw; height:18.75vw;
           min-width:50px; min-height:50px;
-          max-width:80px; max-height: 80px; }
+          max-width:80px; max-height: 80px; }*/
 
 /* @media end*/

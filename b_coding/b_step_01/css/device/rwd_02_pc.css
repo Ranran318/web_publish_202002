@@ -3,9 +3,12 @@
 /*design data  : 1024px*/
 
 @media screen
-       and (min-width:1024px;)
-       and (max-width:1439px;) {
+       and (min-width:1024px)
+       and (max-width:1439px) {
 
-#viewBox {height: 555px;
+#viewBox {
+  height: 555px;
+  height: 34.6875rem;
        }
        /* @media end  */
+     }
