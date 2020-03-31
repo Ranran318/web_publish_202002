@@ -1,0 +1,13 @@
+/*rwd_02_mobile.css*/
+
+/*design data :  320px */
+
+@media screen 
+     and (max-width:639px) {
+
+/*#viewBox {width:120px; height:7.5rem;}*/
+#viewBox {width:18.75vw; height:18.75vw;
+          min-width:50px; min-height:50px;
+          max-width:80px; max-height: 80px; }
+
+/* @media end*/

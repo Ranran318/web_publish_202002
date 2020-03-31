@@ -1,0 +1,10 @@
+/* rwd_02_pcfull.css */
+
+/* design data : 1440px*/
+@media screen
+       and (min-width:1440px){
+
+       
+#viewBox {height:auto; min-height: 570px; max-height:810px;}
+}
+/* @media end */

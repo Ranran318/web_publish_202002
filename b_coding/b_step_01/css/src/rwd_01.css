@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* rwd_01.css */
+@import url{"../device/rwd_01_base.css"};
+@import url{"../device/rwd_01_mobile.css"};
+@import url{"../device/rwd_01_tablet.css"};
+@import url{"../device/rwd_01_pcpull.css"};
+
+ 
+/* 해당페이지의 공통요소 */
+
+
+
+/*
+반응형웹 ( @medi로  시작하는  쿼리문)
+  디바이의 상황/기기 ( screen, tv, handheld, all, print...)
+  가로의 크기값을 기준으로 파악 (min-width, max-width로)
+   디바이스가 가로형/세로형 (horizontal, vertical)
+*/
+
+
