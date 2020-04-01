@@ -1,0 +1,32 @@
+/*rwd_03_tablet.css*/
+
+
+/*design data : 480px*/
+
+@media screen
+      and (min-width:480px) 
+      and (max-width:767px){
+/*가로브라우저 280px 기준*/
+
+
+
+/*#head_Box {height:px; background-color: #333333;}*/
+
+
+#view_Box {height:450px; background-color: #BBAA77;}
+
+
+#content_Box { height:1200px; background-color: #547D77;}
+
+
+#notice_Box { height:1200px; background-color: #957DE9;}
+ .noticeBox_container{display:block; float:left; width: 50%; }
+ 
+ .more_content{display:none;}
+
+
+#footBox {height:120px; background-color: #333333;}
+
+
+/* @media end */
+}
