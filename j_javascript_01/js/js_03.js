@@ -23,7 +23,11 @@ var a,b,c;
 //console.log( c );
 
 //c = 1 + '1000'; // 11000
-//console.log( c, typeof(c) );
+//console.log( c );
+//console.log( typeof(c) );
+//console.log(c, typeof(c));
+
+//=(변수) 대입하다 , ==(비교): 같다.
 
 c = a + b;
 console.log( c );
