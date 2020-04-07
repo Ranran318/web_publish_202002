@@ -17,10 +17,10 @@
 
 #content_Box { max-width: 1200px; height:210px; margin: auto;}
 
-#notice_Box { max-width: 1200px; height:540px; margin:auto; }
- .noticeBox_container{display: block; float:left; width:33.333333% }
+#info_Box { max-width: 1200px; height:540px; margin:auto; }
+ .infoBox_container{display: block; float:left; width:33.333333% }
  .new_area{background-color: #957de9}
- .notice_area{width: 33.333334%; background-color: #957de9}
+ .info_area{width: 33.333334%; background-color: #957de9}
  .more_content{display:none;}
 
 

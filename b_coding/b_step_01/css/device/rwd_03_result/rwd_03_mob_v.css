@@ -21,8 +21,8 @@
 
 #view_Box {padding-top:12.5vw; height:480vw; height:150vw;}
 #content_Box {height:480px; height:150vw;}
-#notice_Box {height:480px; height:150vw; }
-.noticeBox_container { width: 100%; height:100%; display: none;} 
+#info_Box {height:480px; height:150vw; }
+.infoBox_container { width: 100%; height:100%; display: none;} 
 .new_area{display: block; background-color: #957de9}
 
 #footBox {height:40px; height:150vw; }
