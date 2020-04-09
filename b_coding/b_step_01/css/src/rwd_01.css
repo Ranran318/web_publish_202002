@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 /* rwd_01.css */
-@import url{"../device/rwd_01_base.css"};
-@import url{"../device/rwd_01_mobile.css"};
-@import url{"../device/rwd_01_tablet.css"};
-@import url{"../device/rwd_01_pcpull.css"};
+@import url("../device/rwd_01_base.css");
+@import url("../device/rwd_01_mobile.css");
+@import url("../device/rwd_01_tablet.css");
+@import url("../device/rwd_01_pcpull.css");
 
  
 /* 해당페이지의 공통요소 */

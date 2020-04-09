@@ -1,0 +1,79 @@
+@charset "UTF-8"
+/*0409_test.css*/
+
+
+/*Design*/
+#wrap{width:100%; 
+      height: auto;
+      background-color: skyblue;}
+
+
+
+#headBox{width:100%; 
+         height:auto; 
+         background-color: #999;}
+ 
+/* //navBox===============*/
+#nav_area{width:308px; height: 796px; background-color:red;}
+.nav_box {width:288px; height: 796px; background-color: skyblue;}
+ .snsBox {position: relative; top: 348px; left: 0; width:80px; height: 120px; background-color:#999;}
+ .logo_Box {padding:20px; background-color: #ccc;}
+
+ h1 {padding:5px; background-color: #888; text-align : center;}
+
+#nav_01 {width:;}
+#nav_02 {width: 1612px; height: 120px; background-color:#333;}
+
+
+
+
+
+
+/*viewBox==================================================*/
+#viewBox{width:100%; 
+        height:676px;
+        background-color: #ccc;}
+
+
+
+/*usewBox==================================================*/
+#useBox{width:100%; 
+        height:;
+       background-color: #666;}
+
+
+
+/*eventBox==================================================*/
+#eventBox{width:100%; 
+          height:;
+          background-color: #999;}
+
+
+
+/*infoBox==================================================*/
+#infoBox{width:100%; height: 562px;
+        background-color: #ccc;}
+
+
+
+/*projBox==================================================*/
+#projBox{width:100%;  height: 562px;
+         background-color: #666;}
+
+
+
+/*guideBox==================================================*/
+#guideBox{width:100%; 
+          height:300px; 
+          background-color: #999;}
+
+
+
+/*footBox==================================================*/
+#footBox{width:100%; 
+         height:300px;
+         background-color: #ccc;}
+
+
+
+
