@@ -3,26 +3,31 @@
 
 
 /*Design*/
-#wrap{width:100%; 
-      height: auto;
-      background-color: skyblue;}
+#wrap{width:1920px; 
+      height:auto;
+      background-color: #fff}
 
 
 
 #headBox{width:100%; 
-         height:auto; 
-         background-color: #999;}
+         height:796px 
+         background-color: #ccc;}
  
 /* //navBox===============*/
-#nav_area{width:308px; height: 796px; background-color:red;}
-.nav_box {width:288px; height: 796px; background-color: skyblue;}
- .snsBox {position: relative; top: 348px; left: 0; width:80px; height: 120px; background-color:#999;}
- .logo_Box {padding:20px; background-color: #ccc;}
+#logo_Box{float:left; width:308px; height: 796px; background-color:#E6E6E6;}
+ .unb_Box{width:80px; height:60px; 
+          background-color:#999;}
+   .unb_Box img{margin:0 20px; width:26px ;height:22px;background-color: red;}
+ .nav_box {width:288px; height: 766px; background-color: skyblue;}
+ .snsBox {position: relative; top: 348px; left:0px; width:80px; height: 120px; background-color:#999;}
+ .minilogo_Box {position:relative; top:30px; margin: 0 auto; width:288px; height:766px; 
+                background-color: #666;}
 
- h1 {padding:5px; background-color: #888; text-align : center;}
+ h1 {position:relative; top:0px; left: 100px; width:140px; height:45px ; padding-top:15px; 
+     background-color: #999; font-size:20px; text-align : center;}
 
 #nav_01 {width:;}
-#nav_02 {width: 1612px; height: 120px; background-color:#333;}
+#nav_02 {width: 1612px; height: 120px;}
 
 
 

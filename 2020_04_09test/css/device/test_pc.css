@@ -1,4 +1,4 @@
-@media screen and (max-width:639px;) {
+@media screen and (max-width:639px;) and (min-width:341px;){
 
 
 #wrap {width:100%; height:auto; background-color: skyblue;}
