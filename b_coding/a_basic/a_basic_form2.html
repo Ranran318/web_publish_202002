@@ -13,151 +13,340 @@
 	<title>form 구조 이해하기</title>
 </head>
 <body>
-	<h1>html 구조 이해하기</h1>
-	<hr />
-
-
-	<h2>form2</h2>
-	<div class="form_area">
-		<form action="#" method="">
-		<fieldset>
-			<legend>입력</legend>
-
-			<label for="inputText">입력할 내용을 작성하세요.</label>
-			<input type="text" id="InputText" name="InputText" value="" />
-			<br />
-
-			<label for="pwText">입력할 내용을 작성하세요.</label>
-			<input type="password" id="pwtext" name="pwtext" value="" />
-			<br />
-
-			<input type="hidden" id="hiddenText" name="hdText" value="012230" />
-
-			<hr />
-
-			<input type="hidden" id="hiddenText" name="hdText" value="" />
-
-			<hr />
-			<h3>html5 이후에 존재하는 기능</h3>
-
-			<label for="searchArea">검색할 내용을 입력하세요.</label>
-			<input type="search" id="searchArea" name="" value=""
-									required="required" />
-
-			<br />
-
-			<label for="mailArea">사용하는 이메일주소를 입력하세요.</label>
-			<input type="email" id="mailArea" name="mailArea" value="" required />
-			<br />
-
-      <label for="urlArea">웹페이지 주소를 입력하세요.</label>		
-			<input type="url" id="urlArea" name="urlArea" value="" required />
-
-			<br />
-			<label for="telArea">생년월일을 입력하세요.</label>
-			<input type="tel" id="telArea" name="telArea" value="" required />
-
-			<br />
-			<!--<input type="submit"  value="전송" />-->
-		</fieldset>
-	  </form>
-		<!-- ============================-->
-
-		<fieldset>
-
-			<legend>체크1</legend>
-			<p>다음 중 좋아하는 음식을 고르시오.</p>
-
-
-			<ul>
-				<li>
-			  <input type="checkbox" checked="checked" id="sel_01" value="치킨" name="food" />
-				<label for="sel_01">치킨</label>
-				</li>
-				<li>
-					<input type="checkbox" id="sel_02" value="피자" name="food" />
-					<label for="sel_02">피자</label>
-				</li>
-				<li>
-					<input type="checkbox" id="sel_03" value="족발" name="food" />
-					<label for="sel_03">족발</label>
-				</li>
-				<li>
-					<input type="checkbox" id="sel_04" value="보쌈" name="food" />
-					<label for="sel_04">보쌈</label>
-				</li>
-			</ul>
-			<!-- var food = ["치킨", "피자", "보쌈"];-->
-
-
-		</fieldset>
-
-		<!-- ============================-->
-
-		<fieldset>
-			<legend>체크2</legend>
-			<p>다음 중 마음에 드는 사람을 고르시오</p>
-			<ul>
-				<li>
-					<input type="radio" id="sel_01" name="radioSel" value="엄마">
-					<label for="r_sel_01"><i>*</i>엄마</label>
-				</li>
-				<li>
-					<input type="radio" id="sel_02" name="radioSel" value="아빠">
-					<label for="r_sel_02">아빠</label>
-				</li>
-				<li>
-					<input type="radio" id="sel_03" name="radioSel" value="할머니">
-					<label for="r_sel_03">할머니</label>
-				</li>
-				<li>
-					<input type="radio" id="sel_04" name="radioSel" value="건물주">
-					<label for="r_sel_04">건물주</label>
-				</li>
-			</ul>
-
-		</fieldset>
-
-		<!-- ============================-->
-
-		<fieldset>
-			<legend>버튼</legend>
-			
-			<input type="submit" value="동의">
-			<input type="reset" value="취소">
-			<input type="image" value="동의" src="#" alt="버튼이미지설명" />
-			<br />
-
-      <label for="postLink">우편번호 검색</label>
-			<input type="button" id="postLink" value="우편번호">
-			<br />
-
-			<label for="dataFile">첨부자료</label>
-			<input type="file" id="dataFile" value="" />
-
-		</fieldset>
-
-		<!-- ============================-->
-
-		<fieldset>
-			<legend>멀티/복합</legend>
-			<p>여러 줄의 내용을 입력하는 형태</p>
-			<label for="comment"></label>
-			<textarea name="" id="" cols="5" rows="10" readonly>
-				계약서
-			</textarea>
-		</fieldset>
-
-		<!-- ============================-->
-
-		<fieldset>
-			<legend>HTML5 추가기능</legend>
-
-		</fieldset>
-
-		<!-- ============================-->
-
-	</form>
-	</div>
+	
+	  	
+	  <h1>html 구조 이해하기</h1>
+	  <hr />
+  
+  
+	  <h2>form2</h2>
+	  <div class="form_area">
+	  	<form action="#" method="">
+	  	<fieldset>
+	  		<legend>입력</legend>
+  
+	  		<label for="inputText">입력할 내용을 작성하세요.</label>
+	  		<input type="text" id="InputText" name="InputText" value="" />
+	  		<br />
+  
+	  		<label for="pwText">입력할 내용을 작성하세요.</label>
+	  		<input type="password" id="pwtext" name="pwtext" value="" />
+	  		<br />
+  
+	  		<input type="hidden" id="hiddenText" name="hdText" value="012230" />
+  
+	  		<hr />
+  
+	  		<input type="hidden" id="hiddenText" name="hdText" value="" />
+  
+	  		<hr />
+	  		<h3>html5 이후에 존재하는 기능</h3>
+  
+	  		<label for="searchArea">검색할 내용을 입력하세요.</label>
+	  		<input type="search" id="searchArea" name="" value=""
+	  								required="required" />
+  
+	  		<br />
+  
+	  		<label for="mailArea">사용하는 이메일주소를 입력하세요.</label>
+	  		<input type="email" id="mailArea" name="mailArea" value="" required />
+	  		<br />
+  
+        <label for="urlArea">웹페이지 주소를 입력하세요.</label>		
+	  		<input type="url" id="urlArea" name="urlArea" value="" required />
+  
+	  		<br />
+	  		<label for="telArea">생년월일을 입력하세요.</label>
+	  		<input type="tel" id="telArea" name="telArea" value="" required />
+  
+	  		<br />
+	  		<!--<input type="submit"  value="전송" />-->
+	  	</fieldset>
+	    </form>
+	  	<!-- ============================-->
+  
+	  	<fieldset>
+  
+	  		<legend>체크1</legend>
+	  		<p>다음 중 좋아하는 음식을 고르시오.</p>
+  
+  
+	  		<ul>
+	  			<li>
+	  		  <input type="checkbox" checked="checked" id="sel_01" value="치킨" name="food" />
+	  			<label for="sel_01">치킨</label>
+	  			</li>
+	  			<li>
+	  				<input type="checkbox" id="sel_02" value="피자" name="food" />
+	  				<label for="sel_02">피자</label>
+	  			</li>
+	  			<li>
+	  				<input type="checkbox" id="sel_03" value="족발" name="food" />
+	  				<label for="sel_03">족발</label>
+	  			</li>
+	  			<li>
+	  				<input type="checkbox" id="sel_04" value="보쌈" name="food" />
+	  				<label for="sel_04">보쌈</label>
+	  			</li>
+	  		</ul>
+	  		<!-- var food = ["치킨", "피자", "보쌈"];-->
+  
+  
+	  	</fieldset>
+  
+	  	<!-- ============================-->
+  
+	  	<fieldset>
+	  		<legend>체크2</legend>
+	  		<p>다음 중 마음에 드는 사람을 고르시오</p>
+	  		<ul>
+	  			<li>
+	  				<input type="radio" id="sel_01" name="radioSel" value="엄마">
+	  				<label for="r_sel_01"><i>*</i>엄마</label>
+	  			</li>
+	  			<li>
+	  				<input type="radio" id="sel_02" name="radioSel" value="아빠">
+	  				<label for="r_sel_02">아빠</label>
+	  			</li>
+	  			<li>
+	  				<input type="radio" id="sel_03" name="radioSel" value="할머니">
+	  				<label for="r_sel_03">할머니</label>
+	  			</li>
+	  			<li>
+	  				<input type="radio" id="sel_04" name="radioSel" value="건물주">
+	  				<label for="r_sel_04">건물주</label>
+	  			</li>
+	  		</ul>
+  
+	  	</fieldset>
+  
+	  	<!-- ============================-->
+  
+	  	<fieldset>
+	  		<legend>버튼</legend>
+	  		
+	  		<input type="submit" value="동의">
+	  		<input type="reset" value="취소">
+	  		<input type="image" value="동의" src="#" alt="버튼이미지설명" />
+	  		<br />
+  
+        <label for="postLink">우편번호 검색</label>
+	  		<input type="button" id="postLink" value="우편번호">
+	  		<br />
+  
+	  		<label for="dataFile">첨부자료</label>
+	  		<input type="file" id="dataFile" value="" />
+  
+	  	</fieldset>
+  
+	  	<!-- ============================-->
+  
+	  	<fieldset>
+	  		<legend>멀티/복합</legend>
+	  		       <p>여러 줄의 내용을 입력하는 형태</p>
+	  		       <label for="comment">내용을 입력하세요.</label>
+	  		       <textarea name="" id="" cols="5" rows="10" readonly>계약서</textarea>
+	  		<br />
+  
+	  		
+	  		<label for="optionSelect">상품의 옵션을 선택하세요</label>
+	  		<select name="optionSelect" id="optionSelect" >
+	  			      <option>옵션선택</option>
+  
+	  			      <optgroup label="렌즈 부분">
+	  			      <option value="lenz">카메라 렌즈</option>
+	  			      <option value="cover">안경닦이</option>
+	  		        </optgroup>
+  
+	  			      <optgroup label="케이스 부분">
+	  			      <option value="case">안경케이스</option>
+	  		        </optgroup>
+  
+	  			      <optgroup label="기타">
+	  			      <option value="ticket">주차권</option>
+	  	        	</optgroup>
+	  		</select>
+	  		<br />
+  
+  
+	  		<button type="submit">확인</button>
+	  		<button type="reset">취소</button>
+	  		<button type="button">메뉴</button>
+  
+	  	</fieldset>
+  
+	  	<!-- ============================-->
+  
+	  	<fieldset>
+	  		<legend>HTML5 추가기능</legend>
+  
+	  		<!-- email,tel, serarch, url -->
+	  		<p>위에서 언급한 내용 외에는 아직 브라우저에서 원활하게 동작하지 않으므로 참고용으로 기억하자.</p>
+	  		<input type="time">
+	  		<input type="week">
+	  		<input type="date">
+	  		<input type="datetime-local">
+  
+	  		<input type="color">
+	  		<input type="number" min="1" max="20" step="3">
+	  		<input type="range" min="1" max="10" step="2">
+	  		
+	  		<hr />
+  
+	  		<div class="area" oninput="x.value=parseINt(first.value) + parseInt(milddle.value)">
+	  			<input type="range" value="" min="1" max="10" id="first">+
+	  			<input type="number" value="50" id="middle">=
+	  			<output for="first middle" name="x"></output>
+	  		</div>
+	  	</fieldset>
+  
+	  		
+	  		<fieldset>
+	  						<legend>호텔스컴바인</legend>
+	  						<p>여행지</p>
+	  						<label for="opt"></label>
+	  						<input type="text" name="" id="opt" />
+	  						
+	  						<p>체크인</p>
+	  						<label for="" id="hotelsearch"></label>
+	  						<input type="image" src="#" alt="">
+										<select class="hidden" id="hotelsearch">
+	  						          <option>-월</option>
+	  						          <option value="224">2020년 4월</option>
+	  						          <option value="225">2020년 5월</option>
+	  						          <option value="226">2020년 6월</option>
+	  						          <option value="227">2020년 7월</option>
+	  						          <option vaule="228">2020년 8월</option>
+	  						    </select>
+								<br />
+								
+								<p>체크아웃</p>
+								<label for="" id="checkout"></label>
+								<input type="image" src="#" alt="">
+										<select class="hidden" id="checkout">
+  
+	  						<input type="image" src="#" alt="">
+	  						       <option>-월</option>
+	  						       <option value="2214">yyyy년 m월</option>
+	  						       <option value="2215">yyyy년 m월</option>
+	  						       <option value="2216">yyyy년 m월</option>
+	  						       <option value="2217">yyyy년 m월</option>
+								       <option value="2218">yyyy년 m월</option>
+							</select>
+  
+	  					
+  
+	  						<p>인원</p>
+  
+	  						<br />
+  
+	  						<p>추가 검색 옵션</p>
+	  						<br />
+	  						<ul>
+	  							  <p>호텔등급</p>
+	  							     <li>
+	  								       <input type="checkbox" checked="checked" id="010" value="" name="">
+	  								       <label for="010"><i>★</i></label>
+	  								       <br />
+     
+	  								       <input type="checkbox" checked="checked" id="020" value="" name="">
+	  								       <label for="020"><i>★★</i></label>
+	  								       <br />
+     
+	  								       <input type="checkbox" checked="checked" id="030" value="" name="">
+	  								       <label for="030"><i>★★★</i></label>
+	  								       <br />
+     
+	  								       <input type="checkbox" checked="checked" id="040" value="" name="">
+	  								       <label for="040"><i>★★★★</i></label>
+	  								       <br />
+     
+	  								       <input type="checkbox" checked="checked" id="050" value="" name="">
+	  								       <label for="050"><i>★★★★★</i></label>
+	  							     </li>	
+	  							<br />
+  
+	  							
+	  							<p>가격(1박당)</p>	
+	  							<li>
+	  							    <input type="checkbox" checked="checked" id="1" value="" name="">
+	  								  <label for="1"> &#8361; 0 - &#8361; 49,999 </label>
+	  								  <br />
+  
+	  								  <input type="checkbox" checked="checked" id="2" value="" name="">
+	  								  <label for="2"> &#8361; 50,000 - &#8361; 109,999 </label>
+	  							  	<br />
+  
+	  							  	<input type="checkbox" checked="checked" id="3" value="" name="">
+	  								  <label for="3"> &#8361; 110,000 - &#8361; 159,999 </label>
+	  								  <br />
+   
+	  								  <input type="checkbox" checked="checked" id="4" value="" name="">
+	  								  <label for="4"> &#8361; 160,000 - &#8361; 209,999 </label>
+	  								  <br />
+  
+	  								  <input type="checkbox" checked="checked" id="5" value="" name="">
+	  								  <label for="5"> &#8361; 210,000 </label>
+	  							   	<br />
+	  							</li>
+	  							<br />
+  
+	  							<li>
+	  								<p>숙소 유형</p>
+	  								   <input type="checkbox" checked="checked" id="001" value="" name="">
+	  								   <label for="01"> 호텔</label>
+	  								   <br />
+  
+	  								   <input type="checkbox" checked="checked" id="002" value="" name="">
+	  								   <label for="02"> 아파트 </label>
+	  								   <br />
+  
+	  							   	 <input type="checkbox" checked="checked" id="003" value="" name="">
+	  								   <label for="03"> 호스텔 </label>
+	  								   <br />
+   
+	  								   <input type="checkbox" checked="checked" id="004" value="" name="">
+	  								   <label for="04"> 모텔 </label>
+	  							     <br />
+  
+	  								   <input type="checkbox" checked="checked" id="005" value="" name="">
+	  								   <label for="05"> 베드 & 블랙퍼스트 </label>
+	  								   <br />
+	  							</li>
+	  							<br />
+  
+	  							<li>
+	  								<p>고객 평점</p>
+	  								   <input type="checkbox" checked="checked" id="01" value="" name="">
+	  								   <label for="01"> 최고: 9 </label>
+	  								   <br />
+  
+	  								   <input type="checkbox" checked="checked" id="02" value="" name="">
+	  								   <label for="02"> 매우 좋음: 8 </label>
+	  								   <br />
+  
+	  								   <input type="checkbox" checked="checked" id="03" value="" name="">
+	  								   <label for="03"> 좋음: 7 </label>
+	  								   <br />
+   
+	  								   <input type="checkbox" checked="checked" id="04" value="" name="">
+	  								   <label for="04"> 무난함: 6</label>
+	  								   <br />
+  
+	  								   <input type="checkbox" checked="checked" id="05" value="" name="">
+	  								   <label for="05"> 평점 없음 </label>
+	  								   <br />
+	  							</li>
+	  						</ul>
+	  						<br />
+  
+	  						<input type=button id="search" value="검색" name="" />
+	  					  <label for="search"></label>
+	  		</fieldset>
+  
+	  	<!-- ============================-->
+  
+	   </form>
+	  </div>
 </body>
 </html>
