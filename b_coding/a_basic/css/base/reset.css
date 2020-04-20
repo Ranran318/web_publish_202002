@@ -5,7 +5,8 @@
 
 
 html,body{width:100%; height:100%; 
-          font-family: 'myriad pro', arial,'돋움',dotum;}
+         /* font-family: 'myriad pro', arial,'돋움',dotum; */
+        }
 html,body,
 h1,h2,h3,h4,h5,h6,
 p,pre,div,ul,ol,li,dl,dt,dd,
@@ -17,7 +18,7 @@ a{color:inherit; text-decoration:none;}
 
 button{cursor:pointer; border: 0; background-color: #acf; border-radius:0;}
 
-a:focus, button: focus{outline:3px solid #fa0}
+a:focus, button:focus{outline:3px solid #fa0}
 
 header,section,article,footer,nav,aside,main,figure,figcaption{
   display:block;
