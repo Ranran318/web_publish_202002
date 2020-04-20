@@ -38,8 +38,8 @@ if( t === 'number'){
 // 다수 분기 - switch(){case:; break;}
 // switch(조건){ case 조건부합1: 기능수행; case 조건부합2: 기능수행; case 조건부합3: 기능수행; default:수행; }
 
-var par = parseInt(moreN);
-swicth( par ){
+var par = parseInt(moreN); 
+swicth( par );{
   case 1:
       console.log('1이다');
       break;
