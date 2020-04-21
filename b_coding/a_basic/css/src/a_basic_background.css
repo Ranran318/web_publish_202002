@@ -66,7 +66,7 @@ background-color:#acf; display:none;}
 이외의  다른 단위는 내용 이미지는 0 0 좌표를 기준으로
 위치 이동 */
 
-.in_box > span {
+.in_box > span {display:none;
 	width: 0; height: 0; overflow:hidden; background-color: #aca;
  }
 
@@ -102,7 +102,7 @@ background-color:#acf; display:none;}
 
 .part_03 a {display:block;
 	width:100%; height:100%; background-color: #fcf;
-	background-image: url('../../img/sprites_icon.jpg');
+	background-image: url('../../img/sprite_icon.jpg');
 	background-repeat: no-repeat;
 }
 
@@ -111,6 +111,199 @@ width:0; height:0; position: absolute; z-index: -1;
 overflow:hidden;
 }
 
+
 .part_03 li:nth-child(1)>a{
-	background-position: -30% -20%;
+	background-position: -30px -20px;
 }
+
+.part_03 li:nth-child(2)>a{
+	background-position: -412px -116px;
+	background-position: -25.75rem -7.25rem;
+}
+
+.part_03 li:nth-child(3)>a:hover{
+	background-position: -126px -504px;
+}
+
+.part_03 li:nth-child(3)>a:active{
+	background-position: -222px -504px;
+	background-position: -13.875rem -31.5rem;
+
+}
+
+.part_03 li:nth-child(3)>a:active{
+	background-position: -318px -504px;
+	background-position: -19.875rem -31.5rem;
+}
+
+/*
+
+*div{}
+*마우스 올릴때 -> div:hover{}
+*마우스 누르고 있을 때 -> div:active{}
+*방문한 적이 있을 때 -> div:visited{}
+*link의 기능일 때 -> div:linked{}
+*초점이 잡혔을 때 -> div:focus{}
+*체크 되었을 때 -> div:check{}
+*내용상의 가상선택자(이전) -> div:before{}
+*내용상의 가상선택자(이후) -> div:after{}
+
+*/
+
+/*
+.part_03 li:nth-child(1){
+	background-position: -10px -69px;
+	background-position: -0.625rem -4.3125rem;
+	
+}
+*/
+
+/*
+.part_03 li {
+	float: left; width:60px; height:60px;
+	margin:0.5rem; border: 1px solid #777;
+}
+.part_03 a {display:block;
+	width:100%; height:100%; background-color: #fcf;
+	background-image: url('../../img/unnamed.png');
+	background-repeat: no-repeat;
+}
+
+.part_03 a span{display:block;
+width:0; height:0; position: absolute; z-index: -1;
+overflow:hidden;
+}
+
+
+.part_03 li:nth-child(1)>a{
+	background-position: -10px -49px;
+}
+
+.part_03 li:nth-child(2)>a{
+	background-position: -px -px;
+	
+}
+
+.part_03 li:nth-child(3)>a:hover{
+	background-position: -126px -504px;
+}
+*/
+
+/* ================= */
+.part_04{height:auto;}
+
+.bg_box_01{
+	width:400px; height:100px;
+	background-image: url('../../img/background/sunset.jpg');
+	background-repeat:no-repeat;
+	background-position: 0% 50%;
+	background-size: 100% auto;
+}
+
+.bg_box_02{width:200px; height:200px;
+	background-image: url('../../img/background/grass.jpg');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: auto 150%;
+	background-color:#fff;
+}
+
+.bg_box_03{width:300px; height:300px;
+	background-image: url('../../img/background/camera.jpg');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size:cover;
+	background-color:#fff;
+}
+
+.bg_box_03:hover{
+	background-size: contain;
+}
+
+.bg_box_04{width:100%; height:200px;
+ background-image: url('../../img/background/camera.jpg');
+ background-repeat: no-repeat;
+ background-position: 50% 50%;
+ background-size: 100% auto;
+ transition: all 300ms ease;
+}
+
+.bg_box_04:hover{
+	background-position: 50% 80%;
+	background-size: 120% auto;
+
+}
+
+/* =============== */
+
+.part_05 > div{
+	float:left; width:150px; height:150px;
+	margin:1rem; 
+	border:10px dotted #f07;
+	padding: 10px; 
+	background-color: #7cf;
+	background-image: url('../../img/background/sunset.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 150 auto;
+  
+}
+
+/*.part_05 > .clip_04 { color:transparent; }*/
+/* .clip_00 {} */
+.clip_01{background-clip:border-box;}
+.clip_02{background-clip:padding-box;}
+.clip_03{background-clip:content-box;}
+.clip_04{-webkit-background-clip:text;
+         color:transparent;}
+
+
+/* background-size:
+*cover       -> 빈공간이 없이 곽차게 처리하는 것
+*contain     -> 내용이미지를 모두 보게 만들기
+
+
+*/
+
+/* *background-clip
+* 배경이미지의 영역을 어디가지 포함할 것인가?
+* 아무것도 없는 형태: border-box
+* border-box   -> 외곽선의 영역까지 이미지를 담을 수 있게 처리
+* padding-box  -> padding 영역까지 이미지를 처리(border 제외)
+* content-box  -> 내용만 담을 수 있는 영역(padding, border 제외)
+* text         -> 글씨의 영역만큼 이미지로 마스크처리
+									조건: 글씨의 색상은 투명
+									IE에서는 지원하지 않는다.
+*/
+/* ===================================== */
+
+.part_06{height:auto;}
+
+
+.part_06 > div{width:100%; height: 600px; 
+							border-bottom:1px solid #333;
+							background-repeat: no-repeat;
+							background-position: 50% 0;
+							background-size: cover;
+}
+
+.attzch_01{background-image: url('../../img/background/grass.jpg');
+                             
+	         background-attachment: scroll;}
+
+.part_06 > .attzch_02{background-image: url('../../img/punch.png'),
+	        url('../../img/background/starrynight.jpg');
+														
+				   background-size: 100px auto, cover;
+					 background-position: 50% 50%, 50% 100%;
+					 background-attachment: scroll, fixed;}
+
+.attzch_03{background-image: url('../../img/background/tree.jpg');
+	
+
+	         background-attachment: scroll;}
+
+.attzch_04{background-image: url('../../img/background/sunset.jpg');
+
+	         background-attachment: fixed;}
+
