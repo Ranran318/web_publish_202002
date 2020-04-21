@@ -1,0 +1,116 @@
+/* a_basic_backgoround.css */
+
+/*
+*background-color:배경색;
+*background-image:; 
+- <img> 와 비슷한 개념이지만, img경우는 글자처럼 html 요소 내부에 담아서 사용하는 기능
+- background-image의 경우는 배경에 색상대신 이미지로 대체 하는 기능
+- img는 새로고침의 경우 매번 새로 불러오는 형식
+- bgi는 임시로 저장해서 새로고침해도 추가 데이터를 소모하지 않는다.
+- 여러개의 이미지를 하나의 이미지로 저장하여 브라우저의 속도를 올릴 수 있는 기능(is기법)
+- img는 자주 변경하는 기능, bgi 디자이너들이 주로 사용, 한번 세팅 크게 변하지 않는 영역
+									 
+*background-repeat:no-repeat | repeat-x | repeat-y | repeat;| 
+*background-position:;
+*background-size:;
+*background-clip:;
+
+
+
+
+
+- IR 기법, IS 기법 의 내용을 찾아서 정리
+*/
+
+.bg_wrap {
+	width: 800px; height:auto;
+	margin:auto; padding:0.5rem; background-color: #dfdfdf;}
+
+.part {
+	width:100%; height:500px; border:1px solid #777;
+	margin-bottom:1rem;
+}
+
+h1{text-align: center;}
+
+h2{width:100%; height:30px; font-size:1rem;
+background-color:#acf; display:none;}
+
+/* ============ */
+
+.part_01{
+	background-image:url('../../img/punch.png');
+	background-repeat:repeat;
+	background-position: 0 0;
+
+}
+
+.part_02{
+	background-image: url('../../img/flower.png');
+	background-repeat:no-repeat;
+	/*background-position:right bottom;*/
+	background-position: 100% 30%;
+	/* background-position-y:50%; */
+}
+
+.in_box{
+	width:300px; height:300px;
+	background-color:#acc;
+	background-image: url('../../img/flower.png');
+	background-repeat: no-repeat;
+	background-position: -100px -100px;
+}
+
+
+/* %는 내용물의 이미지가 함께 %위치를 기준으로 배치가 되나,
+이외의  다른 단위는 내용 이미지는 0 0 좌표를 기준으로
+위치 이동 */
+
+.in_box > span {
+	width: 0; height: 0; overflow:hidden; background-color: #aca;
+ }
+
+ /*
+	IR(image-replace) : 내용을 ext대신 이미지로 대체하여 보이게하는 기법
+	
+	IS(image-sprite) : 여러개의 이미지를 하나의 파일에 담아서 처리하는 기법
+	1. 이미지는 작은 이미지 여러 개를 따로 띄우는 것 보다,
+		 여러 개를 한 번에 띄우는 형태가 로딩속도가 더 빠르다.
+		 
+	2. 여러 개의 이미지를 관리하는 것보다,
+		 하나의 이미지를 통해서 관리하는 게 더 효율성이 높다.
+		 (단, 하나의 이미지에 들어있는 형태들은 유사이미지/
+		  각각의 좌표는 별도의 관리가 되는 것이 좋다.)
+
+
+
+ */
+
+ .part_03 > ul{
+	 width:100%; height:auto;
+	}
+
+	.part_03 > ul:after,
+	.part_03 > ul::after{ 
+	   	content: ""; display:block; clear:both;
+	}
+
+ .part_03 li {
+	 float: left; width:60px; height:60px;
+	 margin:0.5rem; border: 1px solid #777;
+}
+
+.part_03 a {display:block;
+	width:100%; height:100%; background-color: #fcf;
+	background-image: url('../../img/sprites_icon.jpg');
+	background-repeat: no-repeat;
+}
+
+.part_03 a span{display:block;
+width:0; height:0; position: absolute; z-index: -1;
+overflow:hidden;
+}
+
+.part_03 li:nth-child(1)>a{
+	background-position: -30% -20%;
+}
