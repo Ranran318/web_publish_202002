@@ -98,8 +98,8 @@ console.log(obj2[0]);
 //var Fn = function(){}; //함수 표현식
 //function Fn1(){}       // 함수 선언식
 
-function F1(i, d){
-  refurn i * d * 8570;
+function F1(i, d); {
+  refurn (i * d * 8570);
 }
 //t = typeof(F1);
 //console.log(t);

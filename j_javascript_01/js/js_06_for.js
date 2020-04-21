@@ -111,7 +111,7 @@ console.log('i가 바깥에서 나올까?', i);
 //------------------------------------------
 var j;
 for(j = 0; j < arr.length ; j++){
-  console.log( arr[j] + '요일' );
+  console.log( arr[j] + '요일' );}
 
 
 console.log(arr[0]);
