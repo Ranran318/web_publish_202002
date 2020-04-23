@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/* zozo_main.css */
+
+/* #wrap ======================================= */
+#wrap{position:relative;
+	    margin:auto; width:1920px; height:7800px; }
+
+/* #wrap ======================================= */	 
+
+/* #headBox ======================================= */
+#headBox{width:1920; height:120px; 
+	background-color:#fff;
+}
+
+
+h1{padding:30px 90px; width:60px; height:60px; 
+}
+
+h1 > a{
+	background-image:url('/img/1x/logo_h1.png');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.menu_btn {position:absolute; top:30px; right:90px; 
+	/*padding-top:30px; padding-right:90px;*/
+					 width:60px; height:61px;
+					 background-color: #f06;
+					 box-sizing: border-box;
+}
+
+.menu_btn > a {
+	background-image:url('/img/1x/menu_btn.png');
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+
+.menu_btn > a:hover{
+	background-image:url('/img/1x/menu_btnon.png');
+}
+
+/* #headBox ======================================= */
+
+/* #viewBox ======================================= */
+#viewBox{width:1920px; height:958px;
+	border-top:2px solid #333;
+}
+
+.view_Box01 {margin:28px auto; 
+	width:1740px; height:840px; 
+}
+
+.view_Box01 {
+	background-image: url('/img/1x/viewbox_bg.png'); 
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+
+
+/*
+.view_Box01 {z-index:
+	background-image: url('/img/xido_img/greg-rakozy-vw3Ahg4x1tY-unsplash.jpg');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+*/
+/*.view_Box01 div> ul{}*/
+
+
+.view_Box01 div> ul > li:nth-child(1){
+	float:left;
+	width:245px; height:261px; 
+	background-color:#999;
+	
+} 
+/* #viewBox ======================================= */
+
+
+/* #popolBox ======================================= */
+#popolBox{width:1920px; height:1080px; background-color:#666; }
+
+
+/* #popolBox ======================================= */
+
+
+
+/* #graphicBox ======================================= */
+#graphicBox{width:1920px; height:1080px; background-color:#999;}
+
+/* #graphicBox ======================================= */
+
+
+
+/* #grap_tBox ======================================= */
+#grap_tBox{width:1920px; height:1080px; background-color:#888;}
+
+/* #grap_tBox ======================================= */
+
+
+
+/* #mini_vBox ======================================= */
+#mini_vBox{width:1920px; height:320px; background-color:#999; }
+
+/* #mini_vBox ======================================= */
+
+
+
+/* #progBox ======================================= */
+#progBox{width:1920px; height:1080px; background-color:#777;}
+
+/* #progBox ======================================= */
+
+
+
+/* #prog_tBox ======================================= */
+#prog_tBox{width:1920px; height:1080px; background-color:#999;}
+
+/* #prog_tBox ======================================= */
+
+
+
+/* #infoBox ======================================= */
+#infoBox{width:1920px; height:930px; background-color: #f06;}
+
+/* #infoBox ======================================= */
+
+
+
+/* #footBox ======================================= */
+#footBox{width:1920px; height:60px; background-color:#333;}
+
+/* #footBox ======================================= */
+
