@@ -1,0 +1,32 @@
+/* viewBox.css 
+
+
+ * 메인페이지 광고 영역
+*/
+
+
+
+
+/* #viewBox ======================================= */
+#viewBox{padding:150px 90px 100px; box-sizing: border-box;
+	background-color: #fff;} 
+
+#viewBox .full{
+overflow:hidden;
+border-radius:20px;
+background-color: #f06;
+}
+
+#view_indicator {
+	position:absolute; bottom:30px; z-index:100;
+	/* left: 50 %; margin-left:470px */
+	left:0; right:0; margin:auto;
+	width:940px;height:60px;
+	border-radius:16px;
+	
+	background-color:  rgba(255,255,255,0.9);
+}
+
+
+/* #viewBox ======================================= */
+

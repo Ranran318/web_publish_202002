@@ -1,0 +1,37 @@
+/* guideContainer.css
+
+  * guideSub영역포함하여 설정
+  * graphic, graphicSub
+  * program, programsub 영역을 공통영역으로 설정 처리
+
+*/
+
+/* guide_container : # graphicBox, #graphicSubBox 영역의 통합 디자인
+영역  ======================================= */
+.guide_container{	
+	position: relative;
+	background-color:#59e;
+	overflow: hidden;}
+
+	/*.guide_container h2{}*/
+
+	.guide_title{
+		position: absolute; 
+		top: 240px; left:110px; z-index: 100;
+		width: 740px; height: 300px;
+		color:#fff;
+		background-color: #ccc;
+	}
+	/*.guide_btn_area{}
+	.guide_indicator_area{}*/
+
+	.guide_content{float:right;
+								 width: 1300px; height: 120%;
+								 margin-right:-200px;
+								 background-color: rgba(225,255,255,0.9);
+								 background-color: #fca;
+								 transform:rotate(-15deg);
+								 border-radius:50px;
+								}
+
+	/*.guide_tip{}*/
