@@ -1,0 +1,107 @@
+/* transform.css */
+
+h1 {
+	/* width: 100%; height:auto; */
+	padding: 1rem; background-color: #0ad;
+	color:#fff; font-size: 3rem; text-align: center;
+  margin-bottom:  2rem;
+}
+
+.sample {
+	width: 800px; height:auto;
+	margin:  auto; margin-bottom:  2rem;
+	border:  2px solid #777;
+}
+
+.sample h2 {
+	padding:  0.5rem; background-color:  #fa0;
+	border-bottom: 2px solid #057;
+}
+
+.sample div{
+	width: 200px; height: 100px;
+	margin-bottom:  2rem; 
+	padding: 0.2rem;  box-sizing:border-box;
+	border: 1px solid #777; border-radius: 20px;
+	font-size: 1.2rem; color:#333;
+	background-color:#acc;
+}
+
+/*
+
+* transform:
+					 1. 이동 - translate
+					 2. 크기변경 - scale
+					 3. 회전 - rotate
+					 4. 기울이기 - skew
+
+		단위: 이동 - px | rem | %
+					크기 - 1 == 100%, 0.5 == 50%, 3 == 300%
+					회전 - deg(각도)
+		조건: block 요소, float  기능이 되었을 때에는 일부 동작 안 되는 것이 있음.
+		축  : X | Y | Z - 대부분 X축을 기본으로 처리(회전은 Z축을 기본)
+*/
+
+.translate > div:nth-of-type(1) {
+	transform: translateX(200px);
+}
+
+.translate > div:nth-of-type(2) {
+	transform:translate(0,-150px);
+}
+
+.translate > div:nth-of-type(3) {
+	transform: translateZ(-150px);
+}
+
+.translate > div:nth-of-type(4) {
+	transform: translateX(-150px) 
+	           translateY(50px);
+}
+
+/* ================================= */
+
+.scale > div:nth-of-type(1) {
+	transform: scale(1.5);
+}
+
+.scale > div:nth-of-type(2) {
+	transform: scale(-1);
+}
+
+.scale > div:nth-of-type(3) {
+	transform: scaleX(-1) scaleY(2);
+}
+
+
+.scale > div:nth-of-type(4) {
+	transform: scale(-1.5, 0.5);
+}
+
+/* ================================= */
+
+.rotate > div:nth-of-type(1) {
+	transform:rotate(45deg);
+}
+
+.rotate {
+	perspective:500px;
+}
+
+.rotate > div:nth-of-type(2) {
+	transform:rotateX(45deg);
+}
+
+
+/*
+.rotate > div:nth-of-type(1) {
+	transform:rotate(45deg);
+	transition:all 300ms;
+
+}
+.rotate > div:nth-of-type(1):hover{
+	transform:rotate(1150deg)
+}
+
+*/
+
