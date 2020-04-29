@@ -15,6 +15,8 @@ h2 {padding: 0.5rem; background-color: #fca;}
 	margin:  1rem; border:  1px solid #333;
 }
 
+
+
 /* ====================== */
 
 .linear div:nth-of-type(1) {
@@ -96,3 +98,58 @@ h2 {padding: 0.5rem; background-color: #fca;}
 									 3. repeating-[형태(linear | redial)]-gradient(내용은 위 두 기능과 동일)
 
 */
+
+/* practice ============================================= */
+
+/* ========================================================= */
+
+.practice{
+	width:100%; height: 100%; margin: auto;
+}
+
+.practice > h2{padding: 0.5rem; background-color: #068;}
+
+.practice > div {
+	float: left;
+	width: 10rem; height:10rem;
+  border: 0.5px solid #0cf
+}
+
+/* =========================================================*/
+
+.practice > div:nth-of-type(1) {
+	background-color: #ccc;
+	background-image: linear-gradient(45deg, #45e6cb 20%, #f06 90%);
+	transform-origin: 0 100;
+	transform:skew(-15deg);
+
+	
+}
+
+
+.practice div:nth-of-type(2) {margin:10rem;
+	background-color: #ccc;
+	background-image: linear-gradient(45deg, #45e6cb 20%, #f06 90%);
+	transform-origin: 100 0;
+	transform:skew(15deg);
+}
+
+
+
+.practice div:nth-of-type(3) {
+	background-color: #ccc;
+	background-image: linear-gradient(45deg, #45e6cb 20%, #f06 90%);
+	transform-origin: 0 100;
+	transform:skew(-15deg);
+}
+
+
+
+.practice div:nth-of-type(4) {
+	background-color: #ccc;
+	background-image: linear-gradient(45deg, #45e6cb 20%, #f06 90%);
+	transform-origin: 0 100;
+	transform:skew(15deg);
+}
+
+
