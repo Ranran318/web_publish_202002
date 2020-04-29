@@ -1,0 +1,89 @@
+/* main.css */
+
+
+/*#wrap ============================================*/
+#wrap{width:1200px; height:auto; min-height:300px; margin:auto; }
+
+/*#headBox ============================================*/
+#headBox{position: relative; z-index: 1000;width: 100%; height: 100px; 
+        padding:10px; box-sizing: border-box;
+        background-color: #fa1;}
+h1{float: left; width: 140px; height: 80px; background-color:#fff;}
+#gnb{float: right; width: 800px; height: 50px; margin-top: 20px;background-color: #fff;}
+.menu{width: 100%; height: auto; min-height:50px;background-color: #ccc;}
+.menu > li{float:left; width: 25%; height: auto; min-height:50px;    
+           background-color: #acc;}
+
+
+.menu dl {width:100%; height: auto; text-align: center;}
+.menu dt {width:100%; height: 50px; font-weight: bold; font-size: 1.1rem;
+          padding:5px; box-sizing: border-box;}
+.menu dd {width:100%; height: auto; display: none;}
+.menu dd>ul {width:100%; height: auto;}
+.menu dd>ul li {width:100%; height:50px; 
+                padding:5px;
+                box-sizing: border-box;}
+
+.menu a {display:block;  width: 100%; height: 100%;
+        background-color: #fff;line-height:40px;}
+.menu a:hover,
+.menu a:focus {background-color: #fa0;}
+/*.menu:hover dd {display: block;}*/
+.menu li:hover dd {display: block;}
+
+
+/* 
+focus 기능은 클릭의 형태가 아니라 그것을 클릭/내용작성 전 위치를 파악하는 기능
+
+반드시, a, button, input, text-area, select 등의 어떠한 기능을 쓸 수 잇는 것에
+처리 가능 (-my opinion//등과 같은 추가적으로 해야하는 애들에 대해서만 focus를 가짐.)
+
+*/
+
+
+
+/*#viewBox ============================================*/
+#viewBox{position:relative; width: 100%; height: 300px; background-color: #bfc;}
+.vie_area {width: 100% ; height: 100%; }
+.indcator{position: absolute; bottom:20px; left: 50%; margin-left: -200px;
+           width: 400px ; height: 30px;}
+.indcator > ul {width: 100%; height: 100%; text-align: center;}
+
+.indcator   li {display:inline-block; width: 30px; height: 30px; margin-left:40px;}
+.indcator   li:fisrt-child {margin-left: 0;}
+.indcator   a  {display: block; width: 100%; height: 100%; 
+                 background-color: #f06;
+                 border-radius:100%;}
+
+
+
+.view_btn{position: absolute; top: 50%; left:5%; margin-top: -25px;
+          width: 90% ; height: 0px; background-color: #07a;}
+.view_btn > button {width:40px; height:50px; background-color: #05a;
+                   color:#fff; font-weight: bold; border-radius:20px;}
+  .next_btn {float:right;}
+  .prev_btn {float:left;}
+.view_list{width: 100% ; height: 100%; background-color: #fff; overflow: hidden;}
+.view_list > ul {width: 400%;height: 100%;}
+.view_list > ul > li {float:left; width: 25%;height: 100%; padding:30px; box-sizing:border-box;}
+  .ad_view_01 {background-color: #aff;}
+  .ad_view_02 {background-color: #ffa;} 
+  .ad_view_03 {background-color: #faf;}
+  .ad_view_04 {background-color: #aff;}
+
+
+/*#conBox ============================================*/
+#conBox{width: 100%; height: auto;}
+.con_area {float:left; width:33.333333%; height:200px;}
+.notice_gallery {background-color: #5f1;}
+.info_news {background-color: #3f7}
+.location_link {background-color: #1f9;}
+
+/*#footBox ============================================*/
+#footBox{width: 100%; height: auto; padding:10px; box-sizing:border-box; 
+         background-color: #fff;}
+
+#footBox >h2 {float:left; width: 100px; height:80px; margin-right:40px;}
+address {float:left; width: 760px; height:80px;}
+.sns{float:right; width: 240px; height:80px;}
+
