@@ -25,3 +25,40 @@
 	 text-align: center; line-height: 100px;
 	 color: #fff; font-weight: bold; font-size: 1.2rem;
  }
+
+ .sample li:nth-child(1){border-radius:1rem}
+ .sample li:nth-child(2){border-radius:1rem 2rem;}
+ .sample li:nth-child(3){border-radius:1rem 2rem 4rem;}
+ .sample li:nth-child(4){border-radius:1rem 0.5rem 2rem 3rem;}
+
+.sample li:nth-child(5){
+	border-radius: 4rem;
+	border-top-left-radius: 1rem; 
+	border-top-right-radius: 2rem;
+	border-bottom-left-radius: 0;
+}
+
+.sample li:nth-child(6){
+	border-top-left-radius:1rem 3rem;
+}
+
+.sample li:nth-child(7){
+	/*border-radius:100%*/
+	border-radius: 50%;
+}
+
+.sampleli:nth-child(8){
+	/*border-radius: 50%;*/
+   border-radius:50px;
+}
+
+
+/*
+13
+t l 50 100
+t r 50 100
+
+15
+t l 100 90
+t r 60 100
+*/
