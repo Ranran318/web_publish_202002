@@ -1,0 +1,249 @@
+/* transition.css */
+
+/*
+ *transition: 애니메이션기법
+ 애니메이션: transition(단회성, animation(연속성)
+
+ * 특정한 조건이 주어졌을 때 한번에 한하여 애니메이션이 처리되는 형식
+ 
+ * transition-[기능] : ...;
+ 1. property        - 속성명(all, css속성명-margin,paddin,background...etc)
+ 2. duration        - 지속시간(1s, 0.5s, 1000ms, 500ms)
+ 3. timing-function - 흐름의 방식(속도처리방식) 
+											(ease, ease-in, ease-out, eaase-in-out,
+											 linear, cubic-bezier())
+ 4. delay           - 지연시간 (지속시간과 표현형태가 동일)
+*/
+
+
+h1 {text-align: center;}
+
+
+
+.sample {
+	width: 800px; height:auto;
+	margin: auto; border: 1px solid #777;
+}
+
+.sample > ul {
+ width: 100%; height: auto;
+}
+
+.sample li {
+	width: 100px; height: 100px;
+	width: 6.25rem; height: 6.25rem;
+	background-color: #acf;
+	border: 2px solid #035;
+	border-radius: 0.5rem;
+	margin:1rem;
+}
+
+.sample li:nth-child(1):hover {
+	width: 500px; height:300px;
+	background-color:#aca;
+	transition-property:width, height;
+	transition-duration: 300ms;
+}
+
+.sample li:nth-child(2):hover {
+	transition-duration: 2000ms;
+}
+
+.sample li:nth-child(2):hover {
+	background-color: #678;
+	transition-property: background-color;
+	transition-duration: 1000ms;
+}
+
+.sample li:nth-child(2):hover {
+	background-color: #f78;
+	transition-property: background-color;
+	transition-duration: 500ms;
+}
+
+.sample li:nth-child(3) > span {
+	display: block; width: 100%; height:100%;
+	background-color: #07f;
+	transition-duration:500ms;
+}
+
+.sample li:nth-child(3):hover > span {
+	transform: translateX(250px) scale(0.4);
+}
+
+.sample li:nth-child(4) {
+	transition-property:all;
+	transition-duration: 1000ms;
+	transition-timing-function: ease;
+	transition-delay: 500ms;
+}
+
+.sample li:nth-child(4):hover{
+	background-color: #555;
+	color: #fff;
+	width:  700px;
+}
+
+.sample_02{
+	width: 100%;
+	height:  1000px;
+	height: 63.6rem;
+	border:  1px solid #333;
+}
+
+.sample_02 > h2{
+	width: 100%;
+	height: 50px;
+	background-color:#06f;
+	color:#fff;
+}
+
+.sample_02 ul {
+	width:  100%; height: auto;
+	margin-top : 1rem;
+	background-color: #ddd;
+}
+
+.sample_02 > li {
+	width: 50px; height: 50px;
+	margin-top:1rem;
+	background-color: #aca;
+
+}
+
+.sample_02 li{
+	width:50px; height:50px;
+	margin-top: 1rem;
+	background-color: #4c7; color:#fff;
+	line-height: 50px;
+	font-weight: bold;
+	transition-property: all;
+	transition-duration: 2000ms;
+}
+
+/* 원본
+.sample_02 li{
+	width:50px; height:50px;
+	margin-top: 1rem;
+	background-color: #4c7; color:#fff;
+	line-height: 50px;
+	font-weight: bold;
+	transition-property: all;
+	transition-duration: 2000ms;
+}
+
+*/
+/*
+.sample_02 li:nth-child(1) {background-im;}
+*/
+.sample_02 li:nth-child(2) {transition-timing-function:ease;}
+.sample_02 li:nth-child(3) {transition-timing-function:ease-in;}
+.sample_02 li:nth-child(4) {transition-timing-function:ease-out;}
+.sample_02 li:nth-child(5) {transition-timing-function:ease-in-out;}
+.sample_02 li:nth-child(6) {transition-timing-function:linear;}
+.sample_02 li:nth-child(7) {transition-timing-function:cubic-bezier(.26,1.24,1,.14)}
+.sample_02 li:nth-child(8) {transition-timing-function:cubic-bezier(.32,1.42,1,-1.31)}
+
+
+/*
+*/
+
+.sample_02:hover li:nth-child(1) {width:800px; background-color:#96a;}
+.sample_02:hover li:nth-child(2) {width:800px; background-color:#fc6;}
+.sample_02:hover li:nth-child(3) {width:800px; background-color:#ca5;}
+.sample_02:hover li:nth-child(4) {width:800px; background-color:#a56;}
+.sample_02:hover li:nth-child(5) {width:800px; background-color:#2f5;}
+.sample_02:hover li:nth-child(6) {width:800px; background-color:#f3f;}
+.sample_02:hover li:nth-child(7) {width:800px; background-color:#f77;}
+/* =================== */
+
+.test{
+	width: 100%;
+	height:  500px;
+	border:  1px solid #333;
+}
+
+
+
+.test_01 {
+	position: relative;
+	float:left;
+	width:  250px; height: 250px;
+	padding:2rem;
+	background-color: #0ac;
+}
+
+.test_01 a{
+	display: block;
+	width: 100%; height: 100%;
+}
+
+
+.test_01 span {
+	display:block;
+	position: absolute; 
+	background-color: #fa0;
+	transition-property: all;
+	transition-duration: 500ms;
+	transition-timing-function: linear;
+}
+
+.line_01 {width:0; height:1rem; top:0; left:0;
+transition-delay: 1500ms;}
+.line_02 {width:1rem; height:0; top:0; left:0;
+transition-delay: 1000ms;}
+.line_03 {width:0; height:1rem; bottom:0; right:0;
+transition-delay: 500ms;}
+.line_04 {width:1rem; height:0; bottom:0; left:0;
+transition-delay: 1ms;}
+
+
+.test_01 a:hover .line_01 {width:100%; transition-delay: 1ms;}
+.test_01 a:hover .line_02 {height:100%; transition-delay:500ms;}
+.test_01 a:hover .line_03 {width:100%; transition-delay: 1500ms;}
+.test_01 a:hover .line_04 {height:100%;transition-delay: 2000ms;}
+
+	/*
+.test li:nth-child(1) {
+	width:100px; height: 15px; background-color: #035;
+	
+}
+.test li:nth-child(2) {
+	position: absolute; top:215px; left:0; bottom:0; right:0; 
+	width:100px; height: 15px; background-color: #96a ;
+}
+.test li:nth-child(3) {
+	float: right;
+	width:15px; height: 200px; background-color: #fc6
+}
+.test li:nth-child(4) {
+	width:15px; height: 200px; background-color:  #aca;
+}
+
+
+.test li:nth-child(1):hover{
+	transition-timing-function:ease;
+}
+*/
+
+.test_01 a:before{
+	content:""; display: block;
+	position: absolute; top: 0; left: 0;
+	width: 100%; height:100%;
+	background-color: rgba(255,50,200,0.7);
+
+}
+
+.test_01 a{
+	background-image:url('../../img/background/grass.jpg');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	color:#fff;
+	
+}
+
+.test_01 a{transition:all 500ms ease;}
+.test_01 a:hover:before{background-color:rgba(255,50,200,0)
+	;}
+.test_01 a:hover{background-size: 130% auto;}

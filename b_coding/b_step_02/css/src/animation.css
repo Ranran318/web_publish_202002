@@ -1,0 +1,45 @@
+/* animation.css */
+
+/** animation: 연속성(계속변화)
+* animation - name              : (애니메이션을 처리한)이름
+	animaiton - direction         : 종료 후 재처리방법
+	animation - delay             : 지연시간
+	animation - duration          : 사용시간
+	animation - interatiion-count : 반복횟수
+	animaiton - play-state        : 재생/정지
+	animation - fill-mode         : 동작 전/후
+
+	*@keyframes{}                 : 선택자에 animation기능을 수행할 이름을 지정하고, 
+																	지정된 이름의 기능을 별도로 수행명령 내용을 따로 처리한다.
+																	
+@charset "";
+@import "";
+@media ...;
+
+*/
+
+
+h1{}
+
+.sample {
+	width: 60rem; height: auto;
+	margin: auto; padding: 1rem; background-color: #ccc;
+}
+
+.sample h2 {
+	border-bottom: 1px solid #777;
+}
+
+.sample ul{
+	width:100%; height: auto;
+}
+
+.sample li{
+	width: 6.25rem; height: 6.25rem;
+	background-color: #aca;
+	margin: 1rem; border: 2px solid #a66;
+	text-align: center; line-height: 6.25rem;
+	font-size: 2rem;
+	border-radius:50%;
+}
+
