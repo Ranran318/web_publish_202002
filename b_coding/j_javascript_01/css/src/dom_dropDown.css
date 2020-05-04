@@ -2,7 +2,7 @@
 
 .drop_menu{
 	width:800px; height:50px;
-	margin:auto; margin-top: 20px;
+	margin: auto; margin-top: 20px;
 	background-color:#cdf;
 
 }
@@ -49,6 +49,9 @@
 	line-height:35px;
 }
 
+/*
 .drop_menu:hover dd{
 	display: block;
-}
+}*/
+
+dt:focus {background-color: red;}
