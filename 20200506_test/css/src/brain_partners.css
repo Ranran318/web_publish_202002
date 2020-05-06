@@ -2,18 +2,70 @@
 
 /* brain_partners.css */
 
+/* main.css */
+
+.middle_name {text-align: center;}
+
+#analysisBox,#doxBox{padding-top:77px; box-sizing: border-box;}
+
 
 /* ===== //wrap ====================================== */
 #wrap{position:relative;
 			margin:auto;
-			width:100%; height:900px; background-color:#333;}
+			width:100%; height:auto;}
 /* ===== //wrap ====================================== */
 
 
 
-
+ 
 /* ===== //headBox ====================================== */
-/*#headBox*/
+#headBox{position:relative; width:100%; height:892px; background-color:#fff;}
+
+.logoBox {position: absolute; top:0; z-index: 100;
+	        margin-left:40px; 
+	        box-sizing:border-box; 
+					width:222px; height: 167px; 
+					background-color:rgba(255,255,255,0);}
+
+.logoBox > h2 {
+		width:222px; height:167px;
+		background-image: url('../../img/brain_img/메인/1x/logo_text.png');
+		background-repeat: no-repeat;
+		background-position:0 0;
+}
+
+
+.gnbBox{padding-left:309px;
+	      box-sizing: border-box;  
+				width:100%; height:60px; 
+				border: 1px solid #b3a048;
+				background-color: #fff;}
+
+.gnbBox li {float: left; padding:17px; margin-right: 18px; box-sizing: border-box; text-align: center;}
+
+.menu_01,.menu_07{width: 100px; height: 60px;}					
+.menu_02,.menu_03{width: 116px; height: 60px;}
+.menu_04{width: 146px; height: 60px;}					
+.menu_06{width: 126px; height: 60px;}
+.menu_05{width: 170px; height: 60px;}
+
+.viewBox {width:100%; height:832px; 
+					background-color:#fff;
+					background-image:url('../../img/brain_img/메인/1x/viewBox_bgpcfull.png'); 
+					background-repeat: no-repeat;
+					background-position:50% 50%;
+}
+
+.new_name {float: left;
+						 margin-left:312px; padding-top:74px; 
+						 color:#fff; font-size:2.25rem}
+
+.brain_partners {
+	          text-transform: uppercase;
+            margin-left:412px; padding-top:225px; 
+            color:#fff; font-size:2.875rem}
+
+
 
 /* ===== //headBox ====================================== */
 
@@ -21,40 +73,68 @@
 
 
 /* ===== //introBox ====================================== */
-/*#introBox*/
+#introBox{width:100%; height:692px; background-color:#daf;}
 /* ===== //introBox ====================================== */
   
 
 
 
 /* ===== //analysisBox  ====================================== */
-/*#analysisBox*/
+#analysisBox{float: left; position: relative; width:100%; height:746px; background-color:#efa;}
+
+.more_btn01{float:right;
+	          position:absolute; top: 70px; right:432px; bottom:620px; left:895px;
+	          width:112px; height:52px;
+						background-image: url('../../img/brain_img/1x/more_btn.png');
+						background-repeat: no-repeat;
+						background-position: 0 0;
+
+}
+
+
 /* ===== //analysisBox  ====================================== */
 
 
 
 
 /* ===== //docBox ====================================== */
-/*#docBox*/
+#docBox{position: relative; float:left; width:100%; height:550px; background-color:#bff;}
+
+.more_btn02 {float:right;
+	position:absolute; top: 70px; right:432px; bottom:620px; left:895px;
+	width:121px; height:30px;
+	background-image: url('../../img/brain_img/1x/more_viewbtn.png');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
 /* ===== //docBox ====================================== */
 
 
 
 
 /* ===== //fam_rateBox ====================================== */
-/*#fam_rateBox*/
+#fam_Box {width:100%; height:200px; background-color:#ccc; box-sizing: border-box;}
+
 /* ===== //fam_rateBox ====================================== */
 
 
 
+/* ===== //eventBox ====================================== */
+#eventBox{width:100%; height:300px; background-color:#999;box-sizing: border-box;}
+/* ===== //eventBox ====================================== */
 
-/* ===== //eventBox ====================================== */
-/*#eventBox*/
-/* ===== //eventBox ====================================== */
+
 
 
 
 
 /* ===== //footBox ====================================== */
-/*#footBox*/
+#footBox{width:100%; height:200px; background-color:#bfa;box-sizing: border-box;}
+
+#footBox > h2 {
+	       width:165px; height:128px; background-color: #fff; box-sizing: border-box;
+
+}  
+
 /* ===== //footBox ====================================== */
