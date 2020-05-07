@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="KO-KR">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>함수 호출하기</title>
+</head>
+<body>
+	<!-- CDN(contents delivery network) -->
+	<script src="https://unpkg.com/jquery@3.5.1/dist/jquery.js"></script>
+	<script src="https://unpkg.com/jquery@3.5.1/dist/jquery.js"></script>
+	<script src="https://unpkg.com/jquery@3.5.1/dist/jquery.js"></script>
+	<script>
+		//$(fuction(){})(); <=과거에 이렇ㅎ게 쓰이지ㅏ만
+		// $.ready(function(){});
+		(funciton($){
+			var body = $('body');
+
+			body.css({'backgroundColor':'#acc'});
+
+			bopy.on('click',function(){
+				body.animate({'backgroundColor':'#fac'});
+			});
+
+		})(jQuery);
+		
+			</script>
+</body>
+</html>
