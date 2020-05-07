@@ -19,8 +19,9 @@
  * ---------> $('ul > li'), $('ul').children('li')
  * 자손선택자
  * ---------> $( 'ul li'), $('ul').find('li')
- * id/clas 선택자
- ----------->
+ * id/class 선택자
+ ----> $('#box'), $('.box_min')
+ 
  * 형제선택자
  * 인접형제------> $('dt + dd') , $('dt').next('dd')
  * 동생인 형제들------> $('dt ~ dd') , $('dt').nextAll('dd')
@@ -57,12 +58,73 @@
    $(this)
  */
 
- // $(document).ready(function(){}) - 이렇게 안 쓰고 아래 표현으로 씀
+
+
+ // $(document).ready(function(){}) - 이렇게 안 쓰고 아래 표현으로 씀.
 
 (function($){
 	// 자식선택자/자손선택자
 	//$("ul>li").css({"color":"#777"});
-	$("ul").children("li").css({"color":"#777"});
-	$("ul").children('li').find('span').css({"fontSize":"2.5rem","fontWeight":"bold"});
+	//$("ul").children("li").css({"color":"#777"});
+/*
+	//$('ul>li span').css({"fontSize":"1.5rem","fontWeight":"bold"});
+//	$("ul") .children('li').find('span').css({"fontSize":"2.5rem","fontWeight":"bold"});
+	 //-> 메소드체인
+
+	var myCss = {"fontSize":"1.5rem", "fontWeight":"bold"};
+	var myUl = $('ul');
+	var myLi = myUl.children('li').find('span');
+
+	//$("ul") .children('li').find('span').css(myCss) -> 
+	myLi.css(myCss)
+	*/
+ //================================================
+  $('.three').prev('li').css({"border":"1px solid #35f"});
+  $('.three').prevAll('li').css({"backgroundColor":"#ccc"});
+  $('.three').next('li').css({"border":"1px solid #f35"});
+	$('.three').nextAll('li').css({"backgroundColor":"#ccc"});
+	
+
+  $('.other_01').siblings().css({"marginBottom":"2rem", "width":"400px","backgroundColor":"#acf"});
+	
+	$('.four').parentsUntil('body').css({
+		                         "padding":"2rem", 
+														 "backgroundColor":"#333",
+														 "borderRadius":"3rem",
+														 "border":"2px solid #fff"
+														});
+
+  $('.four').parents('ul').siblings('h2').css({"backgroundColor":"#fa0"});
+
+
+
+var fourI = $('.four').parent().index();
+ //console.log(fourI);
+
+ //console.log($('li').length);
+
+ $('li').eq(fourI + 1).children('span').css({'textShadow':'0.2rem 0.2rem 0.2rem #fff'});
 
 })(jQuery);
+   
+/* 형제선택자연습  
+  (function($){
+  
+  $("dl>dt").css({"fontSize":"2.5rem","fontweight":"bold"});
+  
+  $("dl").next("dd").css({"color":"#555"});
+  })(jQuery);
+  
+  
+  
+  (function($){
+    $('dt').nextAll('dd').css({"color":"#f06"})
+  
+
+})(jQuery);
+
+
+(function($) {
+$
+  })
+*/ 
