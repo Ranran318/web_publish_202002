@@ -142,6 +142,32 @@ var accMenu = $('.accordion_menu');
 
 //==============================================
 
+//아코디언메뉴 html 구조를 이용한 탭메뉴 만들기
+
+var moreBtn = $('.more_style').find('dt').children('button');
+
+
+
+moreBtn.on('click',function(e){
+	e.preventDefault();
+
+  var thisDt = $(this).parent('dt');
+  var dtNextView = thisDt.next('dd').css('display') === 'none'
+  
+    if(dtNextView){
+      
+      	$('.more_style').find('dd').hide();
+      	thisDt.next('dd').fadeIn();
+  	
+  	
+        
+        //해당하는 dt의 이름을 확인
+        thisDt.siblings('dt').removeClass('action');
+        thisDt.addClass('action');
+ }
+	
+
+});
 
 
 

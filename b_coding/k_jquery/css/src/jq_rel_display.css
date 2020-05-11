@@ -129,10 +129,16 @@ h2 {
 
 /* ====================== */
 
-.tab_more{}
+.tab_more{
+	width:100%; height:auto;
+	padding:1rem; box-sizing: border-box;
+	margin-bottom:10rem;
+}
 
 
-.tab_more > h2 {}
+.tab_more > h2 {
+	width:100%; border-bottom: 1px solid #000;
+}
 
 .more_style{
 	width:100%; height: 500px;

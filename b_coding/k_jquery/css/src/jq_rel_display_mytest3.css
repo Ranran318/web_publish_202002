@@ -1,0 +1,40 @@
+/* jq_rel_display_mytest3.css */
+
+#wrap{width: 100%; height: auto;
+		 margin:auto;
+		 padding:20px;
+		 background-color:#ccc;
+}
+
+h1 {height:50px;
+background-color:#fae;
+font-size:1.5rem;
+color:#333
+}
+
+.menu_Box{
+width:700px ; height:200px;
+background-color:#cfa ;
+}
+
+
+
+.menu_Box button{
+width:200px; height:20px;
+background-color:#baf ;
+
+}
+
+.menu_Box button:hover {
+height:18px;
+background-color:#ffa500 ;
+
+}
+
+.menu_Box dd{
+display: none;
+width:100%; height:35px;
+background-color:#333;
+color:#fff;
+
+}
