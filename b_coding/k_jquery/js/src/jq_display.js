@@ -113,19 +113,43 @@ btn.eq(13).on('click',function (e) {
 
 btn.eq(14).on('click',function(e){
 	e.preventDefault();
+
+	//js + jq 섞은 것 ======== dpBox.attr('class'); => jq 나머진 js 나열=====
 	//var dpA = dpBox.attr('class');
 	//var dps = dpA.split('');
 	//console.log( dps );
 	//if(dps[1] === 'action');
 
+
+	/*
+	// 순수 jq기능만 나열 ======= 
 	 var dpAc = dpBox.hasClass('action'); // class이름 ('action'의 유무를 판단)
-	 if(dpAc === false){
-      dpBox.addClass('action');
-	 }else{
-		 dpBox.removeClass('action');
-	 }
+	// if(dpAc === false){dpBox.addClass('action');}else{dpBox.removeClass('action');}
+  // (dpAc === false) ? dpBox.addClass('action') : dpBox.removeClass('action')
+	(!!!dpAc) ? dpBox.addClass('action') : dpBox.removeClass('action');
+	*/
+
+	dpBox.toggleClass('action');
+
+
 
 });
+
+var testBtn = $('.test_btn');
+var action = $('.act');
+var Boxs = $('.Box');
+
+testBtn.eq(1).on('click',function(a){
+	a.preventDefault();
+	
+
+
+});
+
+
+
+
+
 
 
 

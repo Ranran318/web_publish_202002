@@ -1,6 +1,6 @@
 /* jq_display.css */
 
-#wrap{width: 960px; height:1300px; 
+#wrap{width: 960px; height:auto; 
   margin:auto;
 	background-color: #ddd;
 }
@@ -43,7 +43,7 @@ h1{
 }
 
 
-.display_box .action{
+.display_box.action{
 	display: block;
 	background-color: #acf;
 	
@@ -66,4 +66,42 @@ h1{
 	font-weight: bold;
 }
 
+
+/*==========test.css=============*/
+
+.test_btn{ float: left;
+	height:200px;
+	background-color: #acf;
+	padding-top:10px;	
+	border:1px solid #333;
+	box-sizing: border-box;
+}
+
+.test_btn > .act{
+	width:100px; height:50px;
+	background-color:#ccc;
+	margin-right:2px;
+	
+}
+
+.test_btn > ul{
+	width:100px; height:80px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.test_btn > ul li:nth-child(1){
+	width: 50px; 
+background-color: #fa0;
+}
+
+.test_btn > ul li:nth-child(2){
+	width: 50px; height:20px;
+	background-color: slateblue;
+}
+
+.test_btn > ul li:nth-child(3){
+	width: 50px;
+	background-color: teal;
+}
 
