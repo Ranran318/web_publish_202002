@@ -12,6 +12,8 @@ var btn = $('.act_Box').find('dt').children('button');
 	if( $('.act_Box').find('dd').css('display')==='none'){
 			 $('.act_Box').find('dd').show();}
 
+	})
+
  //button(display:block)이면 사라지게(display:none;)해라.
 
 	
