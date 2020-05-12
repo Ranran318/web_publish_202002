@@ -1,0 +1,111 @@
+/* test0512.css - 남해리  */
+/* #wrap ==================*/
+#wrap{
+	    width:100%; height:5000px;
+			margin:auto;
+			padding:40px;
+      background-color: #fa5;}
+
+
+
+/* #header ================ */
+#headBox{
+width:90%; min-width: 960px; max-width: 1850px;
+height: 90px;
+background-color: #ccc;
+font-size:1.3rem;}
+
+
+h1{width:200px; height:30px;
+	 background-color: #fff;
+	 font-size:1.3rem;
+	 text-align: center;}
+
+
+
+#navBox{
+	   float: right;
+	   width:60%; height:50px;
+		 background-color:#333;
+		}
+
+
+
+.unbBox{
+	float: left;
+	padding:10px; box-sizing: border-box;
+	margin-right:10px;
+	width:60%; height:50px;
+	padding:5px; box-sizing: border-box;
+	background-color: #f9e;
+}
+
+
+.unbBox > dt {
+	float: left;
+	text-align: center;
+
+}
+
+.unbBox > dd {
+	float: left;
+	text-align: center;
+}
+
+
+.gnbBox{
+	float: right;
+	padding:10px; box-sizing:border-box;
+	width:20%; height:50px;
+	padding:5px; box-sizing: border-box;
+  background-color: #999;
+}
+
+.gnb_Box{
+	float: left;
+	width:100px; height: 30px;
+	background-color: aquamarine;
+}
+
+
+
+
+/* 아코디언 메뉴================== */
+
+
+.accodion_Box{
+	width:600px; height:auto;
+	padding:20px;
+	border:1px solid #333;
+	background-color:#999
+}
+
+.accodion_Box dl button{
+	width:600px; height:50px;
+	border:1px solid #fff;
+	background-color:#067;
+	color:#fff;
+
+}
+
+.act_Box > dt button:hover{
+	background-color: #047;
+}
+
+
+
+.act_Box > dd{
+	display: none;
+	height:auto; 
+	padding:0.7rem;
+	background-color: #ace;
+}
+
+
+
+
+
+
+/*
+
+h2{}

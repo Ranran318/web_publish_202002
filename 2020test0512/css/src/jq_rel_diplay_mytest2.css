@@ -1,0 +1,15 @@
+/* jq_rel_diplay_mytest2.css  */
+
+#wrap{
+	width:100%; height:auto;
+	background-color:#333;
+	margin:auto;
+	position: relative;
+}
+
+.accodion-container{}
+
+.accodion-container > dl{}
+
+
+

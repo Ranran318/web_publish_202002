@@ -16,7 +16,7 @@ var liBg = st01Li.eq(0).css('backgroundColor');
  var c01 = conLi.eq(0).css('backgroundColor');
  st01Li.eq(0).css({'backgroundColor':c01});
 */
- st01Li.children('button').on('click focus',function(e){
+ st01Li.children('button').on('click',function(e){
 	 e.preventDefault();
 
 var myThis = $(this).parent('li');
