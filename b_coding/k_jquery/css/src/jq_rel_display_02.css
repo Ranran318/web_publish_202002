@@ -156,12 +156,12 @@ h1 > a{
 	        padding-top:15px;
 	        background-color: rgba(255, 255,255, 0.8);
 	}
-.gnb_navi dd > li{
+.gnb_navi dd  li{
 	width:100%; height: 40px;
 	line-height: 35px;
 }
 
-.gnb_navi dd > li.action{
+.gnb_navi dd  li.action{
 	color:#f00;
 	font-weight: bold;
 	background-color:rgb(210,233,243);

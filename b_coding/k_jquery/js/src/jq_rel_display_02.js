@@ -6,9 +6,11 @@
 var headOffset = $('#headBox').offset().top;
 
 $(window).on('scroll', function(){
-  $('#headBox').css({'position':'fixed', 'bottom':'auto', 'top':0});
+ 
   var wScroll = $(this).scrollTop();
-  if(headOffset < wScroll){}else{ $('#headBox').removeAttr('style');
+  if(headOffset < wScroll){ 
+		$('#headBox').css({'position':'fixed', 'bottom':'auto', 'top':0});
+	  }else{ $('#headBox').removeAttr('style');
    }
  });	
 
@@ -64,7 +66,7 @@ gnbContent.find('a').eq(-1).on('blur',function(){
 */
 
 //0514 ---------------
-/*
+
 
 gnbDl.on('mouseenter',function(){
 	       gnbContent.stop().slideDown();
@@ -110,7 +112,7 @@ gnbContent.find('a').eq(-1).on('blur keyup', function(e){
 		}
 });
 
-*/
+
 
 /*
 gnbNav.on('mouseenter',function(){
@@ -140,7 +142,7 @@ gnbNav.on('mouseleave',function(){
 				// console.log($(this).parents('li'));
 			if(thisLi >= gnbLi.length-1){	thisLi = -1; }
 
-			// console.log(i);
+			console.log(i);
 			switch(eKey){
 				case 37:
 					gnbLi.eq(thisLi-1).find('a').eq(0).focus();
@@ -168,9 +170,9 @@ gnbNav.on('mouseleave',function(){
 				  //   console.log( $('dt.action')[0] );
 					if( $(this).parent()[0] == $('dt.action')[0] ){
 						$(this).parent('dt').next('dd').find('a').eq(0).focus();
-					}else{
-					$(this).parent('li').next('li').find('a').focus();
 					}
+					$(this).parent('li').next('li').find('a').focus();
+					
 				break;
 
 				case 27:
