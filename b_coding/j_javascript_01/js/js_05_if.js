@@ -23,7 +23,7 @@ if( num < moreN ) {
 }
 */
 /*
-var t = typeof(moreN); // number
+var t = typeof(moreN); // number //typeof() //''따옴표를 통해 숫자인지 문자인지 확인하는 태그
 
 if( t === 'number'){
    console.log('moreN은 숫자');
