@@ -1,0 +1,98 @@
+/* jq_eq_index_setInterval.css */
+
+#wrap{
+	width: 800px; height: auto;
+	margin: auto; 
+
+}
+
+h1{
+	width: 100%; height: 50px;
+	margin-bottom: 20px;
+	text-align: center; font-size: 2rem;
+}
+
+h2{
+	width:100; height: 40px;
+	margin-bottom: 10px;
+	background-color: #777;
+	font-size: 1.5rem;
+}
+
+#viewBox {
+	width: 100%; height: 500px;
+	background-color: #cca;
+}
+
+.indicator{
+	position: absolute; left: 12.5rem; bottom: 1.25rem;
+	padding:0.5rem; box-sizing: border-box;
+	width: 250px; height: 40px;
+	border-radius: 1.25rem;
+	background-color: #aaa;
+}
+
+
+.indicator ul{
+	width: 100%; height:100%;
+}
+
+
+.indicator li:last-child{
+	margin-right:0;
+}
+
+.indicator li{
+	float: left;
+	margin-right: 2rem;
+	width: 24px; height: 24px;
+
+}
+
+
+
+.indicator a{
+	display: block;
+	width: 100%; height: 100%;
+	box-sizing: border-box;
+	border-radius: 24px;
+	background-color: rgba(255,255,255,0.6);
+}
+
+.indicator a:focus{
+	outline: 0;
+	width: 50px; height:50px;
+	background-color:rgba(255,255,255,1);
+	border:3px solid #f06;
+	
+}
+
+
+/*   -----------------   */
+.add_view{
+	width: 100%; height: 28.123rem;
+	background-color: #acf;
+	overflow: hidden;
+
+}
+
+.add_view_wrap {
+	width: 500%; height: 100%;
+	margin-left:-100%;
+	/*position: relative;
+	left:-400%;*/
+  /*transform: translateX(-60%);*/
+}
+
+.add_view_wrap > div{
+	float: left;
+	width:20%; height:100%;
+	font-size: 3rem;
+	text-align: center;
+}
+
+.add_01{background-color: #5fe;}
+.add_02{background-color: #f6d;}
+.add_03{background-color: #34c;}
+.add_04{background-color: #ffb;}
+.add_05{background-color: #1fa;}
