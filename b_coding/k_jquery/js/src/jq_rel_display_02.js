@@ -20,17 +20,17 @@ $(window).on('scroll', function(){
 
 
  lmListLink.on('mouseenter focus', function(){
-	lmList.addClass('action');
+	          lmList.addClass('action');
 });
 	
 
   langMember.on('mouseleave', function(){
-		lmList.removeClass('action');
+				    lmList.removeClass('action');
 	});
 
 
 lmListLink.eq(-1).on('blur', function(){
-lmList.removeClass('action')
+            lmList.removeClass('action')
 
 });//-1 마지막 애
 
@@ -42,37 +42,41 @@ var gnbDl = gnbNav.find('dl');
 var gnbTitle = gnbNav.find('dt');
 var gnbTitleLink = gnbTitle.children('a');
 var gnbContent = gnbNav.find('dd');
-//var gnbNavLink = gnbNav.find('a');
+var gnbNavLink = gnbNav.find('a');
 var gnbConLink = gnbContent.find('a');
 
 gnbContent.hide();
 
 /* //part 별로 처리
 gnbTitleLink.on('mouseenter focus',function(){
-	$(this).parentsUntil('ul').siblings('li').find('dd').stop().slideUp();
-	$(this).parent('dt').next('dd').stop().slideDown();
-
+       	$(this).parentsUntil('ul').siblings('li').find('dd').stop().slideUp();
+       	$(this).parent('dt').next('dd').stop().slideDown();
+});
 gnbNav.on('mouseleave',function(){
-	gnbContent.stop().slideUp();
+	       gnbContent.stop().slideUp();
 });
 
 
 gnbContent.find('a').eq(-1).on('blur',function(){
-	gnbContent.stop().slideUp();
+	       gnbContent.stop().slideUp();
  
 });
 */
 
+//0514 ---------------
+/*
+
 gnbDl.on('mouseenter',function(){
-	gnbContent.stop().slideDown();
-	gnbTitle.removeClass('action');
-	$(this).find('dt').addClass('action');
+	       gnbContent.stop().slideDown();
+	       gnbTitle.removeClass('action');
+	       $(this).find('dt').addClass('action');
 });
 
 
 gnbNav.on('mouseleave',function(){
-	gnbContent.stop().slideUp();
-	gnbTitle.removeClass('action');
+	        gnbContent.stop().slideUp();
+	        gnbTitle.removeClass('action');
+	        gnbContent.find('li').removeClass('action');
 });
 
 gnbTitleLink.on('focus',function(){
@@ -91,12 +95,22 @@ gnbConLink.on('focus',function(){
 	
 });
 
-gnbContent.find('a').eq(-1).on('blur', function(){
-	gnbContent.stop().slideUp();
-	gnbTitle.removeClass('action');
+gnbContent.find('a').eq(-1).on('blur keyup', function(e){
+	var eKey38;
+		console.log(e.type == 'keyup');
+
+		if( e.type == 'keyup' ){
+			eKey38 = e.keyCode == 38;			
+			
+			if( !eKey38 ){
+                   	gnbContent.stop().slideUp();
+										 gnbTitle.removeClass('action');
+										 gnbContent.find('li').removeClass('action');
+			}
+		}
 });
 
-
+*/
 
 /*
 gnbNav.on('mouseenter',function(){
@@ -108,7 +122,7 @@ gnbNav.on('mouseleave',function(){
 	gnbContent.stop().slideUp();
 });
 */
-/*
+
 
      gnbNavLink.on('keyup', function(e){
 			 e.preventDefault();
@@ -117,31 +131,81 @@ gnbNav.on('mouseleave',function(){
 				// 왼(37),위(38),오른(39),아래(40), esc(27)
 
 				var eKey = e.keyCode;
-				var i = $(this).parent().index();
-				var thisSel = $(this).parentsUntil('ul').eq(-1).index();
-
+			  var gnbUl = $('.gnb_navi').children('ul');
+			  var gnbLi = gnbUl.children('li');
+			  var i = $(this).parent('li').index();			
+			  var thisLi = $(this).parents('li').eq(-1).index();
 				console.log();
 				
+				// console.log($(this).parents('li'));
+			if(thisLi >= gnbLi.length-1){	thisLi = -1; }
+
+			// console.log(i);
+			switch(eKey){
+				case 37:
+					gnbLi.eq(thisLi-1).find('a').eq(0).focus();
+					gnbContent.find('li').removeClass('action');
+				break;
+
+				case 38:
+					if($(this).parent('li').index() == 0){
+						gnbLi.eq(thisLi).find('a').eq(0).focus();
+						gnbContent.find('li').removeClass('action');
+					}else{
+						$(this).parent('li').prev('li').find('a').focus();
+					}
+				break;
+
+				case 39:
+					gnbLi.eq(thisLi+1).find('a').eq(0).focus();
+					gnbContent.find('li').removeClass('action');
+				break;
+
+				case 40:
+					console.log( $(this).parent()[0] == $('dt.action')[0] );
+//위에와 아래 이 식은 같은 표현임.
+          //console.log( $(this).parent()[0])
+				  //   console.log( $('dt.action')[0] );
+					if( $(this).parent()[0] == $('dt.action')[0] ){
+						$(this).parent('dt').next('dd').find('a').eq(0).focus();
+					}else{
+					$(this).parent('li').next('li').find('a').focus();
+					}
+				break;
+
+				case 27:
+					gnbContent.stop().slideUp();
+					gnbContent.find('li').removeClass('action');
+					gnbTitle.removeClass('action');
+				break;
+			 }
+		});
+
+
+
+
+
+
+/*
 				// console.loe(i);
 
-			//	switch(eKey){
-			//		case 37:
-			//			$(this).parentsUntil('ul').parentsUntil('ul').prev('li').find('dt').find('a').focus();
-			//			break;
-			//		case 38:
-			//			$(this).parents('li').prev('li').find('a').focus();
-			//		  break;
-			//		case 39:
-			//			$(this).parents('li').next('li').find('a').focus();
-			//		  break;
-			//		case 40:
-			//			$(this).parentsUntil('ul').parentsUntil('ul').next('li').find('dt').find('a').focus();
-			//			break;
-			//	  case 27:
-			//			gnbContent.stop().slideUp();
-			//			break;
-
-			//	}
+				switch(eKey){
+					case 37:
+						$(this).parentsUntil('ul').parentsUntil('ul').prev('li').find('dt').find('a').focus();
+			  			break;
+			  		case 38:
+			  			$(this).parents('li').prev('li').find('a').focus();
+			  		  break;
+			  		case 39:
+			  			$(this).parents('li').next('li').find('a').focus();
+			  		  break;
+			  		case 40:
+			  			$(this).parentsUntil('ul').parentsUntil('ul').next('li').find('dt').find('a').focus();
+			  			break;
+			  	  case 27:
+			  			gnbContent.stop().slideUp();
+			  			break  
+			  	}
 			});
 	
 */
@@ -190,8 +254,8 @@ accorBtn.on('click',function(e){
 	//accorBtn.css({'backgroundColor':'transparent'});
         	myT.css({'background-color':'#aca'});
 	}else{
-		thisNext.stop().slideUp(300);
-		myT.css({'backgroundColor':'transparent'});
+		      thisNext.stop().slideUp(300);
+		      myT.css({'backgroundColor':'transparent'});
 	}
 
 	/*
@@ -215,15 +279,15 @@ accorBtn.on('click',function(e){
 		//console.log(hasDownClassName);
 	
 		if(hasDownClassName){
-			myTinI.removeClass('fa-caret-square-down');
-			myTinI.addClass('fa-caret-square-up');
-
-			otherTinI.removeClass('fa-caret-square-up');
-			otherTinI.addClass('fa-caret-square-down');
-
+		      	myTinI.removeClass('fa-caret-square-down');
+		      	myTinI.addClass('fa-caret-square-up');
+      
+		      	otherTinI.removeClass('fa-caret-square-up');
+		      	otherTinI.addClass('fa-caret-square-down');
+      
     }else{ 
-			myTinI.removeClass('fa-caret-square-up');
-			myTinI.addClass('fa-caret-square-down');
+		      	myTinI.removeClass('fa-caret-square-up');
+		      	myTinI.addClass('fa-caret-square-down');
 		}
 */
 	
@@ -234,10 +298,10 @@ accorBtn.on('click',function(e){
 			
 			if(thisNextState){
 						myTinI.css({'transform':'rotate(180deg)', 'transition':'all 300ms ease'});
-						//otherTinI.css('transform';'rotate(0)','transition':'none'});
+						//otherTinI.css('transform':'rotate(0)','transition':'none'});
 			    	otherTinI.removeAttr('style');
 				}else{
-					myTinI.removeAttr('style');
+					   myTinI.removeAttr('style');
 				}
 			
 		
