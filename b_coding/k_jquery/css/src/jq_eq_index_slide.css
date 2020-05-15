@@ -1,0 +1,48 @@
+/* jq_eq_index_slide.css */
+
+#wrap{
+	    width: 100%; height: auto;
+			margin: auto;
+		  background-color: #ccc;}
+
+#miniProduct{
+	width:600px; height:500px;
+	margin: auto;
+	padding-bottom:50px; box-sizing: border-box;
+	background-color: #fa0
+	
+
+}
+
+.indicator{
+	width:200px; height:50px ;
+	margin: auto;
+	background-color: #999;
+  
+}
+
+.indicator > li{
+  margin-right:10px;
+	width: 40px; height: 30px;
+	background-color: #555;
+	border-radius: 50%;
+}
+
+.indicator > li:hover{
+	border:1px solid #ccc;
+}
+
+
+.product{
+	float:left;
+	/*display: none;*/
+	width:2000px; height:500px;
+	background-color: #333;
+}
+
+.product > li{
+   width:600px; height: 500px;
+	 margin:50px;
+	 background-color: darkcyan;
+}
+

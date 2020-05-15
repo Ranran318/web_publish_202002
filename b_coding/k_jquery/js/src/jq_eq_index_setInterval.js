@@ -29,7 +29,7 @@
 	 var i = 0;
 
 	indiLink.on('focus',function(e){
-		e.preventDafault(); // on('focust')하기 이전의 기능들이 수행되는 걸 막아줌. 
+		e.preventDafault(); // on('focus')하기 이전의 기능들이 수행되는 걸 막아줌. 
 
 		var i = $(this).parent('li').index();
 		// console.log(i);
@@ -102,8 +102,8 @@ indiLi.eq(i).addClass('aciton');
 	 var add = $('.add_view').children('div').find('div')
 			
 	      if($('add').on('click')){}else{}	 
-		
+	*/	
 	});
-	*/
+	
 
 })(jQuery);
