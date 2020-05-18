@@ -101,9 +101,9 @@ border: 1px solid #777;
 /* ----------------------------------------------------------------------------- */
 
 .indi_color{
-	display: inline-block; /* 글자만큼 분모가 늘어남. 늘어나면 쭉쭉 채워지는 */
-	width:;
-	height: ;
+	position: absolute; bottom: -2.5rem; left: 50%;
+	width:100%;
+	height: auto;
 	text-align: center;
 	padding:0.2rem; box-sizing: border-box;
 	background-color: #ccc;
@@ -112,16 +112,26 @@ border: 1px solid #777;
 }
 
 
-.indi_color ul{ display: inline-block;}
-.indi_color li{ float:block; margin-right:1rem; width: 1.5rem; height:1.5rem; display: inline-block;}
+.indi_color ul{ display: inline-block;/* 글자만큼 분모가 늘어남. 늘어나면 쭉쭉 채워지는 */}
+.indi_color li{ float:left; margin-right:1rem; width: 1.5rem; height:1.5rem;}
 
 .indi_color li:last-child{margin-right:0;}
-.indi_color li.action{background-color: #aaa;}
 
-.indi_color a {display:block;width:100%; height: 100%;
-border-radius: 1.5rem;
-background-color: #aaa;}
-.indi_color a:focus{background-color : #333;}
+
+.indi_color a {
+				 display:block;
+				 width:100%; height: 100%;
+         border-radius: 1.5rem;
+         background-color: #aaa; outline: 0;}
+
+
+.indi_color li.action a{background-color:#333;}
+
+
+.indi_color a:focus{
+	background-color : rgba(200,200,200,0.5);
+	box-shadow: 0.1rem 0.1rem 0.1rem ease;
+}
 
 
 
@@ -141,9 +151,9 @@ background-color: #aaa;}
 .product li {
 	float: left; position: relative;
 	width:20%; height:100%;
-	background-color: #fff;
 	background-repeat: no-repeat;
 	background-size: 400px 300px;
+	background-color: #fff;
 }
 
 
