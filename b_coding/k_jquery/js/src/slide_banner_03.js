@@ -71,7 +71,7 @@ var cloneLi = productUl.children('li').eq(-1).clone(true); //li 하나 복제.
 
 var productLi = productUl.children('li');
 var proLiLen = productLi.length; //li 의 갯수
-console.log(proLiLen);
+//console.log(proLiLen);
 
 
 
@@ -161,7 +161,8 @@ miniBtnPrev.on('click',function(e){
 
 miniBtn.on('click', function(e){
    
-   		e.preventDefault();
+			 e.preventDefault();
+			// console.log('!')
    		var thisBtn = $(this)[0];
 	   	prSpan.animate({bottom: -100 + '%'});
 	   	if(thisBtn === miniBtnNext[0] && check ) {//next 버튼 클릭시
@@ -198,7 +199,7 @@ var mvImg;
 var MvSlideGo = function(){
      	mvImg = setInterval(function(){
 							 miniBtnNext.trigger('click');
-							 console.log('!');
+							 //console.log('!');
 	    }, timed*5 );};
 
    MvSlideGo();
@@ -206,7 +207,7 @@ var MvSlideGo = function(){
   //miniProduct.on('mouseenter',function(){clearInterval(mvImg);});
   var ClearFn = function(){clearInterval(mvImg)};
 	//miniProduct.on('mouseenter',function(){ mvSlideGo();});
-	var GoFn = function(){mvSlideGo()};
+	var GoFn = function(){MvSlideGo()};
 
 	miniProduct.on({'mouseenter' : ClearFn, 'mouseleave':GoFn});
 
