@@ -1,7 +1,7 @@
 //side_banner_test.js
 
 (function(){
-	/*
+	/* my test
 	var mnP = $('#miniproduct');
 	var btn = $('.side_btn');
 	var prevbtn = $(btn).children('button').eq(1);
