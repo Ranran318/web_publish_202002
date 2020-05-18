@@ -57,7 +57,7 @@
        		            // var i = $(this).parent('li').index();
        		             var iPer = -i*100;
        		             miniParea.stop().animate({ 'marginLeft': iPer + '%'},timed, function(){
-                        if(i >= mLilenT-2){miniParea.css({'marginLeft': 100 + '%'}); i = -1}
+                        if(i >= mLilenT-2){miniParea.css({'marginLeft': 100 + '%'}); i = -1;}
 
 								});
        
@@ -76,7 +76,7 @@ var miniBanLast = miniBanner.find('li').eq(-1).clone(true);
     miniBanner.prepend(miniBanLast);
 var miniBan2Len = miniBanner.children('li').length;
       miniBanner.css({'width' : miniBan2Len * 100 +'%'});
-      miniBanner.children('li').css( {'width': 100 / miniBan2Len + '%'});
+      miniBanner.children('li').css({'width': 100 / miniBan2Len + '%'});
    miniBanner.css({position: 'relative', 'left': -100 + '%'});
 
 var n = 0;
@@ -103,16 +103,16 @@ miniPrev.on('cilck', function(e){
 	n -= 1;
 	miniBanner.stop().animate({'marginLeft':n * -100 + '%'}, timed, function(){
 		 if(n < 0 ){ n = miniBan2Len - 2; }
-    miniBanner.css({'marginLeft' : n * 100 + '%'})
+    miniBanner.css({'marginLeft' : n * -100 + '%'})
 		 });
 });
 
 
+
 var myInterval;
-var MvSlide = funciton(){
-	myInterval = setInterval(function(){
-		miniNext.trigger('click');
-  }, timed *4);};
+var MvSlide = 
+   (function(){
+		 myInterval = setInterval(function(){miniNext.trigger('click');}, timed *2);
 /*
 setInterval(function(){
                 	miniNext.trigger('click');
@@ -121,9 +121,9 @@ setInterval(function(){
 								*/
 								// 변수로 이렇게 불린다만 선언(얘기)했을 뿐 수행하고 있는 상태이다.
 								MvSlide(); 
-               
+							
 
-	miniP2.on('mouseenter',function(){
+	miniP2.on('mouseenter', function(){
 		clearInterval(myInterval);
 	
 });
@@ -131,13 +131,13 @@ setInterval(function(){
   miniP2.on('mouseleave', function(){
 		MySlide();
 	});
-
-
+	 
+});
 // 일시정지(clearInterval), 진행(MySlide) 기능 처리가능 
 //setInterval : 함수로 감싸고 변수로 활용해서 쓰는게 활용도가 높다.
           
 
-
+	 
 /*
 
 
@@ -182,7 +182,7 @@ var Mini2LiCopy = miniP2Li.eq(-1).clone(true);
 
 
 				}))
-*/
-				
-
+ */
+			
+	 
 })(jQuery);
