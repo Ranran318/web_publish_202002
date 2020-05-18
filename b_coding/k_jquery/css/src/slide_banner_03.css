@@ -67,7 +67,116 @@
 	background-repeat: no-repeat;
 }
 
+/* _02
+
+
+#miniProduct{
+position: relative; 
+margin: 1rem auto;
+width:400px;
+height: 300px;
+border: 1px solid #777;
+
+}
+
+.indicator{
+	position: absolute;
+	top:50%; left:-5%; z-index: 1000;
+	width:110%; height: 0;
+}
+
+.indicator button{
+	float:left;
+	width:3rem; height: 3rem;
+	border-radius: 100%;
+	font-size: 2rem;
+	text-indent:0;
+  color:#777;
+}  
+
+.indicator .next{
+	float: right;
+}
 */
+/* ----------------------------------------------------------------------------- */
+/*
+.indi_color{
+	position: absolute; bottom: -2.5rem; left: 50%;
+	width:100%;
+	height: auto;
+	text-align: center;
+	padding:0.2rem; box-sizing: border-box;
+	background-color: #ccc;
+	transform: translateX(-50%);
+
+}
+*/
+/*
+.indi_color ul{ display: inline-block;/* -- 글자만큼 분모가 늘어남. 늘어나면 쭉쭉 채워지는--  }
+.indi_color li{ float:left; margin-right:1rem; width: 1.5rem; height:1.5rem;}
+
+.indi_color li:last-child{margin-right:0;}
+
+
+.indi_color a {
+				 display:block;
+				 width:100%; height: 100%;
+         border-radius: 1.5rem;
+         background-color: #aaa; outline: 0;}
+
+
+.indi_color li.action a{background-color:#333;}
+
+
+.indi_color a:focus{
+	background-color : rgba(200,200,200,0.5);
+	box-shadow: 0.1rem 0.1rem 0.1rem ease;
+}
+
+
+
+*/
+/* ----------------------------------------------------------------------------- */
+
+/*
+.product_wrap{
+	width: 100%; height: 100%;
+	overflow: hidden;
+}
+
+.product{
+	width:500%; height:100%;
+	background-color:#acc;
+}
+
+.product li {
+	float: left; position: relative;
+	width:20%; height:100%;
+	background-repeat: no-repeat;
+	background-size: 400px 300px;
+	background-color: #fff;
+}
+
+
+
+.pr_01{background-image: url('../../img/minicake2.jpg');}
+.pr_02{background-image: url('../../img/minicake.jpg');}
+.pr_03{background-image: url('../../img/minicake2.jpg');}
+.pr_04{background-image: url('../../img/minicake.jpg');}
+.pr_05{background-image: url('../../img/minicake2.jpg');}
+
+.product li span {
+	display:block; position:absolute; left: 0;
+	bottom: 0;
+	width: 100%; height: auto; padding: 1rem;
+	box-sizing: border-box;
+	background-color: rgba(255,100,0,0.5)
+}
+
+*/
+
+
+/* ================ 04 - my ======== */
 
 
 #miniProduct{
@@ -158,11 +267,19 @@ border: 1px solid #777;
 
 
 
-.pr_01{background-image: url('../../img/minicake2.jpg');}
-.pr_02{background-image: url('../../img/minicake.jpg');}
-.pr_03{background-image: url('../../img/minicake2.jpg');}
-.pr_04{background-image: url('../../img/minicake.jpg');}
-.pr_05{background-image: url('../../img/minicake2.jpg');}
+
+
+
+.pr_01{position: relative;
+	background-image: url('../../img/minicake2.jpg');}
+.pr_02{position: absolute; z-index: 50;
+	background-image: url('../../img/minicake.jpg');}
+.pr_03{position: absolute; z-index: 100;
+	background-image: url('../../img/minicake2.jpg');}
+.pr_04{position: absolute; z-index: 150;
+	background-image: url('../../img/minicake.jpg');}
+.pr_05{position: absolute; z-index: 200;
+	background-image: url('../../img/minicake2.jpg');}
 
 .product li span {
 	display:block; position:absolute; left: 0;

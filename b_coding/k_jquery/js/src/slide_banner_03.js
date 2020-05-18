@@ -50,17 +50,17 @@ var miniBtnNext        = miniProduct.find('.next');
 var miniBtnPrev        = miniProduct.find('.prev');
 var timed              = 500;
 //-----------------------------------------------
-// miniBtn.on('click',function(e){
-// 	/*
-// 	console.log($(this));
-// 	console.log('next:', miniBtnNext);
-// 	console.log('prev:', miniBtnPrev);
-// 	*/
-// });
+ //miniBtn.on('click',function(e){
+ //	
+ //	console.log($(this));
+ //	console.log('next:', miniBtnNext);
+ //	console.log('prev:', miniBtnPrev);
+ //	
+ //});
 /*
 	var t = $(this)[0];
 	console.log( t == miniBtnNext[0]); // 판단비교용으로 쓸 수 있다. [0]를 안 써주면 false라고 뜸. true가 나오게 [0]를 써줘야함.
-});
+
 
 */
 //상품 언급-----------------------------------------
@@ -111,7 +111,7 @@ var miniProIndiLi = miniProIndiUl.find('li').children('a');
 miniProIndiUl.find('li').eq(0).addClass('action');
 
 miniProIndiLi.on('click', function(e){
-                  e.proventend();
+                  e.preventDefault();
                   var thisParent = $(this).parent();
                       n = thisParent.index();
                   
