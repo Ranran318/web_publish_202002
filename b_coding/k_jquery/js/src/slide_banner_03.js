@@ -29,7 +29,6 @@ var n = 0;
 	 
 	 });
  
- 
  });
  
  prevbtn.on('cilck', function(e){
@@ -42,11 +41,14 @@ var n = 0;
  });
  
 */
-var miniProduct = $('#miniproduct');
-var miniBtn     = miniProduct.find('button');
-var miniBtnNext = miniProduct.find('.next');
-var miniBtnPrev = miniProduct.find('.prev');
-var timed       = 500;
+
+//인디케이터,버튼 언급 ------
+var miniProduct        = $('#miniProduct');
+
+var miniBtn            = miniProduct.find('button');
+var miniBtnNext        = miniProduct.find('.next');
+var miniBtnPrev        = miniProduct.find('.prev');
+var timed              = 500;
 //-----------------------------------------------
 // miniBtn.on('click',function(e){
 // 	/*
@@ -61,14 +63,14 @@ var timed       = 500;
 });
 
 */
-//-----------------------------------------
+//상품 언급-----------------------------------------
 
 var productUl = miniProduct.find('.product');
-var cloneLi = productUl.children('li').eq(-1).clone(true);
+var cloneLi = productUl.children('li').eq(-1).clone(true); //li 하나 복제.
     productUl.prepend(cloneLi);
 
 var productLi = productUl.children('li');
-var proLiLen = productLi.length;
+var proLiLen = productLi.length; //li 의 갯수
 console.log(proLiLen);
 
 
@@ -78,8 +80,52 @@ productUl.css({width:proLiLen * 100 + '%', marginLeft: -100 + '%',
               position: 'relative'});
 productLi.width(100 / proLiLen + '%');
 
+
+
+
 var n = 0;
 var check = true;
+
+// **indicator 기능 추가(indicator_color)
+// 광고 갯수만큼(복제처리제외) indicator 처리
+var miniProIndiBtnArea = miniProduct.find('.indicator');
+miniProIndiBtnArea.after('<div class="indi_color hidden_wrap"><ul></ul></div>');
+var miniProIndiUl = $('.indi_color').children('ul');
+var i = 0;
+for(; i<proLiLen - 1 ; i++){
+	miniProIndiUl.append('<li><a href="#"><span>광고 ' + ( i + 1 ) + '설명</span></a></li>');
+}
+
+//$('head').append('<style></style>');
+//var styleEl = $('head').find('style');
+//var styleT = "
+//              .pr_01{background-image: url('../../img/minicake2.jpg');}\
+//              .pr_02{background-image: url('../../img/minicake.jpg');}\
+//              .pr_03{background-image: url('../../img/minicake2.jpg');}\
+//              .pr_04{background-image: url('../../img/minicake.jpg');}\
+//              .pr_05{background-image: url('../../img/minicake2.jpg');}";
+//styleEl.text(styleT);
+//=> js 를 조금만 더 공부하면 이런 디테일까지 가능함.
+
+var miniProIndiLi = miniProIndiUl.find('li').children('a');
+miniProIndiUl.find('li').eq(0).addClass('action');
+
+miniProIndiLi.on('click', function(e){
+                  e.proventend();
+                  var thisParent = $(this).parent();
+                      n = thisParent.index();
+                  
+                  
+                  thisParent.addClass('action');
+									thisParent.siblings().removeClass('action');
+									
+									productUl.stop().animate({left: -n * 100 + '%'},timed);
+									
+});
+
+
+//------------------------------------------------
+
 /*
 miniBtnNext.on('click', function(e){
 	e.preventDefault();
@@ -108,45 +154,39 @@ miniBtnPrev.on('click',function(e){
 	});
 	*/
 	
-/*
+
 	var prSpan = productLi.find('span');
 //	prSpan.css({bottom:-100+'%'});
 //버튼 기능 합치기---
 
 miniBtn.on('click', function(e){
-
-		e.preventDefault();
-		var thisBtn = $(this)[0];
-		
-//next 버튼 클릭시
-		prSpan.animate({bottom: -100 + '%'});
-		if(thisBtn === miniBtnNext[0] && check ) {
-			check = false;
-			n += 1;
-			productUl.stop().animate({left: -n * 100 + '%'}, timed, function(){
-				if(n >= proLiLen - 2){	n = -1;	 }
-				prSpan.animate({bottom:0});
-	
-				productUl.css({left: -n * 100 + '%'});
-				check = true;
-			 });
-	  	}
-
-
-
-//prev 버튼 클릭
-
-else if(check) {
-	check =false;
-	n-= 1;
-	productUl.stop().animate({left: -n * 100 + '%'},timed,function(){
-	        	if(n <= -1){ n = proLiLen -2; }
-	        	productUl.css({left: -n *100 + '%'});
-	        	check = true;
-					});
-				 }
-
-
+   
+   		e.preventDefault();
+   		var thisBtn = $(this)[0];
+	   	prSpan.animate({bottom: -100 + '%'});
+	   	if(thisBtn === miniBtnNext[0] && check ) {//next 버튼 클릭시
+	   		check = false;
+	   		n += 1;
+	   		productUl.stop().animate({left: -n * 100 + '%'}, timed, function(){
+	   			         if(n >= proLiLen - 2){	n = -1;	 }
+	   			         prSpan.animate({bottom:0});
+	   			         productUl.css({left: -n * 100 + '%'});
+	   			         check = true;
+	   		 });
+	     	}else if(check) {//prev 버튼 클릭
+              	check =false;
+              	n-= 1;
+              	productUl.stop().animate({left: -n * 100 + '%'},timed,function(){
+													if(n <= -1){     n = proLiLen -2;    }
+													prSpan.animate({bottom:0});
+              	        	productUl.css({left: -n *100 + '%'});
+              	        	check = true;
+              					});
+              				 }
+miniProIndiUl.find('li').eq(n).addClass('action');
+miniProIndiUl.find('li').eq(n).siblings('li').removeClass('action');
+//=> 좌우 버튼 클릭시 - indicator 처리
+//=> setInterval 처리시 - indicator 처리
 
 
 });
@@ -155,29 +195,26 @@ else if(check) {
 
 //----------------------
 var mvImg;
-var mvSlideGo = function(){
+var MvSlideGo = function(){
      	mvImg = setInterval(function(){
-               miniBtnNext.trigger('click');
-	    }, timed*15 );};
+							 miniBtnNext.trigger('click');
+							 console.log('!');
+	    }, timed*5 );};
 
-   mvSlideGo();
-
-
+   MvSlideGo();
 
   //miniProduct.on('mouseenter',function(){clearInterval(mvImg);});
   var ClearFn = function(){clearInterval(mvImg)};
-
 	//miniProduct.on('mouseenter',function(){ mvSlideGo();});
 	var GoFn = function(){mvSlideGo()};
 
 	miniProduct.on({'mouseenter' : ClearFn, 'mouseleave':GoFn});
 
  
+// 좌우 버튼 클릭시 - indicator 처리
+// setInterval 처리시 - indicator 처리
 
 
-
-
-*/
 
 
 })(jQuery);
