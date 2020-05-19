@@ -28,10 +28,10 @@ miniBtnnext.on('click',function(){
 	 
 	var 
 	PL = productLi.eq()
-	productLi.css({'position' : 'fixed', 'z-index' : k * 100 })
+	productLi.css({'position' : 'fixed', 'z-index' : PL * 100 })
 		proLiLen = productLi.length;
 		
-	 if( ; PL < 4 ; PL+=1){productLi.stop().fadeIn()}
+	for( ; PL < 4 ; PL+=1){productLi.stop().fadeIn()}
 	  else{ productLidiff.stop().fadeout()}
 
 });
@@ -40,14 +40,11 @@ miniBtnnext.on('click',function(){
 var n = 0;
 var check = true;
 
-// **indicator 기능 추가(indicator_color)
-// 광고 갯수만큼(복제처리제외) indicator 처리
 var miniProIndiBtnArea = miniProduct.find('.indicator');
 miniProIndiBtnArea.after('<div class="indi_color hidden_wrap"><ul></ul></div>');
 var miniProIndiUl = $('.indi_color').children('ul');
 var i = 0;
-for(; i<proLiLen - 1 ; i++){
-	miniProIndiUl.append('<li><a href="#"><span>광고 ' + ( i + 1 ) + '설명</span></a></li>');
+
 }
 
 
