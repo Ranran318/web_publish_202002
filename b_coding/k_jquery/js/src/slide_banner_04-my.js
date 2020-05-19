@@ -26,14 +26,15 @@ var productLidiff = productUl.siblings('li')
 miniBtnnext.on('click',function(){
 	e.preventDefault();
 	 
-	var k = productLi.eq()
-	productLi.css({'position' : 'fixed', 'z-index' = k * 100 })
+	var 
+	PL = productLi.eq()
+	productLi.css({'position' : 'fixed', 'z-index' : k * 100 })
 		proLiLen = productLi.length;
 		
-	 if( k ; k < 4 ; +=1){productLi.stop().fadeIn()}
+	 if( ; PL < 4 ; PL+=1){productLi.stop().fadeIn()}
 	  else{ productLidiff.stop().fadeout()}
 
-
+});
 //===============================================
 /*
 var n = 0;
@@ -87,3 +88,7 @@ var MvSlideGo = function(){
 
 
 })(jQuery);
+function newFunction() {
+	;
+}
+
