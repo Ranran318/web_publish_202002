@@ -9,7 +9,7 @@ function Mes(){
 
 var messageBox = Mes();
 
-var mLen = messageBox.length;
+var mLen = messageBox.length; //length : 갯수
 console.log(mLen) ;
 
 if(mLen !== 1) {
