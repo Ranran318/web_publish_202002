@@ -1,0 +1,115 @@
+/* 20200520test.css */
+
+#wrap{position: relative;
+	width:100%; height: 100%;
+	
+}
+
+/* ================================================= */
+#headBox{position: fixed;
+	       width:100%; min-width:960px; max-width:1600px;
+				 height:90px;
+				 margin:auto; margin-left:10%; margin-top:45px;
+				 padding:20px; box-sizing: border-box;
+				 background-color:rgba(55,55,55,0.7)
+}
+
+
+h1{
+	float: left;
+	width:100px; height:50px;
+	background-color: #fff;
+
+}
+
+#navi{
+	float: right;
+	width:70%; height:60px;
+	margin: auto;
+}
+
+
+
+#navi li{
+	float: left;
+	margin-right:100px;
+	width:auto; height: auto;
+	color:#fff;
+	font-size: 2rem;
+}
+
+
+/* ======================================= */
+#viewBox{
+	float: left;
+	overflow: hidden;
+	width:100%; height:900px;
+}
+
+.view_area > ul {
+  
+	width: 600%; height: 900px;
+}
+
+.view_area li{
+	float: left;
+	margin:auto;
+	width: 1000px; height: 100%;
+	background-repeat:no-repeat;
+	background-position: 50% 50%;
+
+}
+
+.view_01{
+	background-image: url('../../img/background/starrynight.jpg');}
+.view_02{
+	background-image: url('../../img/background/starrynight.jpg');}
+.view_03{
+	background-image: url('../../img/background/sunset.jpg');}
+.view_04{
+	background-image: url('../../img/background/tree.jpg');}
+.view_05{
+	background-image: url('../../img/background/starrynight.jpg');}
+.view_06{
+	background-image: url('../../img/background/sunset.jpg');}
+
+
+
+
+/* ============================================== */
+#indicatorBox{
+	float: right;
+	width:100%; height:30px;}
+
+.indi_area{
+	float:right;
+	padding: 5px; box-sizing: border-box;
+	width:200px; height:30px;
+	border-radius: 30px;
+	background-color:rgba(55,55,55,0.7);
+
+}
+
+.indi_area li{
+	float: left;
+	margin-right:2px;
+	width: 24px; height: 24px;
+	border-radius: 100%;
+	background-color: #fff;
+}
+
+
+.prev,.next{
+	width:24px; height: 24px;}
+
+
+.indi_area li > a:focus{
+	background-color: #ff0;
+}
+
+/* ========================= */
+#containerBox{
+	margin:auto;
+	width: 960px; height:5000px;
+	background-color: #333;
+}
