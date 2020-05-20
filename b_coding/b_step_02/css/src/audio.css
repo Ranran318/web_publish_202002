@@ -1,0 +1,54 @@
+#wrap{
+	width: 800px; height:700px;
+	margin: auto;
+	background-color: #dadada;
+}
+
+.media_data{
+	width: 90%; height:200px;
+	border:1px solid #333;
+}
+
+
+.btn {
+	display: block;
+	background-color: #fca;
+}
+
+.btn > button{
+	padding:1rem 2rem; border-radius: 0.5rem;
+	background-color: #05f;
+	color:#fff;
+
+}
+
+
+.btn > button:hover,
+.btn > button:focus{
+	background-color: #7cf;
+	color:#181818; font-weight: bold;
+	box-shadow: -0.2rem -0.2rem 0.3rem rgba(0,0,0,0.7);
+}
+
+.btn >button.action{
+	box-shadow: -0.2rem -0.2rem 0.3rem rgba(0,0,0,0.7) inset;
+}
+
+
+
+/*===============
+audio {
+	display: block;
+}
+*/
+
+
+
+/* audio 익스플로러 등의 작동 안되는 곳도 있음. 
+audio에 소스를 담아 써서 상황ㅎ에 맞게 쓰고
+지원하지않는 브라우저에 별도의 뭐시기를 써서 사용해
+낮은 브라우저 => 별도의 설치나 방법을 이용해서 
+구현하거나 audio 안에 소스 넣어서 하등가.
+loop : 무한재생
+muted : 소리 안 나게
+*/
