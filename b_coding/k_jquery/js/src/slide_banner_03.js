@@ -71,7 +71,7 @@ var cloneLi = productUl.children('li').eq(-1).clone(true); //li 하나 복제.
 
 var productLi = productUl.children('li');
 var proLiLen = productLi.length; //li 의 갯수
-//console.log(proLiLen);
+console.log(proLiLen);
 
 
 
@@ -93,8 +93,7 @@ miniProIndiBtnArea.after('<div class="indi_color hidden_wrap"><ul></ul></div>');
 var miniProIndiUl = $('.indi_color').children('ul');
 var i = 0;
 for(; i<proLiLen - 1 ; i++){
-	miniProIndiUl.append('<li><a href="#"><span>광고 ' + ( i + 1 ) + '설명</span></a></li>');
-}
+	miniProIndiUl.append('<li><a href="#"><span>광고 ' + ( i + 1 ) + '설명</span></a></li>');}
 
 //$('head').append('<style></style>');
 //var styleEl = $('head').find('style');
@@ -119,9 +118,7 @@ miniProIndiLi.on('click', function(e){
                   thisParent.addClass('action');
 									thisParent.siblings().removeClass('action');
 									
-									productUl.stop().animate({left: -n * 100 + '%'},timed);
-									
-});
+									productUl.stop().animate({left: -n * 100 + '%'},timed);});
 
 
 //------------------------------------------------
@@ -200,10 +197,10 @@ var MvSlideGo = function(){
      	mvImg = setInterval(function(){
 							 miniBtnNext.trigger('click');
 							 //console.log('!');
-	    }, timed*5 );};
+			}, timed*5 );
+		};
 
    MvSlideGo();
-
   //miniProduct.on('mouseenter',function(){clearInterval(mvImg);});
   var ClearFn = function(){clearInterval(mvImg)};
 	//miniProduct.on('mouseenter',function(){ mvSlideGo();});

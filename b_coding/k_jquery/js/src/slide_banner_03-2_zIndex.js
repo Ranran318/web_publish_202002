@@ -20,7 +20,7 @@
 
 //.indicator_color 생성
 var indicatorColorCode = '<div class="indicator_color hidden_wrap"><ul></ul></div>';
-var indiLiCode = '<li><a href=""><span></span></a></li>';
+var indiLiCode = '<li><a href="#"><span></span></a></li>';
 
 productWrap.before(indicatorColorCode);
 var indicatorColorUl = $('.indicator_color').find('ul');
@@ -37,13 +37,13 @@ for(;i< productLi.length; i += 1){
 }
 
 var indicatorColorStyle = '.indicator_color{\
-														display: inlinde-block; width:Auto height:30px, text-align:center;\
+														display: inlinde-block; width:100%; height:30px; text-align:center;\
 														position:absolute; right:0; bottom: -50%; z-index:500;\
 														}\
 														.indicator_color ul {\
-														  float:left; width:auto; height:100%; padding:0 10px; background-color:#ccc;\
+														  float:left; width:auto; height:100%; padding:0 10px;\
 														}\
-														.indicatopr_color li {\
+														.indicator_color li {\
 														float:left; margin-right:0.5rem; width: 1.5rem; height:1.5rem; background-color:#fa0;\
 														}\
 														.indicator_color li.action{ background-color:#0af;}\
@@ -52,15 +52,15 @@ var indicatorColorStyle = '.indicator_color{\
 $('head').append('<style>'+ indicatorColorStyle + '</style>');
 //$('style').append();
 //===============================================
-$('.indicator_color').append('<p><span class="n_count"></span> / <span class="t_count">5</span></p');
+$('.indicator_color').append('<p><span class="n_count">3</span> / <span class="t_count">3</span></p');
 
-var indicatorColorCount = '.indicator_color p {float:right; width:40px; background-color:#caf;}';
+var indicatorColorCount = '.indicator_color p {float:right; width:40px;}';
 $('head').find('style').append(indicatorColorCount);
 //====================================================
-productLi.eq(n).css({zIndex:10});
-productLi.eq(n).siblings('li').css({zIndex:0,display:'none'});
+//productLi.eq(n).css({zIndex:10});
+//productLi.eq(n).siblings('li').css({zIndex:0,display:'none'});
 
-$('.n_count').text(n+1);
+//$('.n_count').text(n+1);
 $('.t_count').text(productLi.length);
 	
 	var bool = true;
@@ -69,8 +69,9 @@ $('.t_count').text(productLi.length);
 		if( k !== n){
       $('.n_count').text(n+1);
 			productLi.eq(n).css({zIndex:5, display:'block'});
-			indiLi.eq(n).addclass('action');
+			indiLi.eq(n).addClass('action');
 			indiLi.eq(n).siblings().removeClass('action');
+
 			productLi.eq(k).stop().fadeOut(function(){
 				productLi.eq(n).css({zIndex:10});
 				productLi.eq(n).siblings('li').css({zIndex:0});
@@ -82,7 +83,7 @@ $('.t_count').text(productLi.length);
 //인디케이터 클릭 ------------------------------
 
 var indiLi = indicatorColorUl.children('li'); //인디케이터 ul 안에 있는 li를 선택하겠다.
-indiLi.eq(n).siblings().removeClass('action');
+//indiLi.eq(n).addClass('action');
 
 indiLi.find('a').on('click', function(e){//선택한 li의 몇번재인가? 중요.
 	e.preventDefault();
@@ -113,9 +114,9 @@ FadeFn(n, 1);
 	 }else if($(this)[0] === $('.prev')[0] && bool){
 		 //prev 버튼 클릭
 		 bool = false;
-		 (n <= 0) ? n = productLi.length -1 : n -= 1;	 
+		 (n <= 0) ? n = productLi.length - 1 : n -= 1;	 
 		 FadeFn(n,k);
-		 };
+		 }
 		});		
 
 
