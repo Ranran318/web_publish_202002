@@ -37,7 +37,7 @@ for(;i< productLi.length; i += 1){
 }
 
 var indicatorColorStyle = '.indicator_color{\
-														display: inlinde-block; width:100%; height:30px; text-align:center;\
+														display: inline-block; width:100%; height:30px; text-align:center;\
 														position:absolute; right:0; bottom: -50%; z-index:500;\
 														}\
 														.indicator_color ul {\
@@ -52,7 +52,7 @@ var indicatorColorStyle = '.indicator_color{\
 $('head').append('<style>'+ indicatorColorStyle + '</style>');
 //$('style').append();
 //===============================================
-$('.indicator_color').append('<p><span class="n_count">3</span> / <span class="t_count">3</span></p');
+$('.indicator_color').append('<p><span class="n_count">3</span> / <span class="t_count">3</span></p>');
 
 var indicatorColorCount = '.indicator_color p {float:right; width:40px;}';
 $('head').find('style').append(indicatorColorCount);
@@ -64,6 +64,7 @@ $('head').find('style').append(indicatorColorCount);
 $('.t_count').text(productLi.length);
 	
 	var bool = true;
+	var indiLi = indicatorColorUl.children('li'); //인디케이터 ul 안에 있는 li를 선택하겠다.
 	
 	var FadeFn = function(n,k){
 		if( k !== n){
@@ -77,12 +78,12 @@ $('.t_count').text(productLi.length);
 				productLi.eq(n).siblings('li').css({zIndex:0});
 				bool = true;			
 			});
-		}
+		};
 
 	};
 //인디케이터 클릭 ------------------------------
 
-var indiLi = indicatorColorUl.children('li'); //인디케이터 ul 안에 있는 li를 선택하겠다.
+
 //indiLi.eq(n).addClass('action');
 
 indiLi.find('a').on('click', function(e){//선택한 li의 몇번재인가? 중요.
