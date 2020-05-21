@@ -64,7 +64,7 @@ h1 > a {display: block; width: 100%; height: 100%;}
 		border:none;
 	  background-color: transparent;	
 	}
-	.gnb_view_btn {margin-bottom: 1rem;}
+	.gnb_view_btn {margin:auto; margin-bottom: 1rem;}
 	.gnb_list {display: none;}
 
   
