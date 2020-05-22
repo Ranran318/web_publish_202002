@@ -26,6 +26,9 @@
 	//offset() : 브라우저 상단에서부터 원하는 개체(선택자)가 얼만큼 떨어져 있는지를 확인하는 기능 
 	             //--개인해석:도형이 얼마나 떨어져있는가, 위치도 설정하게 할 수 있음.
 	//offset().top | offset().left
+
+
+
 var headBox = $('#headBox');	
 var hT = $('#headBox').offset().top; // $('headBox').css('top'); // 100px 'px'이라고 문자가 떠서 parseInt를 걸어줘야하기 때문에 offset 써줌.	
 
@@ -55,7 +58,7 @@ var bodyH = $('body').height();
 console.log(bodyH);
 $('#viewBox').height(bodyH);
 
-//  시간차 반응 - 페를로스==========================
+//  시간차 반응 - 페를로스- 글씨,그림,상자 따로 움직이게==========================
 
 var viewBox = $('#viewBox');
 var viewBoxH2 = viewBox.children('h2');
