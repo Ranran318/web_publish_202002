@@ -15,7 +15,11 @@ h1{position: relative;
 
 
 h1 > a {
-	background-image: url("../../../img/monfee_logo.png;");
+	display: block; width:100%; height:100%;
+	background-image: url("../../../img/monfee_svg_logo.svg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 80% auto;
 }
 
 #gnbBox {
@@ -31,15 +35,22 @@ h1 > a {
 #gnbBox::before{
 	content:"";
 	display:block;
-	z-index: -1;
 	position:absolute; top:0; right: 0;
+	z-index: -1;
 	width: 940px; height: 120px;
-	border-bottom: 1px solid #333;
- background-color: rgba(170,51,0,0.7);
  background-color: #fff;
 }
 
 
+#gnbBox:after,
+#gnbBox::after{
+	content:"";
+	display:block;
+	z-index: -2;
+	position:absolute; top:0; right: 0;
+	width: 940px; height: 100%;
+ background-color: rgba(170,51,0,0.7);
+}
 
 
 .gnb_area{
@@ -50,15 +61,6 @@ h1 > a {
 	/*background-color: rgba(170,51,0,0.7);*/
 }
 
-#headBox::after,
-#headBox::after{
-	content:"";
-	display:block;
-	z-index: -1;
-	position:absolute; top:0; right: 0;
-	width: 940px; height: 100%;
- background-color: rgba(170,51,0,0.7);
-}
 
 .gnb_area > li {
 	float: left;
@@ -74,7 +76,7 @@ h1 > a {
 	width: 100%; height: 100%;
 	margin-bottom: 20px;
 	text-align: center;
-	font-size : 4rem;
+	font-size : 1.625rem;
 	line-height: 4rem;
   cursor: pointer;
 }
@@ -91,7 +93,9 @@ h1 > a {
 }
 
 .gnb_sub {width: 100%; height: auto;}
+
 .gnb_sub > li { margin-bottom:0.5rem;width: 100%; height: auto;}
+
 .gnb_sub  a {
 	display: block;
 	width:100%; height:auto;
