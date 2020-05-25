@@ -5,7 +5,6 @@
 
 	var st01 = $('.style_01');
 	var st01Li = st01.find('li');
-
 	var con = $('.content');
 	var conLi = con.children('div');// === var conLi = con.find('div');
 
@@ -27,20 +26,19 @@ myThis.addClass('action');
 myThis.siblings().removeClass('action');
 
 
+conLiEq.siblings().stop().hide();
+conLiEq.stop().fadeIn();
 
 
-	 $(this).addClass('action');
-	 $(this).siblings().removeClass('action');
+
+	// $(this).addClass('action');
+	 //$(this).siblings().removeClass('action');
 
 	 /*
 	 var i = $(this).index();
 	 var conLiEq = conLi.eq(i);
 	 //conLi.hide();
 */
-
-	 conLiEq.siblings().stop().hide();
-	 conLiEq.stop().fadeIn();
-
 	 /*
 	 var conCol = conLi.eq(i).css('backgroundColor');
 	 $(this).siblings().css({'backgroundColor':liBg});
@@ -152,7 +150,7 @@ moreBtn.on('click',function(e){
 	e.preventDefault();
 
   var thisDt = $(this).parent('dt');
-  var dtNextView = thisDt.next('dd').css('display') === 'none'
+  var dtNextView = thisDt.next('dd').css('display') === 'none';
   
     if(dtNextView){
       

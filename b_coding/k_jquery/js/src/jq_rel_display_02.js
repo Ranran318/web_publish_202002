@@ -135,14 +135,17 @@ gnbNav.on('mouseleave',function(){
 				var eKey = e.keyCode;
 			  var gnbUl = $('.gnb_navi').children('ul');
 			  var gnbLi = gnbUl.children('li');
-			  var i = $(this).parent('li').index();			
+			  //var i = $(this).parent('li').index();			
 			  var thisLi = $(this).parents('li').eq(-1).index();
 				console.log();
 				
 				// console.log($(this).parents('li'));
 			if(thisLi >= gnbLi.length-1){	thisLi = -1; }
+			else if(thisLi < 0){
+				thisLi = gnbLi.length-1;
+			}
 
-			console.log(i);
+			//console.log(i);
 			switch(eKey){
 				case 37:
 					gnbLi.eq(thisLi-1).find('a').eq(0).focus();
@@ -164,15 +167,16 @@ gnbNav.on('mouseleave',function(){
 				break;
 
 				case 40:
-					console.log( $(this).parent()[0] == $('dt.action')[0] );
+					console.log( $(this).parent()[0]) 
+					console.log($('dt.action')[0] );
 //위에와 아래 이 식은 같은 표현임.
           //console.log( $(this).parent()[0])
 				  //   console.log( $('dt.action')[0] );
 					if( $(this).parent()[0] == $('dt.action')[0] ){
 						$(this).parent('dt').next('dd').find('a').eq(0).focus();
-					}
+					}else{
 					$(this).parent('li').next('li').find('a').focus();
-					
+					}
 				break;
 
 				case 27:

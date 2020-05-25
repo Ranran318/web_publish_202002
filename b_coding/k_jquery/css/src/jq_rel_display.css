@@ -60,6 +60,7 @@ h2 {
 .style_01 button{
 	width:100%; height:100%;
 	color:inherit; font-weight: bold;
+	background-color: transparent;
 }
 
 .style_01 > .content{
@@ -77,9 +78,9 @@ h2 {
 }
 
 .con_01{background-color: #caf;}
-.con_01{background-color: #fac;}
-.con_01{background-color: #cfa;}
-.con_01{background-color: #a75;}
+.con_02{background-color: #fac;}
+.con_03{background-color: #cfa;}
+.con_04{background-color: #a75;}
 
 .content em{
 	font-style:normal;
@@ -117,6 +118,12 @@ h2 {
 .acc_style_01 button {
 
  width: 100%; height:100%;
+ color:inherit;
+}
+
+.acc_style_01 dt.action{
+	background-color: #0af;
+	color:#fff;
 }
 
 .acc_style_01 dd{
@@ -187,10 +194,11 @@ margin-right:1%;
 
 .more_style dd{
 	display: none;
-	position: absolute;
-	left:0; bottom:0;
+	position: absolute; left:0; bottom:0;
 	width:100%; height:460px;
+	padding:1rem; box-sizing: border-box;
 	background-color: #aca;
+
 }
 
 .more_style dd:first-of-type{
