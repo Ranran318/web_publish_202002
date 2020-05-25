@@ -4,10 +4,10 @@
 	
 	var h1 = $('h1');
 	var headBox =$('#headBox');
-	var conBox =$('#conBox');
-	var footBox =$('#footBox');
-	
-	h1.prependTo(headBox);
+	//var conBox =$('#conBox');
+	//var footBox =$('#footBox');
+	headBox.prepend(h1);
+	//h1.prependTo(headBox);
 	//=================
 
 	$('#viewBox').prepend('<h2>광고내용</h2>');
@@ -52,8 +52,9 @@ gnbUl.empty();
 var linkText;
 
 
-for(i = 0; i < gnbLink.length; i += 1){
-	var linkText = '<li><a target="_blank" href="'+ gnbLink[i] + '">' + gnbLinkText[i] + '</a></li>';
+for(var i = 0; i < gnbLink.length; i += 1){
+	//linkText='<li><a href="${gnbLink[i]} "> ${gnbLinkText[i]} </a></li>';
+	linkText = '<li><a target="_blank" href="'+ gnbLink[i] + '">' + gnbLinkText[i] + '</a></li>';
 gnbUl.append(linkText);
 }
 
@@ -67,7 +68,7 @@ var gnbLinkMore = [
 //console.log(gnbLinkMore[1].link);
 
 for(i = 0; i < gnbLinkMore.length; i += 1){
-	var linkText = '<li><a target="_blank" href="'+ gnbLinkMore[i].link + '">'
+	linkText = '<li><a target="_blank" href="'+ gnbLinkMore[i].link + '">'
 	               + gnbLinkMore[i].text  + '</a></li>';
 gnbUl.append(linkText);
 }
@@ -82,10 +83,10 @@ $('#conBox').find('h2').removeAttr('class');
 
 //===========================
 var vBtn = $('.view_btn');
-vBtn.append('<button class="next_btn" type="button">다음</button>')
-vBtn.append('<button class="prev_btn" type="button">이전</button>')
+vBtn.append('<button class="next_btn" type="button">다음</button>');
+vBtn.append('<button class="prev_btn" type="button">이전</button>');
   
-})(jQuery);
+
 
 
 //===============================
@@ -97,12 +98,12 @@ var testW = $('.test_wrap');
 for( i = 0; i <= 5; i+=1 ){
 	testW.append('<p></p>');
 
-	for(var j=0; j < i; j+=1){
+	for(var j=5; j > i; j-=1){
        testW.find('p').eq(i).append("*");
 	}
 }
 
-
+})(jQuery);
 //==============================================
 
 /**

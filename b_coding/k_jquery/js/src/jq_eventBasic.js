@@ -6,12 +6,12 @@ var css = $('.css');
 var ani = $('.animate');
 
 css.css({'width':'50rem','backgroundColor':'#145','color':'#fff',
-        'transition':'all 1000ms linear'});
+        'transition':'all 1000ms ease-in'});
 ani.animate({'width':'50rem','backgroundColor':'#541','color':'#fff'
             },1000, 'easeInSine', function(){
-							ani.animate({'width' : '10rem', 'backgroundColor':'#111'}, 700, function(){
-								css.animate({'width':'20rem', 'height' : '20rem', 'backgroundColor' :'#333'});
-								ani.animate({'width':'20rem', 'height' : '20rem', 'backgroundColor' :'#fa0'});
+ani.animate({'width' : '10rem', 'backgroundColor':'#111'}, 700, function(){
+							css.animate({'width':'10rem', 'height' : '20rem', 'backgroundColor' :'#333'});
+							ani.animate({'width':'10rem', 'height' : '20rem', 'backgroundColor' :'#fa0'});
 							});
 							
 						});
@@ -76,6 +76,6 @@ evt_02.on('keyup', function(event){
 
 	}
 	//evt_01.append();
-})
+});
 
 	})(jQuery);

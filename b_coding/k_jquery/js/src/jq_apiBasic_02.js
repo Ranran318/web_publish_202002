@@ -45,8 +45,8 @@
 								<button type="button">메뉴</button>\
 								</div>');
 
-var gnbh2 = gnbBox.children('h2')
-consolo.log( gnbh2.attr('class="hidden"'))
+//var gnbh2 = gnbBox.children('h2')
+//consolo.log( gnbh2.attr('class="hidden"'))
 
 
 // viewBox ------------------------------------------- 
