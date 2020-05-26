@@ -124,7 +124,7 @@ headBox.on('mouseleave', function(){
 //news
 var newsList = [
 {img:'menu_01.png', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
-{img:'menu_02.png', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
+{img:'menu_02.png', imgNarr: '이미지 설명', title:'title_01', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cumque eaque odit maxime vero ipsa repellendus magnam quam minus beatae Lorem ipsum dolor sit amet consectetur adipisicing elit.'},
 {img:'menu_03.png', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
 {img:'menu_04.png', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
 {img:'menu_05.png', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
@@ -158,12 +158,12 @@ var textEl = function(i){
 	);
 */
 	var	listEl = '<li>\
-	        <!-- <a href="#">\ -->\
+	         <a href="#">\
 						<div class="img_bg"><span class="hidden">'+ newsList[i].imgNarr +'</span></div>\
 						<dl><dt>'+ newsList[i].title +'</dt>\
 							<dd>'+ newsList[i].content +'</dd>\
 						</dl>\
-					<!--</a>\-->\
+					</a>\
 					</li>';
 	return listEl;
 };
