@@ -27,7 +27,7 @@ h1 > a {
 	float: right;
 	width: 636px;
 	height: auto;
-
+  /* background-color: #fff;  */
 }
 
 #gnbBox:before,
@@ -87,7 +87,7 @@ h1 > a {
 
 .gnb_area > li dl dd{
 	width: 100%; height: auto;
-	background-color: rgba(170,51,0,0.7);
+/*	background-color: rgba(170,51,0,0.7);*/
 	padding: 1rem 0;
 }
 

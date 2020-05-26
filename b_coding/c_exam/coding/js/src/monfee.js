@@ -35,10 +35,10 @@
 	var gnbArr = [ 
 	{title : 'story', //gnbArr[0].title
 	subList : [ //gnbArr[0].subList
-	// //gnbArr[0].subList.linkName , gnaArr[0].subList[0].????????
-					 {linkName: '몽피이야기', link : 'storyMonfee.html'},//gnbArr[0].subList
-	         {linkName: '회사소개', link: 'aboutCompany.html'},
-					 {linkName: '후후업체', link: 'sponCompany.html'}]},
+	
+					 {linkName: '몽피이야기', link : 'storyMonfee.html'},// gnbArr[0].subList[0].linkName , gnbArr[0].subList[0].link
+	         {linkName: '회사소개', link: 'aboutCompany.html'},// gnbArr[0].subList[1].linkName , gnbArr[0].subList[1].link
+					 {linkName: '후후업체', link: 'sponCompany.html'}]},// gnbArr[0].subList[2].linkName , gnbArr[0].subList[2].link
 
 
 {title : 'menu', //gnbArr[1].title
