@@ -21,13 +21,16 @@
 
 	//---------------------
 	var bestNewsBox = $('#bestNewsBox');
-	bestNewsBox.wrap('<div class="bestNewsBox_wrap"></div>');
+bestNews.wrap('<div class="bestNewsBox_wrap"></div>');
 
-	var bestNewsBoxWrap = $('.bestNewsBox_wrap');
+var bestNewsBoxWrap = $('.bestNewsBox_wrap');
 
-	var bestNewsBoxBg = bestNewsBox.css('backgroundColor');
-	bestNewsBoxWrap.css({width:'100%',backgroundColor:bestNewsBoxBg});
-	bestNewsBox.css({width:'940px',backgroundColor:'transparent'});
+	 var bestNewsBoxBg = bestNewsBox.css('backgroundColor');
+	 bestNewsBoxWrap.css({width:'100%', backgroundColor:bestNewsBoxBg});
+	 bestNewsBox.css({width:'940px', backgroundColor:'transparent'});
+
+
+
 	//----------------
 	//var liDl = ('<li><dl></dl></li>');
 	// $(lidl).prepend('dt')
@@ -116,4 +119,42 @@ headBox.on('mouseleave', function(){
 
 //---------------------------------
 
+var newsList = [
+{img:'menu_01.jpg', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
+{img:'menu_02.jpg', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
+{img:'menu_03.jpg', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
+{img:'menu_04.jpg', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
+{img:'menu_05.jpg', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
+{img:'menu_06.jpg', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
+{img:'menu_07.jpg', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'}
+
+];
+
+var imgUrl = '../img/monfee/new_menu/';
+
+
+var bestNews = $('#bestNewsBox');
+	 bestNews.append('<ul class="clearfix"></ul>');
+	 var bestNewsUl = bestNets.children('ul');
+
+	// var listEl = '<li><a href="#">\
+	//							<div class="img_bg"><span class="hidden">' + newsList[i].imgNarr + '</span></div>\
+	//							<dl><dt>' + newsList[i].title + '<dt>\
+	//							<dd>' + newsList[i].content + '</dt>\
+	//							</dl>\
+	//							</a><li>';
+var textEL = function(i){
+
+	var i = 0;
+	for(; i<newsList; i++){
+		bestNewsUl.appeng(textEl(i));
+		bestNewsUl.children('li').eq(i).find('.img_bg).css({backgroundImage:'url('+ imgUrl+ newsList[i].img+')',
+																		backgroundRepeat:'no-repeat',
+																		backgroundPosition:'50% 50%',
+																		backgroundSize:'cover'
+	);
+
+
+
+//--------------------------
 })(jQuery);

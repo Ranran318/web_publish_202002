@@ -1,7 +1,7 @@
 //slide_function.js
 
-(function($){
-
-
+(function(){
+	var mouse = $('.mousewheel');
+	var 
 
 })(jQuery);
