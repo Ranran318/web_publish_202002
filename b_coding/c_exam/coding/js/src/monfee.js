@@ -123,13 +123,13 @@ headBox.on('mouseleave', function(){
 //---------------------------------
 //news
 var newsList = [
-{img:'menu_01.jpg', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
-{img:'menu_02.jpg', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
-{img:'menu_03.jpg', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
-{img:'menu_04.jpg', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
-{img:'menu_05.jpg', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
-{img:'menu_06.jpg', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
-{img:'menu_07.jpg', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'}
+{img:'menu_01.png', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
+{img:'menu_02.png', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
+{img:'menu_03.png', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
+{img:'menu_04.png', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
+{img:'menu_05.png', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
+{img:'menu_06.png', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
+{img:'menu_07.png', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'}
 
 ];
 
