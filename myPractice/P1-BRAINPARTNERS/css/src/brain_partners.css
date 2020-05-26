@@ -127,11 +127,11 @@ nav{
 					 background-position: 0 0;
 									}
 									
+.intro_Box03 {padding:0px 48px 98px 250px; box-sizing: border-box;}
 .intro_Box03 > div{
-	float: left;
-	padding:0px 250px 48px 98px;
+	float: left; margin-right:46px;
 	width:300px; height: 300px;
-	border: 2px solid #fff;
+	border: 1px solid #fff;
 }
 
 
