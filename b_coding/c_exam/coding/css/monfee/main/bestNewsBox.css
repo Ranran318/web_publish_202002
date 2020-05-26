@@ -60,7 +60,7 @@ text-decoration-color: "#0ac";
 	content:""; display: block;
 	position: absolute; top: 0; left: 0; 
 	width: 100%; height: 100%;
-	background-color: rgb(170,51,0,0);
+	background-color: rgba(170,51,0,0);
 	transition:background 300ms linear;
 }
 
@@ -68,8 +68,27 @@ text-decoration-color: "#0ac";
 /* 과정 B*/
 #bestNewsBox a:hover .imb_bg:before,
 #bestNewsBox a:focus .imb_bg:before{
-	background-color: rgb(170,51,0,0.7);
+	background-color: rgba(170,51,0,0.7);
 }
+
+#bestNewsBox a .imb_bg:after{
+content: ""; display:block;
+width: 100%; height: 100%;
+position: absolute; top:0; left:0;
+background-image: url(../../../img/menu_on.png);
+background-repeat: no-repeat;
+background-position: 50% 300%;
+background-size: 100% auto;
+transition: all 200ms linear 100ms;
+opacity: 0;
+}
+
+#bestNewsBox a:hover .imb_bg:after,
+#bestNewsBox a:focus .imb_bg:after{
+	opacity: 1; background-position-y: -50%;
+}
+
+
 
 
 #bestNewsBox dl{

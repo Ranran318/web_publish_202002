@@ -14,14 +14,16 @@
 	var headBoxH = headBox.css('height');
 	var headBoxBg = headBox.css('backgroundColor');
 	
-	headBoxWrap.css({width:'100%', height:headBoxH, backgroundColor:headBoxBg,
-  position:'fixed', top:0, left:0, zIndex:1000});
-	headBox.css({Width:'940px', margin:'auto',backgroundColor:'transparent'});
+	headBoxWrap.css({
+		width:'100%', height:headBoxH, backgroundColor:headBoxBg,
+    position:'fixed', top:0, left:0, zIndex:1000});
+
+		headBox.css({Width:'940px', margin:'auto',backgroundColor:'transparent'});
 
 
 	//---------------------
 	var bestNewsBox = $('#bestNewsBox');
-bestNews.wrap('<div class="bestNewsBox_wrap"></div>');
+bestNewsBox.wrap('<div class="bestNewsBox_wrap"></div>');
 
 var bestNewsBoxWrap = $('.bestNewsBox_wrap');
 
@@ -66,7 +68,8 @@ subList : [ //gnbArr[3].subList
 					{linkName: '이벤트', link : 'storyMonfee.html'},
 					{linkName: '공지사항', link: 'aboutCompany.html'},
 					{linkName: '프로모션', link: 'sponCompany.html'},
-					{linkName: '미디어광고', link: 'sponCompany.html'}]}
+					{linkName: '미디어광고', link: 'sponCompany.html'}
+				]}
 	];
 //---------------------------
 var gnbBox = $('#gnbBox');
@@ -118,7 +121,7 @@ headBox.on('mouseleave', function(){
 });
 
 //---------------------------------
-
+//news
 var newsList = [
 {img:'menu_01.jpg', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
 {img:'menu_02.jpg', imgNarr: '이미지 설명', title:'title_01', content: 'lorem......'},
@@ -135,7 +138,7 @@ var imgUrl = '../img/monfee/new_menu/';
 
 var bestNews = $('#bestNewsBox');
 	 bestNews.append('<ul class="clearfix"></ul>');
-	 var bestNewsUl = bestNets.children('ul');
+	 var bestNewsUl = bestNews.children('ul');
 
 	// var listEl = '<li><a href="#">\
 	//							<div class="img_bg"><span class="hidden">' + newsList[i].imgNarr + '</span></div>\
@@ -143,8 +146,8 @@ var bestNews = $('#bestNewsBox');
 	//							<dd>' + newsList[i].content + '</dt>\
 	//							</dl>\
 	//							</a><li>';
-var textEL = function(i){
-
+var textEl = function(i){
+/*
 	var i = 0;
 	for(; i<newsList; i++){
 		bestNewsUl.appeng(textEl(i));
@@ -153,7 +156,28 @@ var textEL = function(i){
 																		backgroundPosition:'50% 50%',
 																		backgroundSize:'cover'
 	);
+*/
+	var	listEl = '<li>\
+	        <!-- <a href="#">\ -->\
+						<div class="img_bg"><span class="hidden">'+ newsList[i].imgNarr +'</span></div>\
+						<dl><dt>'+ newsList[i].title +'</dt>\
+							<dd>'+ newsList[i].content +'</dd>\
+						</dl>\
+					<!--</a>\-->\
+					</li>';
+	return listEl;
+};
 
+var i=0;
+for(; i<newsList.length; i++){	
+	bestNewsUl.append( textEl(i) );
+	bestNewsUl.children('li').eq(i).find('.img_bg').css({
+															backgroundImage:'url('+ imgUrl +newsList[i].img +')',
+															backgroundRepeat:'no-repeat',
+															backgroundPosition:'50% 50%',
+															backgroundSize:'cover'
+														})
+}
 
 
 //--------------------------

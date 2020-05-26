@@ -9,10 +9,11 @@
 	background-color:#fff;
 }
 
-h1{position: relative;
+h1{
+	position: relative;
 	z-index: 100;
 	float: left;
-	width: 220px; height:100;
+	width: 220px; height:100%;
 	background-color: #a30;
 }
 
