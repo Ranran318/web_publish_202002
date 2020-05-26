@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+/* brain_partners.css */
+
+/* main.css */
+
+.middle_name {text-align: center;}
+
+#analysisBox,#doxBox{padding-top:77px; box-sizing: border-box;}
+
+
+/* ===== //wrap ====================================== */
+#wrap{position:relative;
+			margin:auto;
+			width:1920px; height:auto;}
+/* ===== //wrap ====================================== */
+
+
+
+ 
+/* ===== //headBox ====================================== */
+#headBox{position:relative; width:1920px; height:892px; background-color:#fff;}
+
+.logoBox {position: absolute; top:0; z-index: 100;
+	        margin-left:40px; 
+	        box-sizing:border-box; 
+					width:222px; height: 167px; 
+					background-color:rgba(255,255,255,0);}
+
+.logoBox > h2 {
+		width:222px; height:167px;
+		background-image: url('../../img/brain_img/메인/1x/logo_text.png');
+		background-repeat: no-repeat;
+		background-position:0 0;
+}
+
+.gnbBox {padding-left:354px;
+	      box-sizing: border-box;  
+				width:100%; height:60px; 
+				border: 1px solid #b3a048;
+				background-color: #fff;}
+
+.gnbBox li {float: left; padding:17px; margin-right: 18px; 
+	          box-sizing: border-box; text-align: center;}
+
+.menu_01,.menu_07{width: 100px; height: 60px;}					
+.menu_02,.menu_03{width: 116px; height: 60px;}
+.menu_04{width: 146px; height: 60px;}					
+.menu_06{width: 126px; height: 60px;}
+.menu_05{width: 170px; height: 60px;}
+
+.viewBox {width:100%; height:832px; 
+					background-color:#fff;
+					background-image:url('../../img/brain_img/메인/1x/viewBox_bgpcfull.png'); 
+					background-repeat: no-repeat;
+					background-position:50% 50%;
+}
+
+.new_name {float: left;
+						 margin-left:312px; padding-top:74px; 
+						 color:#fff; font-size:36px}
+
+.brain_partners {
+	          margin-left:649px; padding-top:225px; 
+						color:#fff; text-transform: uppercase;
+					  font-size:46px}
+
+/* ===== //headBox ====================================== */
+
+
+
+
+/* ===== //introBox ====================================== */
+#introBox{width:1920px; height:668px; background-color:#fff;}
+
+#introBox > h2 {padding:15px;}
+
+.intro_container {
+	     height:662px; 
+			 background-image: url('../../img/brain_img/메인/main_highanaly2.jpg');
+			 background-repeat: no-repeat;
+			 background-position: 70% 0;
+}
+
+.intro_Box01 {margin-left:250px; margin-top: 6px;
+							width:500px;  height:150px;
+						  border: 1px solid #fff}
+
+.intro_Box01 > p {padding:32px 20px; color:#fff; font-size: 18px; box-sizing: border-box;}
+
+.intro_Box02 {
+	         width:202px; height: 54px;
+					 background-image: url('../../img/brain_img/메인/ABOUT_US_1.png');
+					 background-repeat: no-repeat;
+					 background-position: 0 0;
+                  }
+
+
+/* ===== //introBox ====================================== */
+  
+
+
+
+/* ===== //analysisBox  ====================================== */
+#analysisBox{float: left; position: relative; width:100%; height:780px; background-color:#efa;}
+
+.more_btn01{float:right;
+	          position:absolute; top: 70px; right:432px; bottom:620px; left:1138px;
+	          width:112px; height:52px;
+						background-image: url('../../img/brain_img/메인/more_btn.png');
+						background-repeat: no-repeat;
+						background-position: 0 0;
+
+}
+
+
+/* ===== //analysisBox  ====================================== */
+
+
+
+
+/* ===== //docBox ====================================== */
+#docBox{position: relative; float:left; width:1920px; height:548px; background-color:#bff;}
+
+.more_btn02 {float:right;
+	position:absolute; top: 70px; right:432px; bottom:620px; left:1183px;
+	width:121px; height:30px;
+	background-image: url('../../img/brain_img/메인/more_viewbtn.png');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+/* ===== //docBox ====================================== */
+
+
+
+
+/* ===== //fam_rateBox ====================================== */
+#fam_Box {width: 1920px; height:200px; background-color:#ccc;}
+
+/* ===== //fam_rateBox ====================================== */
+
+
+
+/* ===== //eventBox ====================================== */
+#eventBox{width:1920px; height:300px; background-color:#999;}
+/* ===== //eventBox ====================================== */
+
+
+
+
+
+
+/* ===== //footBox ====================================== */
+#footBox{width:100%; height:200px; background-color:#bfa;}
+
+/*
+#footBox > h2 {
+	       width:165px; height:128px; background-color: #fff;
+
+}  
+*/
+/* ===== //footBox ====================================== */
