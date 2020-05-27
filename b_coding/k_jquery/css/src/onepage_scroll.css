@@ -34,6 +34,11 @@ h1{
 	float: left; margin-right: 1rem;
 	width:auto; height: 100%;
 }
+
+#gnbBox li.action{
+	font-weight: bold; font-size:1.5rem;
+}
+
 #gnbBox li a{
 	display: block; width:100%; height: 100%;
 }
@@ -43,33 +48,33 @@ h1{
 }
 
 #viewBox {
-	padding-top: 8rem; 
 	width:100%; height: 100%; background-color: #a8f;
+	padding-top: 4rem; box-sizing: border-box;
 	font-size: 2rem;
 }
 #aboutBox {
-	padding-top: 8rem; margin: auto; 
 	width:70%; height: 1600px; background-color:#cff ;
+	padding-top: 8rem; box-sizing: border-box; margin: auto; 
 	font-size: 2rem;
 }
 #newBox {
-	padding-top: 8rem; 
+	padding-top: 8rem; box-sizing: border-box;
 	width:100%; height: 100%; background-color:#a85 ;
 	font-size: 2rem;
 }
 #bestBox {
-	padding-top: 8rem; margin: auto; 
+	padding-top: 8rem; box-sizing: border-box; margin: auto; 
 	width:70%; height:1600px ; background-color: #faf;
 	font-size: 2rem;
 }
 
 #noticeBox {
-	padding-top: 8rem; 
+	padding-top: 8rem; box-sizing: border-box;
 	width:100%; height: 1200px; background-color: #ddd;
 	font-size: 2rem;
 }
 #asInfoBox {
-	padding-top:8rem; margin: auto; 
+	padding-top:8rem; box-sizing: border-box; margin: auto; 
 	width:70%; height:70% ; background-color: #7ff;
 	font-size: 2rem;
 }
