@@ -15,14 +15,6 @@
           max-height:25.3125rem;
         }
 
-#noticeBox {
-            height: 324px;
-            height: 101.25vw;
-            /* 324 /320* 100 */
-            min-height:; 
-            max-height:;
-            max-height:;
-}
 
 /*#viewBox {width:120px; height:7.5rem;}*/
 
@@ -31,3 +23,4 @@
           max-width:80px; max-height: 80px; }*/
 
 /* @media end*/
+     }
