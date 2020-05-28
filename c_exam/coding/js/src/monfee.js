@@ -18,7 +18,7 @@
 		width:'100%', height:headBoxH, backgroundColor:headBoxBg,
     position:'fixed', top:0, left:0, zIndex:1000});
 
-		headBox.css({Width:'940px', margin:'auto',backgroundColor:'transparent'});
+		headBox.css({width:'940px', margin:'auto', backgroundColor:'transparent'});
 
 
 	//---------------------

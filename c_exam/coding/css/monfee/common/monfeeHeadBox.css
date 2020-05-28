@@ -59,7 +59,7 @@ h1 > a {
 
 .gnb_area{
 
-	widows: 100%; height:auto;
+	width: 100%; height:auto;
 	padding-top:35px;
 	box-sizing: border-box;
 	/*background-color: rgba(170,51,0,0.7);*/
