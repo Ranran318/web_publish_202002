@@ -12,7 +12,7 @@
 /* ===== //wrap ====================================== */
 #wrap{position:relative;
 			margin:auto;
-			width:1920px; height:auto;}
+			max-width:1920px; height:auto;}
 /* ===== //wrap ====================================== */
 
 
@@ -20,7 +20,7 @@
  
 /* ===== //headBox ====================================== */
 #headBox{position: relative; 
-	width:1920px; height:892px; 
+	width:1920px; height:60px; 
 	background-color:#fff;}
 
 .logoBox {position: absolute; top:0; z-index: 100;
@@ -29,9 +29,9 @@
 					width:222px; height: 167px; 
 					background-color:rgba(255,255,255,0);}
 
-.logoBox > h1 {
-		width:222px; height:167px;
-		background-image: url('../../img/brain_img/메인/1x/logo_text.png');
+h1 {
+		width:220px; height:165px;
+		background-image: url('../../img/brain_img/main/1x/logo_text.png');
 		background-repeat: no-repeat;
 		background-position:0 0;
 }
@@ -77,9 +77,9 @@ nav{
 
 
 /* ==================================== */
-.viewBox {width:100%; height:832px; 
+.viewBox {width:1920px; height:832px; 
 					background-color:#fff;
-					background-image:url('../../img/brain_img/메인/1x/viewBox_bgpcfull.png'); 
+					background-image:url('../../img/brain_img/main/1x/viewBox_bgpcfull.png'); 
 					background-repeat: no-repeat;
 					background-position:50% 50%;
 }
@@ -92,7 +92,9 @@ nav{
 	          margin-left:649px; padding-top:225px; 
 						color:#fff; text-transform: uppercase;
 						font-weight: bold;
-					  font-size:46px}
+						font-size:60px;
+						letter-spacing: 14px;
+					  }
 
 /* ===== //headBox ====================================== */
 
@@ -100,42 +102,89 @@ nav{
 
 
 /* ===== //introBox ====================================== */
-#introBox{width:1920px; height:668px; background-color:#fff;}
+#introBox{
+	
+	width:1920px; height:668px; background-color:#fff;}
 
 #introBox > h2 {padding:15px;}
 
 .intro_container {
-	     height:662px; 
-			 background-image: url('../../img/brain_img/메인/main_highanaly2.jpg');
+	     float: left;
+		   width:1920px;
+			 height:606px; 
+			 padding-top: 2px; padding-bottom:50px; box-sizing: border-box;
+			 background-image: url('../../img/brain_img/main/main_highanaly2.jpg');
 			 background-repeat: no-repeat;
 			 background-position: 70% 0;
 }
-
-.intro_Box01 {margin-left:250px; margin-top: 6px;
+/*------------------------------------------------*/
+.intro_Box01 {
+	            margin-left:250px; margin-top: 2px;
 							width:500px;  height:150px;
 						  border: 1px solid #fff}
 
 .intro_Box01 > p {
-	padding:32px 20px; color:#fff;
-	word-wrap: normal; 
+	padding:31px 22px; box-sizing: border-box; color:#fff;
+	word-wrap: normal; text-align: justify;
 	font-size: 18px; box-sizing: border-box;}
 
+
+
+/*------------------------------------------------*/
 .intro_Box02 {
+	         float: left;
+	         margin-top:47px;
+	         margin-left:250px; 
 	         width:202px; height: 54px;
-					 background-image: url('../../img/brain_img/메인/ABOUT_US_1.png');
+					 background-image: url('../../img/brain_img/main/ABOUT_US.png');
 					 background-repeat: no-repeat;
 					 background-position: 0 0;
+					 
 									}
 									
-.intro_Box03 {padding:0px 48px 98px 250px; box-sizing: border-box;}
+/*------------------------------------------------*/
+.intro_Box03 {
+	float: right;	position: relative; z-index: 100;
+	margin-top: 52px; margin-left:484px; 
+	z-index:100;
+  width: 1340px; height: 508px;}
+
+.intro_Box03 dt{margin-top: 160px;text-align:center; color:#fff; font-size: 1.875rem;}
+.intro_Box03 dd{text-align:center; color:#fff; font-size: 1.25rem;}
+	
+
 .intro_Box03 > div{
-	float: left; margin-right:46px;
+	float: left;
+	margin-right:46px;
 	width:300px; height: 300px;
 	border: 1px solid #fff;
 }
 
+.item_01{position: absolute; top:255px; left:0; }
+.item_02{position: absolute; top:137px;  }
+.item_03{position: absolute; top:69px;  }
+.item_04{position: absolute; top:0px; right:0; }
 
 
+
+
+.intro_Box03 dl div{
+	margin: auto;
+	width:100px; height: 92px;
+	background-repeat: no-repeat;
+	background-position: 100%;
+}
+
+
+
+.item_img01{
+	background-image: url('../../img/brain_img/main/info.png');}
+.item_img02{
+	background-image: url('../../img/brain_img/main/analy.png');}
+.item_img03{
+	background-image: url('../../img/brain_img/main/method.png');}
+.item_img04{
+	background-image: url('../../img/brain_img/main/guide.png');}
 
 
 /* ===== //introBox ====================================== */
@@ -144,7 +193,13 @@ nav{
 
 
 /* ===== //analysisBox  ====================================== */
-#analysisBox{float: left; position: relative; width:100%; height:780px; background-color:#efa;}
+#analysisBox{float: left; position: relative; width:100%; height:788px; background-color:#efa;}
+
+.acc_Box{width:302px; height: 83px;
+         background-image: url('../../img/brain_img/pcfull_acc.png');
+				 background-repeat: no-repeat;
+				 background-position: 100%;
+}
 
 .more_btn01{float:right;
 	          position:absolute; top: 70px; right:432px; bottom:620px; left:1138px;
