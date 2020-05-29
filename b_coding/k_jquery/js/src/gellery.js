@@ -1,0 +1,5 @@
+//gellery.js
+
+(function($){
+
+})(jQuery);
