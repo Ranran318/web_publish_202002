@@ -38,10 +38,11 @@
 	var headWrap = wrap.find('.headBox_wrap');
 	var footWrap = wrap.find('.footBox_wrap');
 	
-	headWrap.load('../page/common/headBox.html',function(){
+	headWrap.load('../page/common/headBox.html',function(){ //load 는 불러온다. 콜백함수같은거. onepage 기능 안 먹힘. headBox 내용 안에서만 일어남.
 		var headBox = $('#headBox');
-		console.log(headBox);
-	});
+		//console.log(headBox);
+		headBox.prepend('h1');
+	}); //load는 다른 기능에 영향을 줄 수 없다. 그 내용 안에서만 기능 실행이나 영향을 줌. 
 
 	footWrap.load('../page/common/footBox.html');
 
