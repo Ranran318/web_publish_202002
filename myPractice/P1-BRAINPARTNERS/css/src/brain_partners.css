@@ -6,7 +6,7 @@
 
 .middle_name {text-align: center;}
 
-#analysisBox,#doxBox{padding-top:77px; box-sizing: border-box;}
+
 
 
 /* ===== //wrap ====================================== */
@@ -27,28 +27,28 @@
 	        margin-left:40px; 
 	        box-sizing:border-box; 
 					width:222px; height: 167px; 
-					background-color:rgba(255,255,255,0);}
-
-h1 {
-		width:220px; height:165px;
+					background-color:rgba(255, 255, 255, 0);
 		background-image: url('../../img/brain_img/main/1x/logo_text.png');
 		background-repeat: no-repeat;
 		background-position:0 0;
 }
 
-nav{
-	margin: 0 auto;
-	width: 1316px; height:46px;}
 
-
-
-.gnbBox {padding-left:354px;
+.gnbBox {
+	      float: left;
+	      margin:auto;
+	      padding-left:354px;
 	      box-sizing: border-box;  
-				width:100%; height:60px; 
-				border: 1px solid #b3a048;
-				background-color: #fff;}
+				width:1920px; height:auto;}
 
-.gnbBox li {float: left; padding:17px; margin-right: 74px; 
+.gnbBox ul { 
+	position: absolute; top:0px; z-index:20;
+	width: 1400px; height: 300px;
+}
+
+
+.gnbBox li {float: left; 
+	          padding:17px; margin-right: 74px; 
 	          box-sizing: border-box; text-align: center;}
 
 .menu_01,.menu_07{width: 100px; height: 60px;}					
@@ -57,12 +57,18 @@ nav{
 .menu_06{width: 126px; height: 60px;}
 .menu_05{width: 170px; height: 60px;}
 
+
+
 .gnbBox dd {
-	display: none;
+	display:none;
+	margin-top: 20px;
+	width:150px; height: auto;
+  line-height: 40px;
 }
 
-.gnbBox dt:hover,
-.gnbBox dt:focus {
+.gnbBox dt.action :hover,
+.gnbBox dt.action :focus {
+	border: 1px solid #b3a048;
  color: #b3a048;
 }
 
@@ -77,7 +83,7 @@ nav{
 
 
 /* ==================================== */
-.viewBox {width:1920px; height:832px; 
+#viewBox {width:1920px; height:832px; 
 					background-color:#fff;
 					background-image:url('../../img/brain_img/main/1x/viewBox_bgpcfull.png'); 
 					background-repeat: no-repeat;
@@ -112,7 +118,7 @@ nav{
 	     float: left;
 		   width:1920px;
 			 height:606px; 
-			 padding-top: 2px; padding-bottom:50px; box-sizing: border-box;
+			 box-sizing: border-box;
 			 background-image: url('../../img/brain_img/main/main_highanaly2.jpg');
 			 background-repeat: no-repeat;
 			 background-position: 70% 0;
@@ -144,32 +150,53 @@ nav{
 									
 /*------------------------------------------------*/
 .intro_Box03 {
-	float: right;	position: relative; z-index: 100;
-	margin-top: 52px; margin-left:484px; 
-	z-index:100;
-  width: 1340px; height: 508px;}
-
-.intro_Box03 dt{margin-top: 160px;text-align:center; color:#fff; font-size: 1.875rem;}
-.intro_Box03 dd{text-align:center; color:#fff; font-size: 1.25rem;}
-	
-
-.intro_Box03 > div{
+	position: relative;
 	float: left;
-	margin-right:46px;
-	width:300px; height: 300px;
-	border: 1px solid #fff;
+  width: 1400px; height: 508px;}
+
+	
+	
+	.intro_Box03 dl{
+		float: left;
+		width: 300px; height: 300px;
+		border: 1px solid #fff;
+	}
+	
+	.intro_Box03 dd{
+		
+		text-align:center; color:#fff; font-size: 1.25rem;}
+	.intro_Box03 dt{
+	  margin-top: 13px;
+		text-align:center; color:#fff; font-size: 1.875rem;}
+
+
+
+
+.item_01 {
+	margin-top:45px;
+	margin-left: 34px;
+	margin-right: 44px; 
 }
 
-.item_01{position: absolute; top:255px; left:0; }
-.item_02{position: absolute; top:137px;  }
-.item_03{position: absolute; top:69px;  }
-.item_04{position: absolute; top:0px; right:0; }
+.item_02 {
+	margin-top:30px;
+	margin-right:44px;
+}
 
+.item_03 { 
+	margin-top: 15px;
+	margin-right:44px;
+}
 
+.item_04 { 
+		margin-top: 0px;
+
+}
 
 
 .intro_Box03 dl div{
 	margin: auto;
+	margin-top:40px ;
 	width:100px; height: 92px;
 	background-repeat: no-repeat;
 	background-position: 100%;
@@ -178,13 +205,16 @@ nav{
 
 
 .item_img01{
+
 	background-image: url('../../img/brain_img/main/info.png');}
 .item_img02{
 	background-image: url('../../img/brain_img/main/analy.png');}
 .item_img03{
 	background-image: url('../../img/brain_img/main/method.png');}
 .item_img04{
+	
 	background-image: url('../../img/brain_img/main/guide.png');}
+
 
 
 /* ===== //introBox ====================================== */
@@ -193,22 +223,72 @@ nav{
 
 
 /* ===== //analysisBox  ====================================== */
-#analysisBox{float: left; position: relative; width:100%; height:788px; background-color:#efa;}
+#analysisBox{
+	float: left; position: relative; 
+	width:1920px; height:788px;   
+  background-color: #fff;
+}
 
-.acc_Box{width:302px; height: 83px;
+#analysisBox h2{
+	margin-top: 2px;
+}
+
+.acc_Box{margin: auto;
+				 width:302px; height: 83px;
          background-image: url('../../img/brain_img/pcfull_acc.png');
 				 background-repeat: no-repeat;
 				 background-position: 100%;
 }
 
+
+#analysisBox ul{
+	margin:auto;
+	width:1588px; height: 564px;
+  }
+
+
 .more_btn01{float:right;
 	          position:absolute; top: 70px; right:432px; bottom:620px; left:1138px;
 	          width:112px; height:52px;
-						background-image: url('../../img/brain_img/메인/more_btn.png');
+						background-image: url('../../img/brain_img/main/more_btn.png');
 						background-repeat: no-repeat;
-						background-position: 0 0;
+						background-position: 50%;
 
 }
+
+.member_Box{
+	position: relative;
+	float: left;
+	width: 1520px; height: 482px;}
+
+
+.member_Box li{
+	float: left;
+}
+
+/* 애널리스트 - 자문위원단*/
+.card_01, .card_04, .card_07{
+	position:absolute; top: 40px; z-index: 500;
+	float: left;
+	width:302px; height: 302px;
+}
+.card_01{ position: absolute; left: 133px;}
+.card_04{ position: absolute; left: 665px;}
+.card_07{ position: absolute; left: 1202px;}
+
+
+.card_01{background-image: url('../../img/brain_img/main/jack_intro.png');}
+.card_04{background-image: url('../../img/brain_img/main/brain_intro.png');} 
+.card_07{background-image: url('../../img/brain_img/main/nious_intro.png');}
+
+.card_02, .card_05, .card_08 {
+	width: 450px; height: 480px;
+}
+
+
+
+
+
 
 
 /* ===== //analysisBox  ====================================== */
@@ -217,14 +297,91 @@ nav{
 
 
 /* ===== //docBox ====================================== */
-#docBox{position: relative; float:left; width:1920px; height:548px; background-color:#bff;}
+#docBox{position: relative; float:left; 
+	width:1920px; height:548px;
+	border-top:1px solid#141A34;
+}
+
+
+#docBox > h2 {
+	margin-top:109px;
+}
+
+
 
 .more_btn02 {float:right;
-	position:absolute; top: 70px; right:432px; bottom:620px; left:1183px;
+	position:absolute; top: 142px; right:432px; bottom:620px; left:1183px;
 	width:121px; height:30px;
-	background-image: url('../../img/brain_img/메인/more_viewbtn.png');
+	background-image: url('../../img/brain_img/main/more_viewbtn.png');
 	background-repeat: no-repeat;
 	background-position: 0 0;
+}
+
+.doc_containers {
+
+	margin: auto;
+	width: 690px; height: 266px;
+	overflow: hidden;
+
+}
+.doc_containers > ul {
+	position:relative;
+	float: left;
+	margin-top: 56px;
+	width: 1440px; height: 266px;
+
+
+
+}
+
+.doc_containers li{
+
+	float: left;
+	margin-right: 28px;
+	width:calc( 100 / 5);
+	background-repeat: no-repeat;
+}
+
+
+.doc_Box a{width: 330px; height: 266px;}
+ 
+.doc_01{
+width:330px; height: 266px;
+background-image:url('../../img/brain_img/main/content01.png');
+background-position: 100%;}
+
+.doc_02{width:330px; height: 266px;
+background-image:url('../../img/brain_img/main/content02.png');
+background-position: 100%;}
+
+.doc_03{width:330px; height: 266px;
+background-image:url('../../img/brain_img/main/report1.jpg');
+background-size:330px 366px;}
+
+.doc_04{width:330px; height: 266px;
+background-image:url('../../img/brain_img/main/report2.jpg');
+background-size:330px 366px;}
+
+
+.docbtn_Box{
+	position: absolute; top: 280px; left:420px; z-index: 50; 
+	width:1060px; height: 46px;
+}
+
+.prev_btn{
+
+	float: left;
+	width:61px; height: 47px;
+	background-image: url('../../img/brain_img/main/prev_btn.png');
+  background-repeat: no-repeat;
+}
+
+.next_btn{
+	
+	float: right;
+	width:61px; height: 47px;
+	background-image: url('../../img/brain_img/main/next_btn.png');
+  background-repeat: no-repeat;
 }
 
 /* ===== //docBox ====================================== */
@@ -233,23 +390,99 @@ nav{
 
 
 /* ===== //fam_rateBox ====================================== */
-#fam_Box {width: 1920px; height:200px; background-color:#ccc;}
+#famBox {
+	width: 1920px; height:400px; 
+	background-color: #fa0;}
+
 
 /* ===== //fam_rateBox ====================================== */
 
 
 
 /* ===== //eventBox ====================================== */
-#eventBox{width:1920px; height:300px; background-color:#999;}
+#eventBox{
+	width:1920px; height:250px; 
+
+	background-color:#999;}
+
+
+
+
+
 /* ===== //eventBox ====================================== */
 
 
 
+/* ===== //topbtnBox ====================================== */
+
+#topbtnBox{
+	display: none;
+	float: right;
+	position: absolute; z-index:1000;
+	width: 50px;height: 50px;
+	background-color: #b3a048 ;
+	border-radius: 10px;
+
+}
+
+#topbtn_Box span{
+	width: 50px; height: 50px;
+	margin:4px 1px;
+	display: inline-block;
+	color:#f0a;
+	font-size: 1.5rem;
+  text-transform: capitalize;
+}
 
 
 
 /* ===== //footBox ====================================== */
-#footBox{width:100%; height:200px; background-color:#bfa;}
+#footBox{
+	float: left;
+  border-top:1px solid #fff;
+	width:1920px; height:200px; background-color:#141A34;}
+
+#footBox > h2{
+	float: left;
+  margin-top:32px; margin-left:98px;
+	width: 165px; height: 128px;
+	background-image: url('../../img/brain_img/foot_logo.png');
+	background-repeat: no-repeat;
+	background-position: 100%;
+}
+
+
+
+.foot_Box01 > ul{
+	margin-top:17px; margin-left: 340px;
+	width: 248px; height: 24px;
+	
+
+}
+
+.foot_Box01 li{
+	float: left;
+  color:#fff;
+  text-align: center;
+}
+
+.foot_Box01 li:nth-child(1){
+	width: 150px; height: 24px;
+	margin-right: 30px;
+}
+
+.foot_Box02 > address{
+	margin-top: 18px;
+ margin-left: 344px;
+	width:1000px; height: 100px;
+
+}
+
+.foot_Box02 p{
+ color: #fff ;
+ text-align: justify;
+ 
+}
 
 /*
 #footBox > h2 {
