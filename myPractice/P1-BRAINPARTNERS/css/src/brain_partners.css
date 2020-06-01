@@ -51,12 +51,11 @@
 	          padding:17px; margin-right: 74px; 
 	          box-sizing: border-box; text-align: center;}
 
-.menu_01,.menu_07{width: 100px; height: 60px;}					
-.menu_02,.menu_03{width: 116px; height: 60px;}
-.menu_04{width: 146px; height: 60px;}					
-.menu_06{width: 126px; height: 60px;}
-.menu_05{width: 170px; height: 60px;}
-
+.menu_01.action ,.menu_07.action {width: 100px; height: 60px;}					
+.menu_02.action ,.menu_03.action {width: 116px; height: 60px;}
+.menu_04.action {width: 146px; height: 60px;}					
+.menu_06.action {width: 126px; height: 60px;}
+.menu_05.action {width: 170px; height: 60px;}
 
 
 .gnbBox dd {
