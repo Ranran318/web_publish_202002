@@ -10,8 +10,27 @@
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(100,100,100,0.7);
   border-radius: 0.3rem;
   background-color: #565656;
-  padding:1rem;
+  /*padding:1rem;*/
   color: #fff; font-size: 2rem;
   box-sizing: border-box;
 
+}
+/*
+.mw{
+  /*
+  overflow: hidden;
+  overflow-x: auto;
+  
+}
+*/
+
+.mw > ul{
+  width: 500%;
+  height: 100%;
+}
+
+.mw li{
+  float: left;
+  width: 20%;
+  height: 100%;
 }

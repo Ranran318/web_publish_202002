@@ -31,9 +31,9 @@
 win.on('scroll', function(e){
   e.preventDefault();
   var winTop = win.scrollTop();
-  var winTop2 = winTop + winH;
+  var winTop2 = winTop + winH; // + @ 더 높여주는 것도 좋음. Ex) var winTop2 = winTop + winH + 20
   //console.log(winTop);
-  //상단 #introBox------------------------------------------------------------------
+  //상단 #introBox----firewatchgame 겹치는 화면들--------------------------------------------------------------
   introDiv.eq(0).css({backgroundPositionY:winTop/16*16}); //일정한 비율로 -> 나누기
   introDiv.eq(1).css({backgroundPositionY:winTop/16*14}); //일정한 비율로 -> 나누기
   introDiv.eq(2).css({backgroundPositionY:winTop/16*13}); 
@@ -43,6 +43,9 @@ win.on('scroll', function(e){
   introDiv.eq(6).css({backgroundPositionY:winTop/16*5}); 
   introDiv.eq(7).css({backgroundPositionY:winTop/16*3}); 
   introDiv.eq(8).css({backgroundPositionY:winTop/16*1}); 
+
+  //16으로만 그냥 나눴을 때 자연스럽지않고 뚝뚞 끊기듯 움직이기 때문에 다시 곱해줌으로써 
+  //자연스러운 움직임을 부여해준다.
   //================================================================
   
   //중간 기능 처리 #contentBox ---------------------------------------------------
