@@ -22,7 +22,7 @@
 
   win.on('resize', function(){
     winW = win.innerWidth();
-    (winW < 640) ? introBox.children('div').remove() : location.reload();
+    (winW < 640) ? introBox.children('div').remove() : location.reload();//location.reload(); ===새로고침
    
 
   });
