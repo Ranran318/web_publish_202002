@@ -34,8 +34,9 @@ tl.load('../terms/termsLocation.txt');
 ta.load('../terms/termsAlert.txt');
 //-------------====================================
 
+var inputCk = $('input[type="checkbox"]');
 var inputcheckList = [ts, tp, tl, ta];
-var inputCk = $(input[type="checkbox"]);
+
 ac.on('click',function(e){
   var acAttr = ac.is('.checked');
 
@@ -69,13 +70,39 @@ ac.on('click',function(e){
 var allState;
 var AllCk = function(state){
   if(state === true){
-    inputCk.attr({'checked':true});
-    inputCk.removeClass('check');
+    ac.attr({'checked':true});
+    ac.removeClass('check');
   }else{
     ac.attr({'checked':false});
     ac.removeClass('check');
   }
 };
+
+//=====================================
+//각각의 요소 클릭-------------------------------
+var EachCk = function(){
+     
+  var nowState;
+  for(var i = 0; i < inputcheckList.length; i++){
+    var hasCheck = inputCheckList[i].hasClass('check') == false;
+    if(hasCheck){nowState = false; break;} else {}
+  }
+}
+var ar = [1,2,3,4,5,6,7,8,9];
+//$.each()
+
+//$('input[type="checkbox"]').not('#allCheck').on('click');
+
+
+//ar.forEach(function(d){
+//  console.log(d);
+//});
+//
+//for (var i=0 ; ㅑ < ar.length; i++){
+//  console.log(ar[i]);
+//}
+
+//일일이 설정해줘야하는 거 for /알아서 각각 처리 forEach (오로지 배열요소만 선택한다.)
 
 ac.on('click',function(){
   $('input[type="checkbox"]').on('click', function(){
@@ -103,9 +130,10 @@ ac.on('click',function(){
           ac.attr({'checked':true});
           ac.addClass('check');
               }
-    }
-  };
+          }
+        } 
 });
-
+});
+//$.each() : 선택자 여러개를 각가 수행하게 만들기위한 jQuery
 
 })(jQuery);

@@ -32,7 +32,9 @@ fieldset{
 }
 */
 
-input[type="checkBox"] { position: absolute; z-index: -1; top: 0; left:0; 
+input[type ="checkBox"] { 
+  position: absolute; z-index: -1; 
+  width:0; height:0; 
 overflow: hidden;}
 
 
@@ -83,7 +85,8 @@ input[type="checkbox"]:focus +
   outline: 2px dotted #00c850;
 }
   
-input[type="checkbox"].check + .check_area >label:before  { color:#f07; }
+input[type="checkbox"].check + 
+.check_area >label:before  { color:#f07; }
 
 /*
 .require_check .check_area > label:after { content:"(필수)"; font-size:0.8rem; color:#070;)
