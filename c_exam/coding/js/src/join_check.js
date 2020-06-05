@@ -34,11 +34,77 @@ tl.load('../terms/termsLocation.txt');
 ta.load('../terms/termsAlert.txt');
 //-------------====================================
 
+var inputcheckList = [ts, tp, tl, ta];
+var inputCk = $(input[type="checkbox"]);
 ac.on('click',function(e){
-  e.preventDafault();
-  var acAttr = ac.is(':checked') == 'checked';
-  
-  console.log(acAttr);
+  var acAttr = ac.is('.checked');
+
+
+  if(acAttr){
+    //ac.attr({'checked':'checked'});
+    ac.attr({'checked':true});
+    ac.addClass('check');
+    ts.attr({'checked':true});
+    tp.attr({'checked':true});
+    tl.attr({'checked':true});
+    ta.attr({'checked':true});
+    
+    inputCk.addClass('check');
+    inputCk.attr({'checked':true});
+    
+  }else{
+    //ac.attr({'checked':'checked'});
+   // ac.attr({'checked':false});
+   // ac.removeClass('check');
+   // ts.attr({'checked':false});
+   // tp.attr({'checked':false});
+   // tl.attr({'checked':false});
+   // ta.attr({'checked':false});
+   inputCk.removeClass('check');
+   inputCk.attr({'checked':false});
+ // console.log(acAttr);
+};
+});
+//===========================================
+var allState;
+var AllCk = function(state){
+  if(state === true){
+    inputCk.attr({'checked':true});
+    inputCk.removeClass('check');
+  }else{
+    ac.attr({'checked':false});
+    ac.removeClass('check');
+  }
+};
+
+ac.on('click',function(){
+  $('input[type="checkbox"]').on('click', function(){
+   // console.log($(this));
+    var nowCk = $(this).is(':checked');
+  console.log(nowCk);
+
+  AllCk(nowCk);
+
+    if(nowCk === false){
+      $(this).attr({'checked':false});
+      $(this).removeAttr('check');
+
+      
+    }else{
+      ac.attr({'checked':true});
+      ac.removeClass('check');
+
+      for(var i=0; i< inputcheckList.length; i++){
+        if(inputcheckList[i] == false){
+          ac.attr({'checked': false});
+          ac.removeClass('check');
+          break;
+        }else{
+          ac.attr({'checked':true});
+          ac.addClass('check');
+              }
+    }
+  };
 });
 
 
