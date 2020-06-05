@@ -35,16 +35,9 @@ margin-bottom: 1rem;
 
 
 
-
-
-
-
-
-
-
 .joinBox dl{
-  width:100%; height:78px;
-  margin-bottom: 60px;
+  width:100%; height: auto;;min-height:78px; 
+  margin-bottom: 16px;
  
 }
 
@@ -52,11 +45,11 @@ margin-bottom: 1rem;
   margin-bottom: 0;
 }
 
-.confirm_text.error .end_icon,
-.confirm_text.error .confirm_text{ color:#d00;}
+.joinBox dl.error .end_icon,
+.joinBox dl.error .confirm_text{ color:#d00;}
 
-.confirm_text.success .end_icon,
-.confirm_text.error .confirm_text{ color:#0d0;}
+.joinBox dl.success .end_icon,
+.joinBox dl.error .confirm_text{ color:#0d0;}
 
 
 
@@ -68,17 +61,15 @@ margin-bottom: 1rem;
 
 .input_area{
   width:100%; height: 50px; 
-  background-color: #caa;
+  background-color: #fff;
   padding-right:10px ;
   border:1px solid #dadada;
   box-sizing: border-box;
-  background-color: #fff;
-}
+
+}s
 
 
-.end_icon > span{ display: none;
-  display: inline-block;
-}
+.end_icon > span{ display: none;}
 .input_area.error strong>span{
   display: inline-block; color: #d00;
 }
@@ -87,7 +78,7 @@ margin-bottom: 1rem;
 
 .input_area div{
   float: left;
-  padding: 10px;
+  padding: 10px; box-sizing: border-box;
   width: 100%; height: 100%;
 }
 
@@ -112,7 +103,28 @@ margin-bottom: 1rem;
 }
 
 
+.user_certi .input_area{
+  margin-bottom:10px;
+}
 
+.user_certi .input_area:last-of-type{
+  margin-bottom:0;
+
+}
+
+.confirm_send .input_area{
+  height: 60px;
+  padding-right: 0;
+}
+
+.confirm_send .input_area input{
+  cursor: pointer;
+  background-color: #03c75a;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 0;
+  text-shadow: 0.1rem 0.1rem 0.3rem #171717;
+} 
 
 .input_area input,
 .input_area select {
@@ -125,13 +137,11 @@ margin-bottom: 1rem;
 
 
 
-.input_area input:focus{
+.input_area input:focus,
+.input_area select:focus{
   border:2px solid #333;
 }
 
-.input_area strong{
-  float: right;
-}
 
 .end_icon{
   float: right;
@@ -159,16 +169,3 @@ margin-bottom: 1rem;
   color:#777;
 }
 
-.confirm_send .input_area{
-  height: 60px;
-  padding-right: 0;
-}
-
-.confirm_send .input_area input{
-  cursor: pointer;
-  background-color: #03c75a;
-  color: #fff;
-  font-size: 2rem;
-  border-radius: 0;
-  text-shadow: 0.1rem 0.1rem 0.3rem #171717;
-} 
