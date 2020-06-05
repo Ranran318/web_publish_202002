@@ -11,7 +11,13 @@
   var tlTerms = tl.nextAll('.terms').eq(0);
   var taTerms = ta.nextAll('.terms').eq(0);
   
-  
+  /* 외부파일 불러오는 방법 -간편성 */
+tsTerms.load('../terms/termsService.html');
+tpTerms.load('../terms/termsPrivacy.txt');
+tlTerms.load('../terms/termsLocation.txt');
+taTerms.load('../terms/termsAlert.txt');
+
+
   /* 편한 것.
   var termsService;
 $.ajax({
@@ -25,35 +31,44 @@ $.ajax({
   }
 });
 ts.append(termsService);
-
 */
-/* 외부파일 불러오는 방법 -간편성 */
-ts.load('../terms/termsService.html');
-tp.load('../terms/termsPrivacy.txt');
-tl.load('../terms/termsLocation.txt');
-ta.load('../terms/termsAlert.txt');
-//-------------====================================
 
+//-------====================================
 var inputCk = $('input[type="checkbox"]');
-var inputcheckList = [ts, tp, tl, ta];
+var inputCheckList = [ts, tp, tl, ta];
 
+//전체  동의 체크 사항 ----------------------------------
 ac.on('click',function(e){
-  var acAttr = ac.is('.checked');
-
+  var acAttr = ac.is(':checked');
+  AllCk(acAttr);
 
   if(acAttr){
     //ac.attr({'checked':'checked'});
-    ac.attr({'checked':true});
-    ac.addClass('check');
-    ts.attr({'checked':true});
-    tp.attr({'checked':true});
-    tl.attr({'checked':true});
-    ta.attr({'checked':true});
-    
     inputCk.addClass('check');
     inputCk.attr({'checked':true});
-    
   }else{
+    
+    inputCk.removeClass('check');
+    inputCk.attr({'checked':false});
+  }
+});
+//----------------------------------------
+
+var allState;
+var AllCk = function(state){
+  if(state === true){
+    
+    ac.attr({'checked':true});
+    ac.addClass('check');
+  }else{
+    
+    ac.attr({'checked':false});
+    ac.removeClass('check');
+  }
+};
+
+
+//--------------------------------
     //ac.attr({'checked':'checked'});
    // ac.attr({'checked':false});
    // ac.removeClass('check');
@@ -61,34 +76,52 @@ ac.on('click',function(e){
    // tp.attr({'checked':false});
    // tl.attr({'checked':false});
    // ta.attr({'checked':false});
-   inputCk.removeClass('check');
-   inputCk.attr({'checked':false});
+ 
  // console.log(acAttr);
-};
-});
-//===========================================
-var allState;
-var AllCk = function(state){
-  if(state === true){
-    ac.attr({'checked':true});
-    ac.removeClass('check');
-  }else{
-    ac.attr({'checked':false});
-    ac.removeClass('check');
-  }
+
+//각각의 상태 파악 --------------------------------
+var EachCk = function(){
+   var nowState;
+   for(var i=0; i< inputCheckList.length; i++){
+              var hasCheck = inputCheckList[i].hasClass('check') == false;
+              if(hasCheck){ nowState = false; break;}else {nowState = true;}
+   }
+   return nowState;
 };
 
 //=====================================
 //각각의 요소 클릭-------------------------------
-var EachCk = function(){
-     
-  var nowState;
-  for(var i = 0; i < inputcheckList.length; i++){
-    var hasCheck = inputCheckList[i].hasClass('check') == false;
-    if(hasCheck){nowState = false; break;} else {}
-  }
-}
-var ar = [1,2,3,4,5,6,7,8,9];
+
+// $.each() : 선택자 여러개를 각각 수행하게 만들기위한 jQuery 반복수행구문(for 와 유사)
+// $('input[type="checkbox"]').not('#allCheck).on('click' ...)
+
+$.each(inputCheckList, function(data){
+  $(this).on('click', function(e){
+         var thisIt = $(this);
+         var nowCk = thisIt.is(':checked');
+
+         // 선택요소에 대해 체크상태 파악
+         if (nowCk === false){
+           thisIt.attr({'checked':false});
+           thisIt.removeClass('check');
+         }else{
+           thisIt.attr({'checked':false});
+           thisIt.addClass('check');
+
+           allState = false;
+         }
+    //각각 상태 파악,
+    allCk = EachCk();
+    //하나라도 false 처리되면 false 를 반환하여, 전체 해제
+    //true를 반환시 전체체크
+    AllCk(allCk);
+  });
+});
+
+
+
+
+//var ar = [1,2,3,4,5,6,7,8,9];
 //$.each()
 
 //$('input[type="checkbox"]').not('#allCheck').on('click');
@@ -104,36 +137,13 @@ var ar = [1,2,3,4,5,6,7,8,9];
 
 //일일이 설정해줘야하는 거 for /알아서 각각 처리 forEach (오로지 배열요소만 선택한다.)
 
-ac.on('click',function(){
-  $('input[type="checkbox"]').on('click', function(){
-   // console.log($(this));
-    var nowCk = $(this).is(':checked');
-  console.log(nowCk);
 
-  AllCk(nowCk);
+//-----------------
+//확인버튼 클릭시 체크사항
+$('[type="submit"]').on('click', function(e){
+  e.preventDefault();
 
-    if(nowCk === false){
-      $(this).attr({'checked':false});
-      $(this).removeAttr('check');
 
-      
-    }else{
-      ac.attr({'checked':true});
-      ac.removeClass('check');
-
-      for(var i=0; i< inputcheckList.length; i++){
-        if(inputcheckList[i] == false){
-          ac.attr({'checked': false});
-          ac.removeClass('check');
-          break;
-        }else{
-          ac.attr({'checked':true});
-          ac.addClass('check');
-              }
-          }
-        } 
 });
-});
-//$.each() : 선택자 여러개를 각가 수행하게 만들기위한 jQuery
 
 })(jQuery);
