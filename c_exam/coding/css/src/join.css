@@ -3,6 +3,7 @@
 
 #wrap{
   width: 100px; height: auto;
+  margin: auto;
   min-height: 900px;
   padding-top: 3rem;
   padding-bottom: 10rem;
@@ -46,10 +47,10 @@ margin-bottom: 1rem;
 }
 
 .joinBox dl.error .end_icon,
-.joinBox dl.error .confirm_text{ color:#d00;}
+.joinBox dl.error .confirm_text{ display:block; color:#d00;}
 
 .joinBox dl.success .end_icon,
-.joinBox dl.error .confirm_text{ color:#0d0;}
+.joinBox dl.error .confirm_text{ display:block; color:#0d0;}
 
 
 
@@ -60,6 +61,7 @@ margin-bottom: 1rem;
 }
 
 .input_area{
+  position: relative;
   width:100%; height: 50px; 
   background-color: #fff;
   padding-right:10px ;
@@ -128,7 +130,7 @@ margin-bottom: 1rem;
 
 .input_area input,
 .input_area select {
-  
+  display: block;
   width: 100%; height: 100%;
   box-sizing: border-box;
   border:0; /* === none;*/
@@ -159,6 +161,10 @@ margin-bottom: 1rem;
 .end_icon::before{
   color: inherit;
 }*/
+
+
+[for="mobilecerti"]{display: block; width:100%; height:100%; opacity:0.3;}
+#mobileCerti{position: static; width: 0; height:0; overflow:hidden; display: none;}
 
 /*-----------------------*/
 .confirm_text{
