@@ -32,7 +32,7 @@ miniBtnnext.on('click',function(){
 		proLiLen = productLi.length;
 		
 	for( ; PL < 4 ; PL+=1){productLi.stop().fadeIn()}
-	  else{ productLidiff.stop().fadeout()}
+	   productLidiff.stop().fadeout()
 
 });
 //===============================================
