@@ -1,109 +1,115 @@
+/* device : 1920px 기준 입니다. */
 
-@charset "UTF-8";
-
-/* brain_partners.css */
-
-/* main.css */
-
-.middle_name {text-align: center;}
+@media screen and (min-width: 1920px) {
+  
+  .middle_name {text-align: center;}
 
 
+/* haedBox */
+#headBox{
+  position: absolute; top:0px; z-index: 1000;
+  width: 1920px;  height:60px; 
+  position: relative;
+  border-left: 1px solid #b3a048; 
+  border-right: 1px solid #b3a048; 
+  border-bottom: 1px solid #b3a048;
+  background-color:#fff;
 
-
-/* ===== //wrap ====================================== */
-#wrap{position:relative;
-			margin:auto;
-			min-width:100%; height:auto;}
-/* ===== //wrap ====================================== */
-
-
-
- 
-/* ===== //headBox ====================================== */
-#headBox{position: relative; 
-	width:1920px; height:60px; 
-	background-color:#fff;}
-
-.logoBox {position: absolute; top:0; z-index: 100;
-	        margin-left:40px; 
-	        box-sizing:border-box; 
-					width:222px; height: 167px; 
-					background-color:rgba(255, 255, 255, 0);
-		background-image: url('../../img/brain_img/main/1x/logo_text.png');
-		background-repeat: no-repeat;
-		background-position:0 0;
 }
 
 
 .gnbBox {
-	      float: left;
-	      margin:auto;
-	      padding-left:354px;
-	      box-sizing: border-box;  
-				width:1920px; height:auto;}
+  margin:auto;
+  padding-left:200px;
+  box-sizing: border-box; 
+  width:1920px; height:60px;
+  border: 1px solid #b3a048; 
+}
 
-.gnbBox ul { 
-	position: absolute; top:0px; z-index:20;
-	width: 1400px; height: 300px;
+.gnbBox ul {  
+  margin:auto;
+width: 1400px; height: 300px;
+/*
+border: 1px solid #b3a048; 
+background-color: rgba(255,255,255,0.7);
+*/
 }
 
 
-.gnbBox li {float: left; 
-	          padding:17px; margin-right: 74px; 
-	          box-sizing: border-box; text-align: center;}
 
-.menu_01.action ,.menu_07.action {width: 100px; height: 60px;}					
+.gnbBox li {
+  float: left; display: block; 
+      padding:17px; margin-right: 74px; 
+      box-sizing: border-box; text-align: center;}
+
+.menu_01.action ,.menu_06.action, .menu_07.action {
+  width: 100px; height: 60px;
+}					
 .menu_02.action ,.menu_03.action {width: 116px; height: 60px;}
 .menu_04.action {width: 146px; height: 60px;}					
-.menu_06.action {width: 126px; height: 60px;}
 .menu_05.action {width: 170px; height: 60px;}
 
 
-.gnbBox dd {
-	display:none;
-	margin-top: 20px;
-	width:150px; height: auto;
-  line-height: 40px;
+.gnbBox dl{
+  margin:auto;
+  width: 100%; height: auto;
 }
 
-.gnbBox dt.action :hover,
-.gnbBox dt.action :focus {
-	border: 1px solid #b3a048;
- color: #b3a048;
+.gnbBox dl:hover,
+.gnbBox dl:focus {
+  background-color: #fff;
+}
+
+.gnbBox dd {
+  display: none;
+position: absolute; z-index: 10;
+margin-top: 20px;
+width:150px; height: auto;
+line-height: 40px;
+color:#333;
+}
+
+.gnbBox dt:hover,
+.gnbBox dt:focus {
+display: block;
+border-left: 1px solid #b3a048;
+border-right: 1px solid #b3a048;
+color: #b3a048;
 }
 
 .guidesign a{
-	display: block; width: 100px; height:230px;
+display: block; width: 100px; height:230px;
 }
 
 .guidesign i{
-	font-size: 3rem;
-	color:#333;
+font-size: 3rem;
+color:#333;
 }
 
 
-/* #viewBox ==================================== */
+/* ==================================== */
 #viewBox {width:1920px; height:832px; 
-					background-color:#fff;
-					background-image:url('../../img/brain_img/main/1x/viewBox_bgpcfull.png'); 
-					background-repeat: no-repeat;
-					background-position:50% 50%;
+    background-color:#fff;
+    background-image:url('../../img/brain_img/main/1x/viewBox_bgpcfull.png'); 
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+ 
 }
 
 .new_name {float: left;
-						 margin-left:312px; padding-top:74px; 
-						 color:#fff; font-size:36px}
+       margin-left:312px; padding-top:74px; 
+       color:#fff; font-size:36px}
 
 .brain_partners {
-	          margin-left:649px; padding-top:225px; 
-						color:#fff; text-transform: uppercase;
-						font-weight: bold;
-						font-size:60px;
-						letter-spacing: 14px;
-					  }
+      margin-left:649px; padding-top:225px; 
+      color:#fff; text-transform: uppercase;
+      font-weight: bold;
+      font-size:60px;
+      letter-spacing: 14px;
+      }
 
 /* ===== //headBox ====================================== */
-
+    
 
 
 
@@ -112,7 +118,9 @@
 	
 	width:1920px; height:668px; background-color:#fff;}
 
-#introBox > h2 {padding:15px;}
+#introBox > h2 {
+  margin: auto;
+  padding:15px;}
 
 .intro_container {
 	     float: left;
@@ -268,7 +276,7 @@
 
 /* 애널리스트 - 자문위원단*/
 .card_01, .card_04, .card_07{
-	position:absolute; top: 40px; z-index: 500;
+	position:absolute; top: 40px; z-index: 300;
 	float: left;
 	width:302px; height: 302px;
 }
@@ -484,10 +492,5 @@ background-size:330px 366px;}
  
 }
 
-/*
-#footBox > h2 {
-	       width:165px; height:128px; background-color: #fff;
 
-}  
-*/
-/* ===== //footBox ====================================== */
+}
