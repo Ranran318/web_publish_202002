@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/* brain_partners.css */
+
+@import url("../device/p1_base.css");
+@import url("../device/p1_mobile.css");
+@import url("../device/p1_tablet.css");
+@import url("../device/p1_pc.css");
+@import url("../device/p1_pcfull.css");
+
