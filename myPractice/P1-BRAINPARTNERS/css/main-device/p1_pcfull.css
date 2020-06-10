@@ -17,6 +17,10 @@
 
 }
 
+h1 > a {
+	display: block;
+	width:222px; height: 167px;
+}
 
 .gnbBox {
   margin:auto;

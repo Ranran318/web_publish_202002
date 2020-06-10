@@ -1,13 +1,23 @@
 /* infopage_base.css*/
 
+/* main.css */
+
+.middle_name {text-align: center;}
+
+
 #wrap{position:relative;
-  width:1920px; height: auto;
+  width:100%; height: auto;
   margin:auto;
  }
 
   #headBox{position: relative; 
-    width:100%; height:60px; 
+    width:100%; height:60px;
     background-color:#fff;}
+
+    h1 > a {
+      display:block; 
+      width: 222px; height: 167px;
+    }
 
 .logoBox {
   position: absolute; top:0; z-index: 100;
@@ -38,20 +48,21 @@ background-position:0 0;
 
 
 /* ===== //analysisBox  ====================================== */
-#analysisBox{
+#Box{
 	float: left; position: relative; 
 	width:100%; height:788px;   
   background-color: #fff;
 }
-
-#analysisBox h2{
+/*
+#containerBox h2{
 	margin-top: 2px;
 }
+*/
 
 
 
 /* ===== //docBox ====================================== */
-#docBox{position: relative; float:left; 
+#Box{position: relative; float:left; 
 	width:100%; height:548px;
 	border-top:1px solid#141A34;
 }
@@ -60,10 +71,6 @@ background-position:0 0;
 #docBox > h2 {
 	margin-top:109px;
 }
-
-
-
-
 
 
 /* ===== //footBox ====================================== */
