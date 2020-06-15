@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* sub_infopage.css */
+
+@import url("../infopage_device/infopage_base.css");
+@import url("../infopage_device/infopage_mob.css");
+@import url("../infopage_device/infopage_pc.css");
+@import url("../infopage_device/infopage_pcfull.css");

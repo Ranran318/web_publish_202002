@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@media screen and (min-width: 1920px) {
 
 /* brain_partners.css */
 
@@ -135,4 +135,5 @@
  color: #fff ;
  text-align: justify;
  
+}
 }

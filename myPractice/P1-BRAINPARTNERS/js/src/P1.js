@@ -16,7 +16,7 @@ var docSlideLi = docSlideUl.find('li');
    
     var winScroll = $(this).scrollTop();
     if( headOffset < winScroll){ 
-      $('#headBox').css({'position':'fixed', 'bottom':'auto', 'top':0});
+      $('#headBox').css({'position':'fixed', 'top':0});
       }
    });	
   

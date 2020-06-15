@@ -1,0 +1,10 @@
+/* device : width: 320px 기준. */
+@media screen 
+     and (max-width:639px) {
+
+
+
+  #wrap {
+   background-color: #acf;}
+
+}
