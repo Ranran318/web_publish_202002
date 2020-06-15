@@ -42,4 +42,55 @@ import * as jQuery from "../base/jquery-ui.js";
 		else{ j=0; 	imgArea.find('img').eq(j).show();}
 	});
 
+	//-----------------------------------
+	var win = $(window);
+	var winH = win.outerHeight();
+	var splitText_01 = $('.split_text_01');
+	var stT01_Img = splitText_01.find('img');
+	var spT01Offset = splitText_01.offset().top;
+
+	stT01_Img.css({position:'absolute', top:0, left:0, width:'100%', height:'auto',});
+	var imgP = [];
+	for(var k=0; k < 42; i++){
+		imgP[k] = -380 * k;
+
+	}
+
+	console.log(imgP);
+
+
+var l=0;
+var stIterval = {};
+var stIterval = setInterval(function(){
+   stIterval = setInteral(function(){
+		 l += 1
+		 var stTIterval = setInterval(function(){
+			l+=1;
+			stT01_Img.animate({top:imgP[l]},3000);
+
+			if(l >= 42){clearInterval(stIterval),100};
+	 })
+	}
+	)
+	
+});
+
+	win.on('scroll', function(e){
+		var st = $(this).scrollTop() + (winH/2);
+
+		if(st >= spT01Offset){
+      SplitTextInterval();		
+	}
+	
+});
+
+//**문제점(수정해야할 사항) : 스크롤시 setInterval 기능이 반복수행됨.
+
+var arr2 = [[],[]]; //앞에건 x 뒤에껀 y.
+for(var i=0; i<4; i++){arr2[0][i] = 429 * -i;}
+for(var i=0; i<11; j++){arr2[0][j] = 378 * -j;}
+console.log(arr2);
+
+
+
 })(jQuery);
