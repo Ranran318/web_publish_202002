@@ -102,6 +102,9 @@ for(var i=0; i<11; j++){arr2[1][j] = 378 * -j;}
 var split_text_02 = $('.split_text_02');
 var splitText02_offset = split_text_02.offset().top;
 
+
+
+
 var s2 = 0;
 var s2_01 = 0;
 var s2_02 = 0;
@@ -116,6 +119,10 @@ var s2_02 = 0;
 //};
 
 //ForFn();
+
+
+
+
 
 
 var s2 = 0;
