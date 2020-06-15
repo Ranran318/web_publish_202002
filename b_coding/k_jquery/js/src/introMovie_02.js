@@ -36,7 +36,7 @@ import * as jQuery from "../base/jquery-ui.js";
                 						clearInterval( intervalImg ); 
                 					  }	
                     }, 30);
-
+									
 };// SetIntervalImg
 
 	//SetIntervalImg();
@@ -86,12 +86,69 @@ var SplitTextInterval = function(){
 });
 
 //**문제점(수정해야할 사항) : 스크롤시 setInterval 기능이 반복수행됨.
+// setInterval 중복 조건처리기능을 반복수행하지 못하게 해서 처리했음.
+//---------------------------------------------------------------------
+// 행/열 방식으로 이미지를 배치한 경우
 
+//x,y값에 따른 배치
 var arr2 = [[],[]]; //앞에건 x 뒤에껀 y.
-for(var i=0; i<4; i++){arr2[0][i] = 429 * -i;}
-for(var i=0; i<11; j++){arr2[1][j] = 378 * -j;}
-console.log(arr2);
 
+//x값 위치 (가로 429px 간격)
+for(var i=0; i<4; i++){arr2[0][i] = 429 * -i;}
+
+//y값 위치(세로 378px 간격)
+for(var i=0; i<11; j++){arr2[1][j] = 378 * -j;}
+//console.log(arr2);
+var split_text_02 = $('.split_text_02');
+var splitText02_offset = split_text_02.offset().top;
+
+var s2 = 0;
+var s2_01 = 0;
+var s2_02 = 0;
+
+//
+//var ForFn = function(){
+	for( ; s2_01 < 11; s2_01 += 1 ){
+		for(;s2_02 < 4; s2_02 +=1 ){
+			console.log( s2_01, s2_01);
+		}
+	}
+//};
+
+//ForFn();
+
+
+var s2 = 0;
+var scroll2Bool = true;
+var scroll2Go;
+
+var Set2interval = function(){
+	if(scroll2Bool){
+		scroll2Bool = false;
+		scroll2Go = setInterval(function(){
+							 s2 += 1;
+							 console.log(s2);
+							 if(s2 > 15){
+							            clearInterval(scroll2Go); 
+							}
+		},30);
+	}
+};
+
+//화면에 보이는 정도쯤 오면 진행하고 안 보일 때쯤 진행 안 함.
+win.on('scroll', function(){
+	var thisScroll = win.scrollTop();
+	var thisScrollPlus = thisScroll + (winH/3*2);
+	if(thisScrollPlus >  splitText02_offset){
+	     Set2interval();
+	}else if( (thisScroll-1000) < splitText02_offset){
+		 clearInterval(scroll2Go);
+		 s2 = 0;
+		 scroll2Bool = true;
+	}
+});
+
+//값을 4로 나누면..
 
 
 })(jQuery);
