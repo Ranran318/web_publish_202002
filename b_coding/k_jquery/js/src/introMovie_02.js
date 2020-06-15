@@ -13,8 +13,8 @@ import * as jQuery from "../base/jquery-ui.js";
 	var imgUrl;
 
 	for(var i=0; i < imgLen; i++){
-		imgUrl = '../img/introMovie/intro_movie' + (i + 1) ;
-		imgArea.append('<img src="'+ imgUrl + '.png" alt ="내용 입력">');
+	      	imgUrl = '../img/introMovie/intro_movie' + (i + 1) ;
+	      	imgArea.append('<img src="'+ imgUrl + '.png" alt ="내용 입력">');
 
 	}
 
@@ -22,24 +22,28 @@ import * as jQuery from "../base/jquery-ui.js";
 	imgArea.find('img').eq(0).show();
 	imgArea.css({overflow:'hidden'});
 
-	var j=0, intervalImg;
+	var j=0;
+	var intervalImg;
+
 	var SetIntervalImg = function(){
+                		intervalImg = setInterval(function(){
+                			 j += 1;
+                		//console.log(j);
+                		imgArea.find('img').eq(j).show();
+                		imgArea.find('img').eq(j).siblings().hide();
+                
+                		if(j >= imgLen){ 
+                						clearInterval( intervalImg ); 
+                					  }	
+                    }, 30);
 
-		intervalImg = setInterval(function(){
-			 j += 1;
-		//console.log(j);
-		imgArea.find('img').eq(j).show();
-		imgArea.find('img').eq(j).siblings().hide();
-		if(j >= imgLen){ clearInterval(intervalImg) };	
-}, 20);
-
-}// SetIntervalImg
+};// SetIntervalImg
 
 	//SetIntervalImg();
 	$(window).on('scroll',function(){
-		var st = $(this).scrollTop();
-		if(st >= 50 ){	SetIntervalImg();}
-		else{ j=0; 	imgArea.find('img').eq(j).show();}
+	        	var st = $(this).scrollTop();
+	        	if(st >= 50 ){	SetIntervalImg();}
+	    
 	});
 
 	//-----------------------------------
@@ -49,7 +53,7 @@ import * as jQuery from "../base/jquery-ui.js";
 	var stT01_Img = splitText_01.find('img');
 	var spT01Offset = splitText_01.offset().top;
 
-	stT01_Img.css({position:'absolute', top:0, left:0, width:'100%', height:'auto',});
+	stT01_Img.css({position:'absolute', top:0, left:0, width:'100%', height:'auto'});
 	var imgP = [];
 	for(var k=0; k < 42; i++){
 		imgP[k] = -380 * k;
@@ -57,29 +61,26 @@ import * as jQuery from "../base/jquery-ui.js";
 	}
 
 	console.log(imgP);
-
-
 var l=0;
-var stIterval = {};
-var stIterval = setInterval(function(){
-   stIterval = setInteral(function(){
-		 l += 1
-		 var stTIterval = setInterval(function(){
-			l+=1;
-			stT01_Img.animate({top:imgP[l]},3000);
 
-			if(l >= 42){clearInterval(stIterval),100};
-	 })
-	}
-	)
+var stIterval = {};
+var SplitTextInterval = function(){
+   stIterval = setInteral(function(){
+		           l += 1
+		          	stT01_Img.css({top:imgP[l]},3000);
+          
+								if(l >= 42){clearInterval(stIterval);}
+	 },100);
+	 };
 	
-});
+	
+	
+
 
 	win.on('scroll', function(e){
-		var st = $(this).scrollTop() + (winH/2);
-
-		if(st >= spT01Offset){
-      SplitTextInterval();		
+		     var st = $(this).scrollTop() + (winH/2);
+		     if(st >= spT01Offset){
+                  SplitTextInterval();		
 	}
 	
 });
@@ -88,7 +89,7 @@ var stIterval = setInterval(function(){
 
 var arr2 = [[],[]]; //앞에건 x 뒤에껀 y.
 for(var i=0; i<4; i++){arr2[0][i] = 429 * -i;}
-for(var i=0; i<11; j++){arr2[0][j] = 378 * -j;}
+for(var i=0; i<11; j++){arr2[1][j] = 378 * -j;}
 console.log(arr2);
 
 
