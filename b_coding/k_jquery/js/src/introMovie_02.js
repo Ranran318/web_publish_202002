@@ -24,8 +24,11 @@ import * as jQuery from "../base/jquery-ui.js";
 
 	var j=0;
 	var intervalImg;
+	var firstTrue = true;
 
 	var SetIntervalImg = function(){
+		              if(firstTrue){
+										firstTrue = false;
                 		intervalImg = setInterval(function(){
                 			 j += 1;
                 		//console.log(j);
@@ -35,17 +38,19 @@ import * as jQuery from "../base/jquery-ui.js";
                 		if(j >= imgLen){ 
                 						clearInterval( intervalImg ); 
                 					  }	
-                    }, 30);
+										}, 30);
+									}
 									
 };// SetIntervalImg
 
-	//SetIntervalImg();
+	SetIntervalImg();
+	/*
 	$(window).on('scroll',function(){
 	        	var st = $(this).scrollTop();
 	        	if(st >= 50 ){	SetIntervalImg();}
 	    
 	});
-
+*/
 	//-----------------------------------
 	var win = $(window);
 	var winH = win.outerHeight();
@@ -54,23 +59,27 @@ import * as jQuery from "../base/jquery-ui.js";
 	var spT01Offset = splitText_01.offset().top;
 
 	stT01_Img.css({position:'absolute', top:0, left:0, width:'100%', height:'auto'});
+	
 	var imgP = [];
-	for(var k=0; k < 42; i++){
+	for(var k=0; k < 42; k++){
 		imgP[k] = -380 * k;
 
 	}
 
-	console.log(imgP);
-var l=0;
 
-var stIterval = {};
-var SplitTextInterval = function(){
-   stIterval = setInteral(function(){
+var l=0;
+var Go= {};
+var Got = true;
+
+var SetI = function(){
+	if(Got){
+		Got = false;
+		Go = setInteral(function(){
 		           l += 1
-		          	stT01_Img.css({top:imgP[l]},3000);
-          
-								if(l >= 42){clearInterval(stIterval);}
-	 },100);
+							 stT01_Img.css({top:imgP[l]});
+							 if(l > 42) { clearInterval(Go); }
+							 }, 30);		
+	 }
 	 };
 	
 	
@@ -78,9 +87,14 @@ var SplitTextInterval = function(){
 
 
 	win.on('scroll', function(e){
-		     var st = $(this).scrollTop() + (winH/2);
-		     if(st >= spT01Offset){
-                  SplitTextInterval();		
+		var st = $(this).scrollTop();
+		if(st + (winH/2) >= spT01Offset){
+			SetI();
+		}else if(st < winH/2){
+			clearInterval(Go);
+			l=0;
+			stT01_Img.css({top:imgP[l]});
+			Got = true;	
 	}
 	
 });
@@ -103,44 +117,37 @@ var split_text_02 = $('.split_text_02');
 var splitText02_offset = split_text_02.offset().top;
 
 
-
+var s2 = (arr2[0].length * arr2[1].length) -2;
+// console.log(s2);
 
 var s2 = 0;
 var s2_01 = 0;
 var s2_02 = 0;
-
-//
-//var ForFn = function(){
-	for( ; s2_01 < 11; s2_01 += 1 ){
-		for(;s2_02 < 4; s2_02 +=1 ){
-			console.log( s2_01, s2_01);
-		}
-	}
-//};
-
-//ForFn();
-
-
-
-
-
-
-var s2 = 0;
+var count = 0;
+ 
 var scroll2Bool = true;
 var scroll2Go;
-
-var Set2interval = function(){
+var Set2Interval = function(){
 	if(scroll2Bool){
 		scroll2Bool = false;
 		scroll2Go = setInterval(function(){
-							 s2 += 1;
-							 console.log(s2);
-							 if(s2 > 15){
-							            clearInterval(scroll2Go); 
-							}
-		},30);
+			var l = parseInt(count / 4);
+			var l2 = parseInt(count % 4);
+			count += 1;
+			// 나누기 4를 통해 몫과, 나머지값을 구하고, 
+			// 나머지값을 이용하여 x값의 위치를 처리 후
+			// 몫의 값을 이용하여  y값의 위치를 처리
+			// console.log(l2, l);
+			splitText02Img.css({left:arr2[0][l2] + 'px', top:arr2[1][l] + 'px'});
+			if(count >= s2){	clearInterval(scroll2Go);		}
+		}, 30);
 	}
 };
+
+
+
+
+
 
 //화면에 보이는 정도쯤 오면 진행하고 안 보일 때쯤 진행 안 함.
 win.on('scroll', function(){
@@ -150,9 +157,15 @@ win.on('scroll', function(){
 	     Set2interval();
 	}else if( (thisScroll-1000) < splitText02_offset){
 		 clearInterval(scroll2Go);
-		 s2 = 0;
-		 scroll2Bool = true;
+		 count = 0;
+		splitText02Img.css({
+			left: arr2[0][0] + 'px',
+			top: arr2[1][0] + 'px'
+		});
+		scroll2Bool = true;
+
 	}
+
 });
 
 //값을 4로 나누면..
