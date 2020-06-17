@@ -1,18 +1,18 @@
 //_variable.scss
 
 $primary : #f07; 
-$sub1 : #acf; 
-$sub2 : #ccf; 
-$white : #fff; 
-$black : #333;
+$sub1    : #acf; 
+$sub2    : #ccf; 
+$white   : #fff; 
+$black   : #333;
 
 $baseLine : 1px solid $black; 
 
 
 //map 만들기 ---------------------------
 $color : #acf;
-$colorList : (#acf, #fac, #aaf, #faa, #F08);
-$colorMap : (blue:#0cf, yellow:#fa0, red: #a00);
+$colorList : (#acf, #fac, #aaf, #faa, #f08);
+$colorMap  : (blue:#0cf, yellow:#fa0, red: #a00);
 
 $baseColor   : ( yellow:ff0, gray:#aaa , black: #333);
 $natureColor : ( yellow:ff0, gray:#ccc , black: #171717);
