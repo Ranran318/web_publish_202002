@@ -7,3 +7,55 @@ $white : #fff;
 $black : #333;
 
 $baseLine : 1px solid $black; 
+
+
+//map 만들기 ---------------------------
+$color : #acf;
+$colorList : (#acf, #fac, #aaf, #faa, #F08);
+$colorMap : (blue:#0cf, yellow:#fa0, red: #a00);
+
+$baseColor   : ( yellow:ff0, gray:#aaa , black: #333);
+$natureColor : ( yellow:ff0, gray:#ccc , black: #171717);
+$fontColor   : ( yellow:#a70, gray:#777, 
+                black: darken(map-get($natureColor, black), 5%));
+$sampleColor : ( yellow: map-get($fontColor, yellow),
+                 gray: map-get($natureColor, gray)); 
+
+
+//---------------------------------------------------------------
+$url : "../../../img/base/";
+
+// font설정
+// font-family
+//$fontLink: 'http://font.google.com/font.woff';
+//$english(기본영어글씨) :
+
+$fontLink  : 'http://font.google.com/font.woff';
+$english  :'myriad pro', 'div', 'arial';
+$korean    : 'malgun gothic', 'noto sans', dotum;
+$otherFont : sans-serif;
+$fontFamily : $english, $korean, $otherFont;
+
+//font-size
+$h1 : 3rem;
+$h2 : 2.5rem;
+$h3 : 2.2rem;
+$h4 : 2rem;
+$h5 : 1.5rem;
+$h6 : 1.2rem;
+$p  : $h6;
+//----------------------------------------
+//background,shadow
+
+$gr_01 : linea-gradient(45deg, nth($colorList,5), nth($colorList,3));
+$shadow_01 :  1rem 1rem 1rem $black;
+$radius_01 : 0.5rem; // 0.5rem0.5rem0.5rem 이렇게 해도 되고. 이런 식으로 
+
+
+#gnb {
+	font-family: $fontFamily;
+}
+
+//$h1
+
+//리셋 scss가 아니라 리셋 css

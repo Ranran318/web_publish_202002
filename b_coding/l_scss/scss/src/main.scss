@@ -1,8 +1,15 @@
 //main.scss
 /* main.css */
 
-@import "../esttiing/variable";
-@import "../page/header";
-@import "../page/footer";
+@import url("../page/header.css");
+@import "../setting/_variable";
 
-@media screen and (max-width : 640px)
+#wrap {
+	@import "../page/header";
+	@import "../page/footer";
+}
+
+@media screen and (max-width:640px) {
+	@import "../page/header";
+	@import "../page/footer";
+}

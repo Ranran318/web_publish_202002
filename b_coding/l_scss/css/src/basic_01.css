@@ -56,7 +56,7 @@
 		- length(변수)      : 리스트형식의 변수의 갯수를 파악
 		- 문법 @for 문과 함께 사용하기에 편리하다
 			(단, 선택자 사용시에는 순서를 입력할대에는 보간법(변수명을 사용)
-
+			
 8. @for 기법
 				@for 임의변수 form 1 throught 포함할 끝 수(작거나 같다){ 기능 수행 }
 				@for 임의변수 form 1 to 끝수의 다음 수 (작다의 의미){ 기능 수행 }
@@ -88,6 +88,10 @@ $li ( 'graph','apple', 'tomato', 'banana', stawberry';
   color: #fac;
 }
 
+#gnb {
+  font-family: "myriad pro", "div", "arial", "malgun gothic", "noto sans", dotum, sans-serif;
+}
+
 #wrap {
   width: 100%;
   height: 100%;
@@ -111,16 +115,20 @@ $li ( 'graph','apple', 'tomato', 'banana', stawberry';
   width: 100%;
   height: 100%;
 }
+
 #gnb > h2 {
   width: 100px;
   height: 100px;
 }
+
 #gnb > h2 > a {
   display: block;
 }
+
 #gnb > h2 > a > span {
   text-align: cetner;
 }
+
 #gnb > h2 > a:hover > span {
   color: #aaa;
 }
@@ -175,9 +183,9 @@ $li ( 'graph','apple', 'tomato', 'banana', stawberry';
 
 #headBox{
 	width: ( 150px / 1920px * 100 ) vw;
-
+	
 	background-color: rgba($primary,0.5);
-
+	
 }#wrap{
 	width:100%; height: 100%;
 	background-color: darken($primary,20%);
