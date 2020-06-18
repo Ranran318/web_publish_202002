@@ -1,0 +1,6 @@
+//basic_03.scss
+/* basic_03.css */
+
+@import "../setting/mixin";
+
+h1 {@include Img('logo.png');}

@@ -1,0 +1,15 @@
+//_mixin.scss
+//mixin은 형태를 미리 만들어놓고 불러오는 형태이다.
+
+$url : '../../img/main/';
+
+@mixin Img($1, $url){
+  background-image:url($url + $i);
+}
+
+@mixin img($i){
+  background-image: url($url + $i);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
