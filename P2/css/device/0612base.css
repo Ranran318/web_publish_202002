@@ -1,0 +1,14 @@
+/* 0612base.css */
+/* base */
+
+
+#wrap {width:100%; 
+  height:auto;}
+/*rwd_03_base.css*/
+
+h1{width: 322px;
+   height: 46px;
+   background-image: url('../../img/forest_logo/img_logo_re_forest.png');
+   background-repeat: no-repeat;
+  background-position: 50% 50%;}
+ 

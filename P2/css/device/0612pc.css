@@ -1,0 +1,12 @@
+/* 0612pc.css */
+
+@media screen
+and (min-width:1024px)
+and (max-width:1439px) {
+
+#viewBox {
+height: 555px;
+height: 34.6875rem;
+}
+/* @media end  */
+}
