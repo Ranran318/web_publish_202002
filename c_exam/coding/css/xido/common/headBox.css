@@ -2,13 +2,14 @@
 
 
 /* #headBox ======================================= */
-#headBox{position:absolute; top:0; left:0; z-index:1500;
+#headBox{
+	position:absolute; top:0; left:0; z-index:1500;
 	width:100%; height:120px;
 	/* padding:30px 0; */
 	padding:30px 90px;
 	/* padding:1.875rem 4.6875vw; */
 	box-sizing: border-box;
-	border-bottom:2px solid #333;
+	border-bottom:1px solid #333;
 	background-color: #fff;
 	box-shadow:0 0 1rem rgba(51,51,51,0.7);
 }
@@ -42,7 +43,7 @@ position: absolute; right:0; top:100%;
 width:100%; height:auto; min-height:700px;
 padding:60px 1.5%; box-sizing: border-box;
 background-color: #f06;
-background-image: linear-gradient(#f06,#26000f 7.2%);
+background-image: linear-gradient(#f06 7%,#26000f 7.2%);
 }
 
 .gnb_menu > h3 {

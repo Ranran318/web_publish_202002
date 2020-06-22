@@ -19,7 +19,7 @@
     <script src="../ie/respond/dist/respond.min.js"></script>
   <![endif]-->
 
-  <title>Document</title>
+  <title>join_check</title>
 </head>
 <body>
   <!-- layout -->
@@ -41,24 +41,26 @@
 
             <fieldset class="require_check">
               <legend>필수 동의 확인</legend>
-              <input type="checkbox" name="termsService" id="termsService" value="네이버이용약관 동의확인" />
+              <input type="checkbox" name="termsService" id="termsService" value="네이버이용약관 동의확인" required />
               <div class="check_area">
                 <!-- <i class="fas fa-check-circle"></i>-->
-                <label for="termsService">네이버 이용약관 동의 <strong>(필수)</strong></label>
+                <label for="termsService">
+                  네이버 이용약관 동의 <strong>(필수)</strong></label>
               </div>
-              <div class="terms"></div>
+              <div class="terms">
 
               </div>
 
-              
 
-               
-              <input type="checkbox" name="termsPrivacy" id="termsPrivacy" value="개인정보 수집 이용 동의" />
+
+              <input type="checkbox" name="termsPrivacy" id="termsPrivacy" value="개인정보 수집 이용 동의" required/>
               <div class="check_area">
                 <!-- <i class="fas fa-check-circle"></i>-->
                 <label for="termsPrivacy">개인정보 수집 및 이용에 대한 안내 <strong>(필수)</strong></label>
                </div>
-               <div class="terms"></div>
+               <div class="terms">
+
+               </div>
             </fieldset>
 
             <fieldset class="option_check">
@@ -68,15 +70,18 @@
                 <!--<i class="fas fa-check-circle"></i>-->
                 <label for="termsLocation">위치정보 이용약관 동의 <strong>(선택)</strong></label>
               </div>
-              <div class="terms"></div>
+              <div class="terms">
+
+              </div>
 
               <input type="checkbox" name="termsAlert" id="termsAlert" value="개인정보 수집 이용 동의" />
               <div class="check_area">
                 <!-- <i class="fas fa-check-circle"></i>-->
                 <label for="termsAlert">이벤트 등 프로모션 알림 메일 수신 <strong>(선택)</strong></label>
               </div>
-              <div class="terms"></div>
+              <div class="terms">
 
+              </div>
             </fieldset>
 
             <fieldset class="send_cancle">

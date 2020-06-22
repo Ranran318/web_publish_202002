@@ -18,47 +18,45 @@
     <script src="../ie/respond/dist/respond.min.js"></script>
   <![endif]-->
 
-  <title>Document</title>
+  <title>login</title>
 </head>
 <body>
   <!-- layout -->
    <div id="wrap">
-      <h1><a href="../html/login.html">로그인 페이지 만들기</a></h1>
+      <h1>로그인 페이지 만들기</h1>
       <div id="loginBox">
           <h2><span class="hidden">로그인 페이지</span></h2>
+
           <form action="#" method="POST">
             <fieldset class="user_input">
-              <legend>user <span>log in</span></legend>
+              <legend>user <span>log in</span><span class="hidden">정보 입력</span></legend>
               <ul>
                 <li>
                   <input type="text" id="userId" neme="userId" value=""
                           placeholder="E-mail or ID" required="required">
-
                   <label for="userId"><i class="fas fa-envelope"></i>
                     <span class="hidden">이메일 형식의 아이디를 입력하세요.</span>
                   </label>
                 </li>
 
                 <li>
-                     <label for="userPw"><i class="fas fa-lock"></i>
-                      <span class="hidden">사용자의 비밀번호를 입력하세요.</span>
-                    </label>
-                    
-                    <input type="password" id="userPW" name="userPw" value=""
-                    placeholder="Password" required="required"> 
+                     <label type="password" id="userPw" name="userPw" value=""
+                        placeholder="Password" required="required">
+                        <label for="userPw><i class="fas fa-lock"></i>
+                                <span class="hidden">사용자의 비밀번호를 입력하세요.</span>
+                     </label>             
                 </li>
-
               </ul>
             </fieldset>
 
             <fieldset class="user_check">
                      <legend class="hidden">확인 및 사용자 정보체크</legend>
                      <div class="send">
-                       <input type="submit" name="sendBtn" value="log in">
+                          <input type="submit" name="sendBtn" value="log in">
                      </div>
-                     <div class="refind">
-                       <a href="#">forgot username</a> / <a href="#">password &#63; </a>
-                     </div>
+                     <p class="refind">
+                       forgot <a href="#">username</a> / <a href="#">password &#63; </a>
+                     </p>
             </fieldset>
           </form>
         
