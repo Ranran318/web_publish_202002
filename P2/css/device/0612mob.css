@@ -1,0 +1,115 @@
+/* 0612mob.css */
+
+
+@media screen
+and (max-width:639px) {
+ 
+#wrap {width:100%;
+  margin:auto; 
+  height:auto;}
+/*rwd_03_base.css*/
+
+h1{
+  padding:18px;
+  margin:auto;
+}
+
+#head_Box {
+position: fixed;  
+top:0;  left:0;
+z-index:1000;
+
+width:100%; 
+height:140px; 
+height:8.75rem;
+min-height: 100px;
+min-height: 6.25rem;
+min-height: 31.25vw;
+
+
+
+background-color: rgba(255,255,255,0.5)}
+
+#navi{
+  padding: 10px 10px;
+  box-sizing: border-box;
+  height:60px;
+  height:3.75rem;
+}
+.gnbBox{
+  float:right;
+  height:40px;
+  height:2.5rem;
+}
+
+
+
+.unbBox{
+  float: left;
+  height:40px;
+  height:2.5rem;
+}
+
+.unbBox dl > dt {
+  display: none;
+
+}
+
+/*==========*/
+
+#viewBox {
+width:100%;
+height: 476px;
+height: 29.75rem;
+background-color: #ba7;}
+
+
+/*==========*/
+#eventBox {
+width:100%; 
+height:660px;
+height:41.25rem;
+height:;
+background-color: #547D77;
+}
+
+/*==========*/
+#newsBox {
+width: 100%;
+background-color: #ccc;
+}
+
+
+
+#story{
+  width:100%;
+  background-color: #957de9;
+}
+
+
+.notice_area{
+  background-color:#95abe9;
+}
+
+
+.more-content{
+  background-color: #95d2e9
+}
+
+/*==========*/
+#footBox {
+width:100%; 
+height:680px;
+height:42.5rem;
+max-height: 639px;
+max-height: 39.9375rem ;
+max-height: 50vw ;
+background-color: #333;
+}
+
+/*
+.address{}
+*/
+
+/* @media end  */
+}

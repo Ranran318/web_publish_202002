@@ -1,0 +1,148 @@
+/* 0612pcfull.css */
+
+@media screen
+and (min-width:1440px)
+ {
+
+#wrap {
+  width: 100%;
+  margin:auto;
+  height: auto;
+  background-color: #ffa;
+}
+/*rwd_03_base.css*/
+/* ============================================================= */
+#headBox{
+  width:100%;  min-width:75vw;
+  height:240px;
+  height:15rem;
+ 
+}
+
+h1{
+  width: 132px;
+  width: 8.25rem;
+  height: 46px;
+  height: 2.875rem;
+   margin:auto;  padding:40px;
+   background-image: url('../../img/forest_logo/img_logo_re_forest.png');
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+  }
+
+
+
+   #navi{
+     position: relative;
+     width: 100%;
+     height:120px;
+     height:7.5rem;
+    background-color:#666;
+   }
+   .gnbBox{
+    float: right;
+    width: 374px;
+    width: 23.375rem;
+    height:34px;
+    height:2.125rem;
+    background-color:#888;}
+
+   .unbBox{
+     float: left; position: absolute; bottom:0;
+    width: 1026px;
+    width: 64.125rem;
+    height:34px;
+    height:2.125rem;
+
+    
+    background-color:#888;}
+
+.unbBox dl > dd{
+  background-color: #fff;
+}
+.gnbtn_01{
+  width: 96px;
+  height: 34px;
+}
+
+.gnbtn_02, .gnbtn_03,
+.gnbtn_04{
+  width: 60px;
+  height: 34px;
+}
+
+.gnbtn_05{
+  width: 50px;
+  height: 34px;
+
+}
+   
+
+
+/* viewBox ================================================*/
+#viewBox{
+  width:100%;
+  height: 475px;
+  height: 29.6875rem;
+}
+
+/* viewBox ================================================*/
+
+
+/* eventBox ================================================*/
+#eventBox{
+  width:100%;
+
+}
+/* eventBox ================================================*/
+
+
+/* newsBox ================================================*/
+#newsBox{
+  width:100%;
+
+}
+/* newsBox ================================================*/
+
+
+/* storyBox ================================================*/
+#storyBox{
+  width:100%;
+
+}
+/* storyBox ================================================*/
+
+
+/* momentBox ================================================*/
+#momentBox{
+  width:100%;
+
+}
+/* momentBox ================================================*/
+
+
+/* memberBox ================================================*/
+#memberBox{
+  width:100%;
+
+}
+/* memberBox ================================================*/
+
+
+/* topjoneBox ================================================*/
+#topjoneBox{
+  width:100%;
+
+}
+/* topjoneBox ================================================*/
+
+
+/* footBox ===============================================*/
+#footBox{
+  width:100%;
+
+}
+/* footBox ================================================*/
+
+
+}
