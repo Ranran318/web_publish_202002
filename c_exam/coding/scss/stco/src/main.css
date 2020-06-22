@@ -1,0 +1,12 @@
+
+/* main.css */
+@charset "UTF-8";
+
+
+
+#wrap{
+	width: 100%; min-width: 1400px;
+	height: auto; min-height: 900px;
+	background-color:$sample;
+}
+

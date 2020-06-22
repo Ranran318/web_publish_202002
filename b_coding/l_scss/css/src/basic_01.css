@@ -62,12 +62,6 @@
 				@for 임의변수 form 1 to 끝수의 다음 수 (작다의 의미){ 기능 수행 }
 
 샘플 ================================================*/
-/*
-$li ( 'graph','apple', 'tomato', 'banana', stawberry';
- @for $i from 1 through length($li) {
-			#nth($li, $i)_coffee{color:#fac;} 
-}
-*/
 .graph_coffee {
   color: #fac;
 }

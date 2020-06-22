@@ -67,33 +67,34 @@
 
 샘플 ================================================*/				
 
-/*
-$li ( 'graph','apple', 'tomato', 'banana', stawberry';
+
+$li : ( 'graph','apple', 'tomato', 'banana', 'stawberry');
  @for $i from 1 through length($li) {
-			#nth($li, $i)_coffee{color:#fac;} 
+			.#{nth($li, $i)}_coffee{color:#fac;} 
 }
-*/
 
 
-.graph_coffee {color:#fac;}
-.apple_coffee {color:#fac;}
-.tomato_coffee {color:#fac;}
-.banana_coffee {color:#fac;}
-.stawberry_coffee {color:#fac;}
 
+//.graph_coffee {color:#fac;}
+//.apple_coffee {color:#fac;}
+//.tomato_coffee {color:#fac;}
+//.banana_coffee {color:#fac;}
+//.stawberry_coffee {color:#fac;}
 
+@import "../setting/variable";
 
 
 
 //==============================================
 
 
-@import "../setting/variable";
-
 
 
 
 // --------------------------------
+
+
+
 #wrap {
 	width: 100%; height: 100%; 
 	background-color:darken($primary, 20%);
@@ -117,7 +118,7 @@ $li ( 'graph','apple', 'tomato', 'banana', stawberry';
 	width: 100%; height: 100%;	
 	> h2{ width:100px; height: 100px;
 	  	> a {display:block;
-					 > span { text-align: cetner;}
+					 > span { text-align: cetner;
 	 &:hover > span{color:#aaa;}
 		}// a
 	}//	h2					
@@ -149,7 +150,7 @@ $size : (0, 20, 30, 45, 170, 200);
 .list > li:nth-child(2){  background-position-x: nth($size, 5);}
 .list > li:nth-child(2){  background-position-x: nth($size, 6);}
 */
-
+/*
 // 03
 
 //@for $i from 0 through 6 {
@@ -173,7 +174,8 @@ $size : (0, 20, 30, 45, 170, 200);
 
 
 
-//=============================================================
+============================================================= */
+
 /*
 #wrap{
 	width:100%; height: 100%;
@@ -200,5 +202,4 @@ $size : (0, 20, 30, 45, 170, 200);
 	background-color: rgba($primary,0.5);
 
 }
-
-=================================================*/
+*/
