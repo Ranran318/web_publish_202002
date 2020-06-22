@@ -1,5 +1,17 @@
 /*viewBox*/
-//$url:'../../../img/stoImg/adbanner/';
+$url:'../../../img/stoImg/adbanner/';
+$bannerImg: (
+	'banner_01': 'main_rolling_w_0421.jpg',
+	'banner_02': 'main_rolling_w_0429don.jpg',
+	'banner_03': 'main_rolling_w_0608.jpg',
+	'banner_04': 'main_rolling_w_200601.jpg',
+	'banner_05': 'main_rolling_w_200616.jpg',
+	'banner_06': 'main_rolling_w_200618.jpg',
+	'banner_07': 'main_rolling_w_SSE.jpg',
+	'banner_08': 'main_rolling_w_yejidong.jpg',
+	'banner_09': 'main_rolling_w_W2.jpg'
+
+);
 
 #viewBox{
 	position:relative;
@@ -18,11 +30,17 @@
 			}
 	};
 
-$count: 11;
+$count: length($bannerImg);
 
 	.indicator{
 	@include indicator($c:$count, $w:15, $mr:16, $h:15, $b:40);
 	//.view_area{}
+	}
+
+	.view_area{
+		position: relative;
+		width: 100%; height: 100%;
+		>ul{width:100% * ($count  + 1)}
 	}
 
 }
