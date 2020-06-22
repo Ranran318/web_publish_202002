@@ -63,14 +63,14 @@ $url:'../../../../img/stco/';
 	@mixin indicator($c:10,$w:10, $mr:16,$h : 10, $b:33){
 		position: absolute;
 		left:50%; bottom:33px; z-index: 500;
-		width:$count*($w+$mr)-16 + px; height:$h + px;
+		width:rem($c*($w+$mr)-16) + px; height:rem($h);
 
 		transform: translateX(-50%);
 
 		>ul {
 			 width:100%; height: 100%;
 			 >li{
-				 @include lastMargin0(){;
+				 @include lastMargin0(){
 				 width:$w; height:100%;
 				 margin-right:$mr + px;
 				 padding:1px; box-sizing:border-box;
@@ -86,5 +86,5 @@ $url:'../../../../img/stco/';
 
 
 		}
-	
+	}
 	

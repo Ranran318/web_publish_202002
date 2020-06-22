@@ -20,7 +20,7 @@ width: 0; height: 0; overflow:hidden;}
 .full a>span {display: block; position:absolute; z-index:0; width: 0; height: 0; overflow: hidden;}
 
 /* table ---------*/
-.table_style thead {background-color: #ccf;}
+.table_style thead {background-color: #acf;}
 .table_style tfoot {background-color: #ccc;}
 .table_style table {border-left:0; border-right:0;}
 .table_style tr>th:first-child,
