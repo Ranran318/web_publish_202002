@@ -149,7 +149,7 @@ var retinaLaptopGo = false;
 		 var rep = (winScrollPlus - retinaimgOffset) / winH * 30;
 		 retinaImg.css({width: retinaImgPercent + rep +'vw'});
 										 
-	 }
+	     }
 
 //스크롤 다 내리면서 커진 사진 다시 작아지는 과정. => 높이값 줄어드는.
 	 if(winScroll >= retinaImgOffset && rep2 >= 0){
