@@ -2,6 +2,12 @@
 
 @import "./setting";
 
+body{width:100%;
+	   overflow-y:auto;
+		 overflow-x:hidden;
+}
+//js 기능에서 vw 값 준것 때문에 튀는 현상 막기 위해 씀.
+
 #wrap{
 	width:1400px; height:auto; min-height:3000px;
 	margin: auto; padding-top: 90px;
@@ -39,22 +45,14 @@
 	width:$baseWidth - 400px; height:400px;
 	margin: auto;
 }
-p{
-	width:$baseWidth; height: auto; 
-	margin: auto;
-	font-weight: bold;
-	font-size:3rem; color:#777;
-	word-break:keep-all
-
-}
 .movie_link{width:$baseWidth; font-size: 2rem;}
-
-
+   
+  
 #laptopSize { 
 	margin-top: 2300px;
-	width:$baseWidth; height:auto; min-height: 1000px;
+	width:$baseWidth; height:auto; min-height: 700px;
 	margin-bottom:5rem;
-	background-color: #faf;
+	
 	 .macbook{width:100%; height:600px; background-color: rgba(255,255,255,0.3);}
 
 	 .macbook_option{
@@ -93,8 +91,47 @@ p{
 #retinaDisplay { 
 	width:$baseWidth; height:auto; min-height: 500px;
 	background-color: #ffa;
+
+	>h2{
+		width:80%; height: auto; margin:auto;
+		color:$black;
+		font-size:4rem; line-height: 1.2;
+		>em {
+			display: block;
+			color:lighten($black, 45%);
+			font-style: normal;
+		}
+	}
+
+	.retina_image{
+		position: relative; left:50%; z-index:500;
+		transform:translateX(-50%);
+		width:$baseWidth; height:auto; min-height:600px;
+		background-color: #acf;
+		>div{
+			position: absolute; top: 0; left:0;
+			width:100%; height:100%;
+			&.people{
+								z-index: 10; 
+								background-image: url('../../img/mac_other/retina_people.jpg');
+								background-repeat: no-repeat;
+								background-position: 50% 0%;
+								background-size: cover;
+													}
+			&.artwork{z-index:5; background-color: #a8c;}
+		}
+	}
+
+	
+p{
+	@include content;
+	opacity: 1; top:0;
+	 span{color:$black;}
+	
+	}
 }
 #dermi { 
+	margin-top: 2000px;
 	width:$baseWidth; height:auto; min-height: 1000px;
 	background-color: #aff;
 }
