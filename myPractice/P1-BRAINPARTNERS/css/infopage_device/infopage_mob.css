@@ -1,5 +1,5 @@
 /* device : width: 320px 기준. */
-@media screen 
+@media all 
      and (max-width:639px) {
 
 
