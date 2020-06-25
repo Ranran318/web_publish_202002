@@ -2,22 +2,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
 
-
-$baseWidth: 1400px;// size
+// size
+$baseWidth: 1400px;
 
 // color
 $black:#202020; 
 
-
+//mixin
 @mixin content(){
 
+	 position: relative; top:2rem;
 		width:$baseWidth - 350px; height: auto; 
-		margin: auto; position: relative;
-		top:2rem;
-		opacity: 0;
+		margin: auto; 
 		margin-top: 5rem; margin-bottom: 2rem;
+		opacity: 0;
 		font-weight: 700;
-		font-size:3rem; color:lighten($black,40%);
+		font-size:2rem; color:lighten($black,35%); font-weight:700;
 		word-break:keep-all
 	
 	

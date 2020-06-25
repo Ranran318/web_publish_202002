@@ -11,7 +11,6 @@ body {
   min-height: 3000px;
   margin: auto;
   padding-top: 90px;
-  background-image: linear-gradient(#dfdfdf, #afafaf);
 }
 
 #headBox {
@@ -30,47 +29,75 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  width: 1400px;
-  height: 2000px;
+  width: 1100px;
+  height: auto;
+  min-height: 1000px;
   margin: auto;
   transform: translateY(100px);
 }
 #openLaptop > h2 {
+  opacity: 0;
   position: relative;
   z-index: 500;
-  width: 70%;
+  top: 2rem;
+  width: 90%;
   height: auto;
   margin: auto;
   margin-bottom: 2rem;
-  text-align: center;
   padding-top: 2rem;
-  font-size: 4.5rem;
+  text-align: center;
+  color: #202020;
+  font-size: 6rem;
   font-weight: 900;
+  line-height: 1.4;
 }
 #openLaptop > h2 > span {
-  font-size: 0.5em;
+  font-size: 0.35em;
 }
-
-.macbook {
+#openLaptop .macbook {
   position: relative;
-  width: 1000px;
-  height: 400px;
+  width: 1100px;
+  height: 350px;
   margin: auto;
 }
-
-.movie_link {
+#openLaptop .macbook > img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+#openLaptop p {
+  position: relative;
+  top: 2rem;
+  width: 1050px;
+  height: auto;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  opacity: 0;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #797979;
+  font-weight: 700;
+  word-break: keep-all;
+}
+#openLaptop .movie_link {
   width: 1400px;
   font-size: 2rem;
 }
 
 #laptopSize {
-  margin-top: 2300px;
   width: 1400px;
   height: auto;
   min-height: 700px;
+  margin-top: 2300px;
   margin-bottom: 5rem;
 }
 #laptopSize .macbook {
+  position: relative;
   width: 100%;
   height: 600px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -85,7 +112,7 @@ body {
   margin: auto;
 }
 #laptopSize .macbook_option > div {
-  width: 30%;
+  width: 35%;
   height: auto;
   font-size: 1.5rem;
   font-weight: bold;
@@ -96,13 +123,13 @@ body {
   border-bottom: 1px solid #777;
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
-  color: #171717;
+  color: #202020;
 }
 #laptopSize .macbook_option > div dl dt {
   margin-bottom: 0.5rem;
 }
 #laptopSize .macbook_option > div dl dd {
-  color: #7d7d7d;
+  color: #868686;
 }
 #laptopSize .macbook_option > div dl:last-of-type {
   border-bottom: none;
@@ -130,12 +157,16 @@ body {
   width: 1400px;
   height: auto;
   min-height: 500px;
-  background-color: #ffa;
+  margin-bottom: 5rem;
+}
+#retinaDisplay .mobile {
+  display: none;
 }
 #retinaDisplay > h2 {
   width: 80%;
   height: auto;
   margin: auto;
+  margin-bottom: 5rem;
   color: #202020;
   font-size: 4rem;
   line-height: 1.2;
@@ -147,44 +178,64 @@ body {
 }
 #retinaDisplay .retina_image {
   position: relative;
+  top: 0;
   left: 50%;
   z-index: 500;
   transform: translateX(-50%);
   width: 1400px;
   height: auto;
-  min-height: 600px;
-  background-color: #acf;
+  overflow: hidden;
 }
 #retinaDisplay .retina_image > div {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  max-width: 100vw;
   height: 100%;
 }
 #retinaDisplay .retina_image > div.people {
   z-index: 10;
   background-image: url("../../img/mac_other/retina_people.jpg");
+  background-color: #f2f2f2;
   background-repeat: no-repeat;
-  background-position: 50% 0%;
-  background-size: cover;
+  background-position: 50% 0;
+  background-size: auto;
 }
 #retinaDisplay .retina_image > div.artwork {
   z-index: 5;
-  background-color: #a8c;
+  background-image: url("../../img/mac_other/retina_laptop.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: contain;
+  transform: scale(2);
+}
+#retinaDisplay .retina_image > div > .artwork_display {
+  position: absolute;
+  filter: grayscale(1);
+  top: 0;
+  bottom: 7%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 68%;
+  height: 80%;
+  background-position: 50% bottom;
+  background-image: url("../../img/mac_other/retins_bg_img.jpg");
 }
 #retinaDisplay p {
+  position: relative;
+  top: 2rem;
   width: 1050px;
   height: auto;
   margin: auto;
-  position: relative;
-  top: 2rem;
-  opacity: 0;
   margin-top: 5rem;
   margin-bottom: 2rem;
+  opacity: 0;
   font-weight: 700;
-  font-size: 3rem;
-  color: #868686;
+  font-size: 2rem;
+  color: #797979;
+  font-weight: 700;
   word-break: keep-all;
   opacity: 1;
   top: 0;
@@ -193,10 +244,10 @@ body {
   color: #202020;
 }
 
-#dermi {
-  margin-top: 2000px;
+.dermi {
+  margin-top: 4500px;
   width: 1400px;
   height: auto;
-  min-height: 1000px;
+  min-height: 3000px;
   background-color: #aff;
 }

@@ -1,15 +1,16 @@
 (function($){
-	 var win = $(window);
-	 var winH = win.innerHeight();
-	 var winHPart = winH / 3*2;
-	 	 
+	 var win          = $(window);
+	 var winH         = win.innerHeight();
+	 var winHPart     = winH / 4 * 3;
+			
+	 win.scrollTop(0);
 // #openLaptop
-	 var openLaptop = $('#openLaptop');
-	 var openH2 = openLaptop.find('h2');
-	 var macbook = openLaptop.find('.macbook');
+	 var openLaptop   = $('#openLaptop');
+	 var openH2       = openLaptop.find('h2');
+	 var macbook      = openLaptop.find('.macbook');
 	 var macbookInImg = '<img src="" alt="맥북이미지" />';
-	 var url = '../img/mac/';
-	 var j='0000';
+	 var url          = '../img/mac/';
+	 var j ='0000';
 	 var imgLength = 92;
 	 
 // #laptopSize
@@ -22,18 +23,18 @@
 
 // #retinaDisplay
  var retinaDisplay = $('#retinaDisplay');
- var retinaImg = retinaDisplay.find('.retina_image');
- var people = retinaImg.find('.people');
- var artwork = retinaImg.find('.artwork'); 
+ var retinaImg     = $('.retina_image');
+ var people        = retinaImg.find('.people');
+ var artwork       = retinaImg.find('.artwork');
+ var artworkDp    = retinaImg.find('.artwork_display');
  
  
- retinaImg.css({height: winH + 'px'});
 
 
  // 기능 수행 ====================================================================
 
 	 // #openLaptop 영역 처리 ----------------------------------------------
-		openH2.animate({opacity:1, top:0}, 800);
+		openH2.animate({opacity:1, top:0, lineHeight:6+'rem'}, 800);
 		openLaptop.find('p').delay(200).animate({opacity:1, top:0},800);
 
 
@@ -71,15 +72,30 @@
 			//console.log(myop);
 		 //스크롤시 노트북 이미지 변경되게 하기
 			var imgSelect = parseInt(thisScroll / 600 *imgLength);
-			for (imgSelect >= imgLength){ impSelect = imgLength-1;}
-	 })
+			if (imgSelect >= imgLength){
+				     imgSelect = imgLength-1;			
+			}
+			
+			// console.log(secondScrollStart);
+
+		macbook.find('img').eq( imgSelect ).show();
+		macbook.find('img').eq( imgSelect ).siblings().hide();
+
+		// 일정 스크롤이 지난시점에서 openLaptop의 위치를 이동처리
+		if(thisScroll >= secondScrollStart){
+			openLaptop.css({top : secondScrollStart - thisScroll});
+		}
+
+	});	
+			
+
+
 		// #openLaptop 영역 처리 끝  ---------------------------
 		
 		
 		// #laptopSize 영역 처리  ---------------------------
-	 macbookDl.css({opacity:0});
-	 $.each(macbookDl, funciton(data)){ 
-		                            $(this).css({opacity:0})};
+		//$.each(macbookDl, funciton(data)){  $(this).css({opacity:0})};
+		macbookDl.css({opacity:0});
 
 		// dl의 offset값을 각각 파악
 		var dlOffset = [];
@@ -102,20 +118,21 @@
 						
 
 						//laptopSize 위치값파악 후 dl값의 위치에 따라 투명도 처리
-						if(winScorllPlus >= laptopSizeOffset){
+						if(winScrollPlus >= laptopSizeOffset){
 						
-						//dl값을 각각 파악하여 매번 순환체크하도록 처리
-				    for(var i=0; i < macbookDl.length; i++){
-							if(winScrollPlus >= dlOffset[i] && op <= 1){
-									op = (winScrollPlus - dlOffset[i]) / 400;
-									macbookDl.eq(i).css({opacity: op});
-	  						}
-								}		
+						    //dl값을 각각 파악하여 매번 순환체크하도록 처리
+				        for(var i=0; i < macbookDl.length; i++){
+						        	if(winScrollPlus >= dlOffset[i]){ 
+						    	     		    op = (winScrollPlus - dlOffset[i]) / 400;
+						    	     		    macbookDl.eq(i).css({opacity: op});
+	  				    	   	}
+						    }		
 								
 								//동영상 동작하게 만들기
-								if(macbookVideo.hasClass('active')){ //active라는 class가 있으면 수행하고 없으면 수행하지마
-								macbookVideo.find('video').get(0).play();
-							}
+								if(!macbookVideo.hasClass('active')){ //active라는 class가 있으면 수행하고 없으면 수행하지마
+								       	macbookVideo.addClass('active');
+							         	macbookVideo.find('video').get(0).play();
+							  }
 						}
 
 			 
@@ -128,46 +145,59 @@
 				//	});
 
 // #retinaDisplay ------------------------------
- var retinaImgOffset = retinaImg.offset().top;
- var retinaImgWidth = retinaImg.outerWidth();
- var winWidth = win.outerWidth();
+ retinaImg.height(winH);
+
+ var retinaImgOffset  = retinaImg.offset().top;
+ var retinaImgWidth   = retinaImg.outerWidth();
+ var winWidth         = win.outerWidth();
  var retinaImgPercent = retinaImgWidth / winWidth * 100;
- console.log(retinaImgPercent);
- retinaImg.css({width: retinaImgPercent + '%'});
+ var retinaDptoImgOff = retinaDisplay.offset().top - retinaImgOffset;
  
+ //console.log(retinaImgPercent);
+ retinaImg.css({width: retinaImgPercent + 'vw'});
 var rep = 0;
 var rep2 = 100;
 var rep3 = 0;
-var retinaLaptopGo = false;
 
-
- win.oN('scroll', function(){
+ win.on('scroll', function(){
 	 var winScroll = $(this).scrollTop();
 	 var winScrollPlus = winScroll + winHPart;
   
-	 if(winScrollPlus >= retinaImgOffset && rep <= 30){
-		 var rep = (winScrollPlus - retinaimgOffset) / winH * 30;
-		 retinaImg.css({width: retinaImgPercent + rep +'vw'});
+	 if(winScrollPlus >= retinaImgOffset){
+		 rep = (winScrollPlus - retinaImgOffset) / winH * 30;
+		 var peopleWp = retinaImgPercent + rep;
+		 (peopleWp < 100) ? retinaImg.css({width:peopleWp + 'vw'}) : retinaImg.css({width: 100 +'vw'});
 										 
-	     }
+	  }
 
 //스크롤 다 내리면서 커진 사진 다시 작아지는 과정. => 높이값 줄어드는.
-	 if(winScroll >= retinaImgOffset && rep2 >= 0){
-		            rep2 = 120 - (winScroll - reitnaImgOffset) / winH * 100;
-		// console.log(rep2);
-								retinaImg.css({position:'fixed', top:0});
-								people.css({height: rep2 + '%'});
-	 }else{ retinaImg.css({position:'relative', top:'auto'});}
+	 if(winScroll >= retinaImgOffset){
 
-	 if(rep2 <= 0){
-		 rep3 = winScrollPlus - retinaImgOffset / winH * 30;
-		 console.log(rep3);
-		 retinaImg.css({width:, height: });
+		            rep2 = 120 - (winScroll - retinaImgOffset) / winH * 100;
+		// console.log(rep2);
+								retinaDisplay.css({position:'fixed', top:retinaDptoImgOff});
+								people.css({height: rep2 + '%'});
+								artworkDp.css({filter:'grayscale(' + rep2 * 0.1 + ')'});
+
+		 }else{ retinaDisplay.css({position:'relative', top:0});}
+		 
+    //if(rep2 <= 0){
+		// rep3 = winScrollPlus - retinaImgOffset / winH * 30;
+		// console.log(rep3);
+		// retinaImg.css({width:, height: });
 		  
-	 }
+	 //}
+
+	   if(winScroll >= retinaImgOffset + winH){
+							rep3 = 2 - ((winScroll - (retinaImgOffset + winH)) / winH);
+							console.log((winScroll - (retinaImgOffset + winH)));
+							
+							if(rep3 >= 0.7){artwork.css({transform: 'scale(' + rep3 + ')'});}
+							if(rep3 <= 0){retinaDisplay.css({top:retinaDptoImgOff + (rep3 * winH *2) + 'px'})}
+		 }
 
  });
 
-
+//----------------------------------------------------
 
 })(jQuery);
