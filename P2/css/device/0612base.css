@@ -25,6 +25,7 @@ h1{
   width: 8.25rem;
   height: 46px;
   height: 2.875rem;
+
    margin:auto;
    background-image: url('../../img/forest_logo/img_logo_re_forest.png');
    background-repeat: no-repeat;
@@ -32,36 +33,34 @@ h1{
   }
 
 
-
    #navi{
-     width: 100%;
-     height:140px;
+     width:100%;
+     height:120px;
      height:8.75rem;
-    background-color:#666;
+   
    }
    .gnbBox{
-    width: 60px;
-    width: 3.75rem;
-    height:40px;
-    height:2.5rem;
-    background-color:#888;}
+     width:100%;
+    height:24px;
+    height:1.5rem;
+    background-color:#fa0;}
 
    .unbBox{
-    width: 60px;
-    width: 3.75rem;
-    height:40px;
-    height:2.5rem;
+     width:100%;
+    height:34px;
+    height:2.125rem;
 
     
-    background-color:#888;}
+    background-color:#fd9;}
    
 
 
 /* viewBox ================================================*/
 #viewBox{
   width:100%;
-  height: 475px;
-  height: 29.6875rem;
+  height: 950px;
+  height: 59.375rem;
+  background-color:#af9;
 }
 
 /* viewBox ================================================*/
@@ -70,7 +69,9 @@ h1{
 /* eventBox ================================================*/
 #eventBox{
   width:100%;
-
+  height: 642px;
+  height: 40.125rem;
+  background-color:#9af;
 }
 /* eventBox ================================================*/
 
@@ -78,7 +79,9 @@ h1{
 /* newsBox ================================================*/
 #newsBox{
   width:100%;
-
+  height: 660px;
+  height: 41.25rem;
+  background-color:#c9f;
 }
 /* newsBox ================================================*/
 
@@ -86,7 +89,9 @@ h1{
 /* storyBox ================================================*/
 #storyBox{
   width:100%;
-
+  height: 600px;
+  height: 950px;
+  background-color:#69f;
 }
 /* storyBox ================================================*/
 
@@ -94,7 +99,9 @@ h1{
 /* momentBox ================================================*/
 #momentBox{
   width:100%;
-
+  height: 900px;
+  height: 56.25rem;
+  background-color:#fca;
 }
 /* momentBox ================================================*/
 
@@ -102,7 +109,9 @@ h1{
 /* memberBox ================================================*/
 #memberBox{
   width:100%;
-
+  height: 900px;
+  height: 56.25rem;
+  background-color:#fac;
 }
 /* memberBox ================================================*/
 
@@ -110,7 +119,9 @@ h1{
 /* topjoneBox ================================================*/
 #topjoneBox{
   width:100%;
-
+  height: 150px;
+  height: 9.375rem;
+  background-color:#afc;
 }
 /* topjoneBox ================================================*/
 
@@ -118,7 +129,9 @@ h1{
 /* footBox ===============================================*/
 #footBox{
   width:100%;
-
+  height: 330px;
+  height: 20.625rem;
+  background-color:#acf;
 }
 /* footBox ================================================*/
 
