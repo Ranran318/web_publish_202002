@@ -122,7 +122,33 @@ h1{
   height: 150px;
   height: 9.375rem;
   background-color:#afc;
+  
+  
 }
+
+.topbtn_Box01 {
+  float: right; position: relative;
+  margin: auto; margin-right:30px;
+  width:76px; height:76px;
+  background-image: url('../../img/1x/');
+  border:1px solid #183029;
+  border-radius: 50px;
+  text-align: center;
+  
+}
+
+.topbtn_Box
+
+.topbtn_Box01 {
+  position: absolute; top: 0; left:0; right:0; z-index: 1000;
+  width:20px; height:12px;
+  margin: auto; margin-top: 14px;
+  background-image:url('../../img/1x/topbtn_02.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
 /* topjoneBox ================================================*/
 
 
@@ -133,6 +159,19 @@ h1{
   height: 20.625rem;
   background-color:#acf;
 }
+
+#footBox h2{
+  width:132px; height:40px;
+  padding:18px; margin: 4px 30px;
+  background-image:url('../../img/forest_logo/img_logo_re_forest.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+
+
+address { width:; }
 /* footBox ================================================*/
 
 
