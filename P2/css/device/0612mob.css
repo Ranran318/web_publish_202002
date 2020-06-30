@@ -109,15 +109,66 @@ background-color:#c9f;
 }
 
 /*==========*/
-#footBox {
-width:100%; 
-height:680px;
-height:42.5rem;
-max-height: 639px;
-max-height: 39.9375rem ;
-max-height: 50vw ;
-background-color: #333;
+
+#footBox{
+  width:100%;
+  height: 856px;
+  height: 53.5rem;
+
 }
+
+.infoBox_01{
+  margin: auto;
+  width: 320px;
+  height: 284px;
+}
+
+.infoBox_01 > li{
+  margin: auto;
+  padding-top:20px; box-sizing:border-box;
+}
+
+.info_01,.info_02,.info_05{
+  width:100px; 
+  width:6.25rem; 
+  height: 46px;
+  height: 2.875rem;
+
+
+}
+
+.info_03,.info_06 {
+  width:170px; 
+  width:10.625rem; 
+  height: 46px;
+  height: 2.875rem;
+ 
+}
+
+.info_04{width: 260px; height: 46px;}
+
+
+#footBox > address { 
+  height: 400px; 
+  height: 25rem; 
+}
+
+.padd_01 {
+ padding:22px;
+ margin:auto;
+}
+
+.famsite_Box{
+  width:228px; height:130px;
+}
+
+.fb,.insta,.youtube,.naver{
+  float: left;
+  width:46px; height: 46px;
+  background-size: 46px 46px;
+  background-repeat: no-repeat;
+}
+
 
 /*
 .address{}
