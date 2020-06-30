@@ -98,15 +98,61 @@ background-color:#c9f;
   background-color: #957de9;
 }
 
+#memberBox{
+  width: 100%;
+  height: 400px;
+}
 
-.notice_area{
-  background-color:#95abe9;
+#memberBox > h2{}
+
+.pic_01 p{
+  text-align: center;
+}
+#memberBox > button{
+  width:320px; height: 60px;
+  width:20rem; height: 3.75rem;
+  background-color: #0B1915;
+}
+
+.pic_01 { 
+  width:100%; height:400px;
+  height:25rem;
+  background-color:#183029;
+}
+.pic_02 { display: none;} 
+
+#topjoneBox{
+  width: 100%; 
+  height: 150px;
+  height: 9.375rem;
+}
+
+.topbtn_Box01 {
+  float: right;
+  margin: auto;  margin-top: 37px; margin-right:30px;
+  width:76px; height:76px;
+  background-size: 76px 76px;
+  background-image: url('../../img/1x/topbtn_01.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  text-align: center;
+  
 }
 
 
-.more-content{
-  background-color: #95d2e9
+.topbtn_Box02 {
+  float: right; margin-right:60px;
+  margin-top: 60px;
+  margin: auto; margin-top: 14px;
+  width:20px; height:12px;
+  margin: auto; margin-top: 14px;
+  background-image:url('../../img/1x/topbtn_02.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+
 
 /*==========*/
 

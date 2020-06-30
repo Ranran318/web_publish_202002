@@ -107,12 +107,7 @@ h1{
 
 
 /* memberBox ================================================*/
-#memberBox{
-  width:100%;
-  height: 400px;
-  height: 25rem;
-  background-color:#fac;
-}
+
 /* memberBox ================================================*/
 
 
@@ -121,18 +116,20 @@ h1{
   width:100%;
   height: 150px;
   height: 9.375rem;
-  background-color:#afc;
+  border-top: 1px solid #416200;
+  border-bottom: 1px solid #416200;
   
   
 }
 
 .topbtn_Box01 {
-  float: right; position: relative;
-  margin: auto; margin-right:30px;
+  
+  margin: auto;  margin-top: 37px; margin-right:30px;
   width:76px; height:76px;
-  background-size: 84px 84px;
+  background-size: 76px 76px;
   background-image: url('../../img/1x/topbtn_01.png');
-  border:1px solid #183029;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 4px;
   text-align: center;
   
@@ -140,13 +137,13 @@ h1{
 
 
 
-.topbtn_Box01 {
-  position: absolute; top: 0; left:0; right:0; z-index: 1000;
-  width:20px; height:12px;
+.topbtn_Box02 {
+
   margin: auto; margin-top: 14px;
+  width:20px; height:12px;
   background-image:url('../../img/1x/topbtn_02.png');
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
 }
 
 
@@ -203,8 +200,9 @@ h1{
 #footBox > address { 
   height: 400px; 
   height: 25rem; 
+  border-bottom: 1px solid #416200;
   color:#1D1D1D;
-
+  text-align: justify;
 }
 
 .padd_01 { 
@@ -218,7 +216,6 @@ h1{
   margin:auto; margin-top: 20px; margin-bottom: 20px;
   width:228px; height:130px;
   width:14.25rem; height:8.125rem;
-  border:1px solid  #183029;
   border-radius: 4px;
   color:#1D1D1D;
 
@@ -226,8 +223,8 @@ h1{
 
 
 .gobtn_Box{
-  float: right; position: absolute; top:0; left:180px;
-  width: 40px; height: 40px;
+  float: right; position: absolute; top:0; left:120px;
+  width: 34px; height: 34px;
   width: 2.5rem; height: 2.5rem;
   background-color: #416200;
   border-radius: 4px;
@@ -235,7 +232,7 @@ h1{
   text-align: center;
 }
 
-.fb,.insta,.youtube,.naver{
+.fb,.insta,.naver{
 
   float: left;
   width:46px; height: 46px;
@@ -246,7 +243,7 @@ h1{
 
 .fb     {
   position: absolute; bottom:0;
-  background-image: url('../../img/sns_icon/f_logo_RGB_Black_58.png');}
+  background-image: url('../../img/sns_icon/f_logo_RGB-Blue_72.png');}
 .insta{
   position: absolute; left:90px; bottom:0;
   background-image: url('../../img/sns_icon/insta_logo.png');}
