@@ -1,0 +1,16 @@
+
+/* 기준이 되는 크기(16px) == 12pt == 100% == 1em == 1rem */
+/* vw 는 view width의  약자로, 브라우저의 가로값을 100% 기준으로 잡는 크기 단위*/
+/* vh는 view height약자로, 브라우저의 세로값을 100% 기준으로 잡는 크기 단위*/
+/* vw기준으로 사이즈 측정방법 : 기준수치(60px 예시) /  기준브라우저 가로값(320px) *100(100분율) */
+
+@charset "UTF-8";
+
+/* sub_infopage.css */
+
+@import url("../device/resomSubP_01base.css");
+
+@import url("../device/resomSubP_01mob.css");
+@import url("../device/resomSubP_01tablet.css");
+@import url("../device/resomSubP_01pc.css");
+@import url("../device/resomSubP_01pcfull.css");
