@@ -31,10 +31,10 @@
 		 // for 문 start================================
 	       for(; i<j; i++){
     
-	    	     content.append(sampleCode).eq(i);
+	    	     content.append(sampleCode);
 	    	     //content.append(sampleCode);
 				     
-				     person = $('.person');
+				     person = $('.person').eq(i);
 				     person.find('span.num').text(i + 1);
 	    	     person.find('.peopleName').text(data[i].name);
 	    	     person.find('.email').text(data[i].email);
