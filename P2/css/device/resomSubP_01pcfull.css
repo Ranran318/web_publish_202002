@@ -5,12 +5,75 @@
 
 #wrap{
   width: 100%; height: auto;
-  background-color: beige;
 }
 
 #headBox{
   width: 100%; height: 240px;
   background-color:rgba(255,255,255,0.7);
+}
+
+h1{padding:36px;}
+
+/* navigation =================== */
+
+#navi { 
+  width:100%;
+  height:120px;
+  border: 1px solid #444;
+}
+
+#navi > button {
+  display: none;
+}
+
+.gnbBox{
+  margin-top:8px; margin-right: 228px;
+  float:right;
+  width: 510px; height: 34px;
+}
+
+.gnbBox li{
+  float:left;
+  margin-right:10px; padding-top:6px;
+  text-align:center;
+}
+
+.gnbtn_01{width: 150px; height:34px;}
+
+.gnbtn_02,.gnbtn_03,
+.gnbtn_04,.gnbtn_05{width:76px; height:34px;}
+
+.gnbBox li:hover,
+.gnbBox li:focus{
+  color:#416200;
+  border-bottom: 1px solid #416200;
+}
+
+/*======= */
+
+.unbBox{
+  width:1110px;
+  height:34px;
+  margin-left:320px; margin-top:64px;
+}
+
+.unbBox dl {
+  float: left;
+}
+
+.unbBox dt{
+  width:110px; height:34px;
+  margin-right:40px;
+  text-align: center;
+}
+.unbBox dd{
+  display:none;
+}
+
+.unbBox dt:hover,
+.unbBox dt:focus{
+  color:#416200;
+  border-bottom: 1px solid #416200;
 }
 
 
@@ -48,24 +111,25 @@
 
 /* footBox ===============================================*/
 #footBox{
+  position: relative;
+  padding:40px 50px 20px 20px; box-sizing:border-box;
   width:100%;
-  height: 856px;
-  height: 53.5rem;
+  height: 340px;
+  height: 21.25rem;
   background-color: #fff;
+  border: 1px solid #333;
   color:#1D1D1D;
 }
 
-/*회사소개부터 이메일 무단수집거부*/
 .infoBox_01{
-  margin: auto;
-  width: 320px;
-  height: 284px;
-  height: 17.75rem;
+  width: 940px; height: 46px;
   color:#1D1D1D;
 }
 
 .infoBox_01 > li{
-  margin: auto;
+  float: left;
+  margin-right:14px;
+  border-right:1px solid #416200;
   padding-top:20px; box-sizing:border-box;
 }
 
@@ -74,8 +138,6 @@
   width:6.25rem; 
   height: 46px;
   height: 2.875rem;
-
-
 }
 
 .info_03,.info_06 {
@@ -83,7 +145,6 @@
   width:10.625rem; 
   height: 46px;
   height: 2.875rem;
-
 }
 
 .info_04{
@@ -94,41 +155,59 @@
 }
 
 
-/*회사소개부터 이메일 무단수집거부*/
-
 #footBox > address { 
-  height: 400px; 
-  height: 25rem; 
-  border-bottom: 1px solid #416200;
+  width:1170px;
+  height: 200px; 
+  height: 12.5rem;
   color:#1D1D1D;
-  text-align: justify;
 }
+
+
 
 .padd_01 { 
  padding:22px;
  margin:auto;
 }
 
-.famsite_Box{
-  position: relative;
-  padding:5px;box-sizing: border-box;
-  margin:auto; margin-top: 20px; margin-bottom: 20px;
-  width:228px; height:130px;
-  width:14.25rem; height:8.125rem;
-  border-radius: 4px;
-  color:#1D1D1D;
 
+
+.footgnbBox{
+  position: absolute; top:40px; right:238px;
+  width:228px; height: 130px;}
+
+.famsite_Box{
+  float: left;
+  width:128px; height:46px;
+  width:14.25rem; height:8.125rem;
+  color:#1D1D1D;
+  border:1px solid #fa0;
+}
+
+.famsite_Box button{
+  display:none;
+}
+
+.gobtn_Box {
+  width: 46px; height:46px;
 }
 
 
-.gobtn_Box{
-  float: right; position: absolute; top:0; left:120px;
-  width: 34px; height: 34px;
-  width: 2.5rem; height: 2.5rem;
-  background-color: #416200;
+.gobtn_Box a{
+
+  width: 46px; height: 46px;
+  width: 2.875rem; height: 2.875rem;
   border-radius: 4px;
+  background-color: #416200;
   color: #fff;
   text-align: center;
+}
+
+
+.snsBox{
+  width:226px; height:47px;
+  margin-left:42px;
+  background-color: #333;
+
 }
 
 .fb,.insta,.naver{

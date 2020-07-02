@@ -31,10 +31,10 @@
 			 t3Dd.find('button').on('click', function(e){
 						e.preventDefault();
 						var dataHref = $(this).attr('data-href');
-						var dataHref = $(this).attr('data-link');
+						var dataLink = $(this).attr('data-link');
 						t3Dd.stop().slideToggle(100);
 						//console.log(dataHref);
-						go.attr({'href':dataHref, 'target':'blank'});
+						go.attr({'href':dataHref, 'target':'_blank'});
 						go.focus();
 			 });
 
