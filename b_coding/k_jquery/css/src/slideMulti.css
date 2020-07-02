@@ -10,7 +10,7 @@
 
 
 #wrap{
-  width: 90px; min-width: 900px;
+  width: 90%; min-width: 900px;
   max-width: 1600px; height: auto;
   margin: auto;
 }
@@ -53,7 +53,7 @@ h1{
 
 .btn{
   position: absolute; top:50%; left:50%; z-index: 1000;
-  width: 60px; height: 0;
+  width: 60%; height: 0;
   transform: translateX(-50%);
   
 }  
@@ -62,6 +62,7 @@ h1{
  float: left;
  font-size:4rem;
  transform:translateY(-50%);
+ color:#fff;
 }
 
 .btn > button.next {float: right;}
@@ -80,15 +81,15 @@ h1{
 .slide_banner li{
   position: absolute; top:0; left:0; right:0; margin: auto;
   z-index: 100;
-  width: 40px;height: 600px;
-  background-color: #fff;
+  width: 40%; height: 600px;
   transform:translateY(-50%);
   box-sizing: border-box;
   padding-top:250px;
-   background-repeat: no-repeat;
+  background-color: #fff;
+  background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  transition: all 500ms linear;
+  /*transition: all 500ms linear;*/
 }
 
 .slide_banner li:first-child{
@@ -179,21 +180,25 @@ h1{
 .slide_banner li.active span{
   transform:translateY(translateY(0));
 }
-.slide_banner li.active .con_01{
+.slide_banner li .con_01{
   transition-delay:0;
 }
-.slide_banner li.active .con_02{
-  transition-delay:150ms;
+.slide_banner li .con_02{
+  transition-delay:100ms;
 }
-.slide_banner li.active .con_03{
-  transition-delay:300ms;
+.slide_banner li .con_03{
+  transition-delay:200ms;
 }
 
 
 
 .slide_banner li.up span{
-  
+  transform:translateY(-3rem);
+  transition:all 500ms ease-out;
+
 }
+
+
 
 /*----------------------------------*/
 
