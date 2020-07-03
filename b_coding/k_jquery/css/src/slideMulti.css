@@ -79,10 +79,10 @@ h1{
 }
 
 .slide_banner li{
-  position: absolute; top:0; left:0; right:0; margin: auto;
+  position: absolute; top:0; bottom:0; left:0; right:0; 
   z-index: 100;
   width: 40%; height: 600px;
-  transform:translateY(-50%);
+  margin: auto;
   box-sizing: border-box;
   padding-top:250px;
   background-color: #fff;
@@ -99,14 +99,14 @@ h1{
 
 .slide_banner li:last-child{
   z-index: -1;
-  transform:translateX(100%) rotateY(-20deg) scale(0.8);
+  transform:translateX(100%) rotateY(-45deg) scale(0.8);
 }
 
 /* =============================== */
 
-.banner_01{background-image:url('../../img/background/starrynight.jpg')};
-.banner_02{background-image:url('../../img/background/sunset.jpg')};
-.banner_03{background-image:url('../../img/background/tree.jpg')};
+.banner_01{background-image:url('../../img/background/starrynight.jpg');}
+.banner_02{background-image:url('../../img/background/tree.jpg');}
+.banner_03{background-image:url('../../img/background/sunset.jpg');}
 
 
 /* =============================== */
@@ -115,19 +115,14 @@ h1{
   width:200%; height:auto;
   font-size:4rem; font-weight:bold;
   color:var(--base-color);
- opacity: 0;
- transition:all 500ms ease;
+  opacity: 0;
+  transition:all 500ms ease;
 
 }
 
 
 
 .slide_banner li.active p{
-   display:block;
-   position: absolute; top:50%; left:-2rem;
-   width:200%; height:auto;
-
-   font-size:4rem; font-weight:bold;
   opacity: 1;
   }
 
@@ -142,14 +137,14 @@ h1{
 .slide_banner li .con_02{
   
   position: relative; left:50px;
+  text-transform:uppercase; 
   font-size:3rem;
   margin-bottom:2rem;
-  text-transform:uppercase; 
 }
 
 
 .slide_banner li .con_02:before{
-  content:"" ; position:absolute; left:-50px;
+  content:"" ; position:absolute; top: 50%; left:-50px;
   width:40px; height: 0.5rem;
   background-color:#171717;
   background-color:var(--base-color);
@@ -174,29 +169,32 @@ h1{
 
 
 .slide_banner li span{
-  transform:translateY(1.5rem);
-  transition:all 500ms ease;
+  transform:translateY(2rem);
+
 }
-.slide_banner li.active span{
-  transform:translateY(translateY(0));
+/*.slide_banner li.active span{
+  transform:translateY(translateY(0));*/
+
+.slide_banner li.active .con_01{
+  transform:translateY(0); transition:all 300ms ease 0;
 }
-.slide_banner li .con_01{
-  transition-delay:0;
+.slide_banner li.active .con_02{
+  transform:translateY(0); transition:all 500ms ease 100ms;
 }
-.slide_banner li .con_02{
-  transition-delay:100ms;
-}
-.slide_banner li .con_03{
-  transition-delay:200ms;
+.slide_banner li.active .con_03{
+  transform:translateY(0); transition:all 700ms ease 200ms;
 }
 
 
 
 .slide_banner li.up span{
-  transform:translateY(-3rem);
   transition:all 500ms ease-out;
 
 }
+
+.slide_banner li.up .con_01{	transform:translateY(-5rem); transition:all 800ms ease 0; }
+.slide_banner li.up .con_02{	transform:translateY(-3rem);  transition:all 800ms ease 200ms; }
+.slide_banner li.up .con_03{	transform:translateY(-1rem);  transition:all 800ms ease 400ms; }
 
 
 

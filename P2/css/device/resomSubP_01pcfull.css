@@ -3,16 +3,26 @@
 
 @media all and (min-width:1440px){
 
+  :root{
+    font-family: sans-serif, 'nanumbarungodic';
+  }
+
+  p{
+    text-align: justify;
+  }
+
 #wrap{
   width: 100%; height: auto;
+  margin: auto;
 }
 
 #headBox{
   width: 100%; height: 240px;
-  background-color:rgba(255,255,255,0.7);
+ background-color: #fff;
 }
 
-h1{padding:36px;}
+
+
 
 /* navigation =================== */
 
@@ -20,6 +30,7 @@ h1{padding:36px;}
   width:100%;
   height:120px;
   border: 1px solid #444;
+
 }
 
 #navi > button {
@@ -27,9 +38,13 @@ h1{padding:36px;}
 }
 
 .gnbBox{
-  margin-top:8px; margin-right: 228px;
+  margin-top:8px; margin-right: 34px;
   float:right;
-  width: 510px; height: 34px;
+  width: 504px; height: 34px;
+}
+.gnbBox:hover, .gnbBox:focus{
+  border-left:1px solid #5aa;
+  border-right:1px solid #5aa;
 }
 
 .gnbBox li{
@@ -43,18 +58,28 @@ h1{padding:36px;}
 .gnbtn_02,.gnbtn_03,
 .gnbtn_04,.gnbtn_05{width:76px; height:34px;}
 
+
+
 .gnbBox li:hover,
 .gnbBox li:focus{
   color:#416200;
-  border-bottom: 1px solid #416200;
+  border-bottom: 2px solid #416200;
 }
 
 /*======= */
 
 .unbBox{
-  width:1110px;
-  height:34px;
+  width:980px;
+  height:40px;
   margin-left:320px; margin-top:64px;
+  border:1px solid #5aa;
+  padding:8px; box-sizing: border-box;
+  border-radius: 8px;
+
+}
+
+.unbBox > ul{
+  margin: auto;
 }
 
 .unbBox dl {
@@ -73,12 +98,140 @@ h1{padding:36px;}
 .unbBox dt:hover,
 .unbBox dt:focus{
   color:#416200;
-  border-bottom: 1px solid #416200;
+  border-bottom: 2px solid #416200;
 }
+
+
+
+
+/* viewBox ================================================*/
+#viewBox{
+  width:100%;
+  height:522px;
+  background-color: #fff;
+}
+
+.pic_container{
+  width: 100%; height:522px;
+  background-size: 100%;
+  background-image: url('../../img/forest_intro/intro_mountain05.jpg');
+  /*background-position: 10% 30%;*/
+  /*background-position: 90% 60%;*/
+  background-position: 70% 50%;
+  background-repeat: no-repeat;
+}
+
+
+
+
+/* viewBox ================================================*/
+
+/* quickBox ====================================================== */
+
+#quickmenuBox{
+  position: relative;
+  width: 100%; height: 96px;
+  border-bottom: 1px solid #bcc;
+}
+
+.quickBox{
+  position: absolute; top:50px; left:0; right:0;
+  margin:auto;
+  width: 324px; height:45px;
+  border:1px solid #bcc;
+  border-radius: 10px;
+}
+
+.quickBox a{
+ float: left;
+ padding:10px; box-sizing: border-box;
+ width: 160px; height: 44px;
+ text-align: center;
+}
+
+.quick_01 a{
+  margin-right:2px;
+  border-right: 1px solid #bcc;
+
+}
+
+
+.quick_01 a:hover, 
+.quick_01 a:focus{
+  box-shadow: 0.1rem 0.3rem 0.3rem 0 #bcc;
+  }
+.quick_02 a:hover,.quick_02 a:focus{
+  box-shadow: 0.1rem 0.3rem 0.3rem 0 #bcc;
+  }
+/* quickBox ====================================================== */
+
+
+/* #introBox ====================================================== */
+
+
+#introBox {
+  margin: auto;
+  width:100%; height:1052px;
+  padding: 56px 90px 56px 90px; box-sizing: border-box;
+}
+
+#introBox > h2{
+  width: 160px; height: 44px;
+}
+
+.intro_container{
+  position: relative;
+  width:1326px; height:970px;
+}
+
+.introtext_01{
+  position: absolute; z-index: 100;
+  width:700px; height:374px;
+  background-color: rgba(255,255,255,0.7);
+}
+
+.introtext_02{
+  position: absolute; top:30px; right:0; z-index: 200;
+  float: right;
+  width:480px; height:300px;
+  background-color:rgba(255,255,255,0.9);
+  border-radius: 10px;
+}
+
+.introtext_02 dt{
+  width: 140px; height: 30px;
+  font-weight: bold;
+}
+
+.introtex_02 dd{
+  width:140px; height: 60px;
+}
+
+.intropic{
+ position: absolute; top:0; left:0; right:0; bottom:0;
+ margin: auto;
+ width: 1060px; height: 600px;
+ background-image: url('../../img/forest_intro/forest_resom_infoimage/forest_concept_01.jpg');
+ background-repeat: no-repeat;
+ background-position: 0 0;
+}
+
 
 
 /* topjoneBox ================================================*/
 
+
+
+#topjoneBox{
+  position: relative;
+  width:100%;
+  height: 150px;
+ 
+  background-color:#fff;
+  border-top: 1px solid #416200;
+  
+  
+}
 
 .topbtn_Box01 {
   
@@ -88,15 +241,14 @@ h1{padding:36px;}
   background-image: url('../../img/1x/topbtn_01.png');
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 4px;
-  text-align: center;
+ 
   
 }
 
 
 
 .topbtn_Box02 {
-
+  position: absolute;
   margin: auto; margin-top: 14px;
   width:20px; height:12px;
   background-image:url('../../img/1x/topbtn_02.png');
@@ -112,17 +264,21 @@ h1{padding:36px;}
 /* footBox ===============================================*/
 #footBox{
   position: relative;
+  float: left;
   padding:40px 50px 20px 20px; box-sizing:border-box;
   width:100%;
   height: 340px;
   height: 21.25rem;
   background-color: #fff;
-  border: 1px solid #333;
+  border-top: 1px solid #333;
   color:#1D1D1D;
+  /*padding-bottom: 50px; box-sizing: border-box;*/
 }
 
+/*=============================*/
 .infoBox_01{
-  width: 940px; height: 46px;
+  margin: auto;
+  width: 990px; height: 46px;
   color:#1D1D1D;
 }
 
@@ -130,7 +286,7 @@ h1{padding:36px;}
   float: left;
   margin-right:14px;
   border-right:1px solid #416200;
-  padding-top:20px; box-sizing:border-box;
+  padding-top:8px; box-sizing:border-box;
 }
 
 .info_01,.info_02,.info_05{
@@ -154,18 +310,22 @@ h1{padding:36px;}
 
 }
 
+/*===============================*/
+
 
 #footBox > address { 
+  margin: auto;
   width:1170px;
   height: 200px; 
   height: 12.5rem;
   color:#1D1D1D;
+ 
 }
 
 
 
 .padd_01 { 
- padding:22px;
+ padding:20px;
  margin:auto;
 }
 

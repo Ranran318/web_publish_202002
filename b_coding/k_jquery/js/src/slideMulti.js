@@ -1,6 +1,6 @@
 (function($){
    
-   var slideBanner = $('.slidebanner');
+   var slideBanner = $('.slide_banner');
    var btn         = $('.btn').find('button');
    var slideUl     = slideBanner.children('ul');
    var slideLi     = slideUl.find('li');
@@ -8,7 +8,7 @@
    //------------------------------------------------
    // Li 순서 변경, .active 삭제 및 재설정
 
-   slideLi.removeClass('active');
+  slideLi.removeClass('active');
   slideLi.eq(-1).prependTo(slideUl);
   slideLi     = slideUl.find('li');
   slideLi.eq(1).addClass('active');
@@ -18,11 +18,13 @@
    var hasActive;
    var q;
     var WhereActive = function(){
+      //정면에 보이는 배너순서 찾기(.active찾기)
       for(var i=0; i<slideLi.length; i++){
-        hasActive = slideLi.eq(i).hasClass('active')
-         if(hasActive){q = i; break;}
+               hasActive = slideLi.eq(i).hasClass('active');
+              if(hasActive){q = i; break;}
      }
-      return q;
+    // console.log(q)
+     
     };
 
     WhereActive();
@@ -33,84 +35,81 @@
   //var q = ;
   var btnTrue = true;
 
-  btn.on('click',function(e){
-      e.preventDault();
-      var nBtn = $(this)[0] === $('.next')[0];
-      
- // 정면에 보이는 배너순서 찾기(.active 찾기)
+  btn.on('click', function(e){
+      e.preventDefault();
+      var nBtn = $(this)[0] === $('.next')[0];    
       WhereActive();
       slideLi.removeClass('active');
-
       if(nBtn && btnTrue){
-        //다음버튼 중복기능방지 
-        btnTure = false;
-         //next버튼 클릭시      
-          slideLi.eq(-1).css({
-            transform:'translate3D(100%,0,0) scale(0.8) rotateY(-45deg)',
-         
-            transition:'all 800ms linear'
-          });
-
-          slideLi.eq(q).css({
-            transform:'translate3D(-100%,0,0) scale(0.8) rotateY(45deg)', 
-            zIndex:-1,
-            transition:'all 500ms linear'
-          });
-
-          slideLi.eq(q).addClass('up');
-
-          slideLi.eq(q+1).css({
-            transform:'translate3D(0, 0, 0) scale(1) rotateY(-45deg)',
-            zIndex:100,
-            transition:'all 800ms linear'
-          });
-
-
-          setTimeout(function(){
-            slideLi.eq(0).appendTo(slideUl);
-            slideLi     = slideUL.find('li');
-            slideLi.eq(1).addClass('active');
-            slideLi.eq(q).removeClass('up');
-            btnTrue = true;
-          },500);
-
+              //다음버튼 중복기능방지 
+                btnTrue = false;
+               //각 내용 위치이동
+                      slideLi.eq(q-1).css({
+                             transform:'translate3D(100%,0,0) scale(0.8) rotateY(-45deg)',        
+                             transition:'all 500ms linear'
+                      });
+            
+                      slideLi.eq(q).css({
+                               transform:'translate3D(-100%,0,0) scale(0.8) rotateY(45deg)', 
+                               zIndex:-1,
+                               transition:'all 500ms linear'
+                      });
+            
+                      slideLi.addClass('up');
+            
+                      slideLi.eq(q+1).css({
+                               transform:'translate3D(0, 0, 0) scale(1) rotateY(0)',
+                               zIndex:100,
+                               transition:'all 500ms linear'
+                      });
+            
+            
+                      setTimeout(function(){
+                                slideLi.eq(0).appendTo(slideUl);
+                                slideLi     = slideUl.find('li');
+                                slideLi.eq(1).addClass('active');
+                                slideLi.removeClass('up');
+                                btnTrue = true;
+                        //WhereActive();
+                      },500);
+            
+            
+               //slideLi   = slideUl.find('li');
       
-         //slideLi   = slideUl.find('li');
-        
-
-
       }
       else if(btnTrue){
          // prev 버튼 클릭시
-         //다음버튼 중복기능방지 
-        btnTure = false;
-        //next버튼 클릭시      
-         slideLi.eq(0).css({
-           transform:'ranslate3D(100%,0,0) scale(1) rotateY(0)',
-           zIndex:100,
-           transition:'all 500ms linear'
-         });
-
-         slideLi.eq(q).css({
-           transform:'translate3D(100%,0,0) scale(0.8) rotateY(-45deg)', 
-           zIndex:-1,
-           transition:'all 500ms linear'
-         });
-
-         slideLi.eq(-1).css({
-           transform:'translate3D(-100%, 0, 0) scale(0.8) rotateY(45deg)',
-           zIndex:-1,
-           transition:'all 500ms linear'
-         });
-
-
-         setTimeout(function(){
-           slideLi.removeClass('active');
-           slideLi.eq(-1).prependTo(slideUl);
-           slideLi = slideUL.find('li');
-           slideLi.eq(1).addClass('active');
-           btnTrue = true;
-         },500);
+         //버튼 중복기능방지 
+        btnTrue = false;
+        //각 내용 위치이동     
+                slideLi.eq(q-1).css({
+                        transform:'translate3D(0, 0, 0) scale(1) rotateY(0)',
+                        zIndex:100,
+                        transition:'all 500ms linear'
+              });
+     
+                slideLi.eq(q).css({
+                        transform:'translate3D(100%, 0, 0) scale(0.8) rotateY(-45deg)', 
+                        zIndex:-1,
+                        transition:'all 500ms linear'
+              });
+     
+              slideLi.addClass('up');
+     
+              slideLi.eq(q+1).css({
+                      transform:'translate3D(-100%, 0, 0) scale(0.8) rotateY(45deg)',
+                      transition:'all 500ms linear'
+              });
+     
+     
+              setTimeout(function(){
+                        slideLi.eq(-1).prependTo(slideUl);		
+                        slideLi     = slideUl.find('li');
+                        slideLi.eq(1).addClass('active');
+                        slideLi.removeClass('up');
+                        btnTrue = true;
+                       // WhereActive();
+              },500);
       
   }
  });
@@ -120,20 +119,30 @@
  // 카드에 마우스 올렸을때 움직임처리
  //console.log(q);
 
- slideLi.eq(q).on('mousemove', function(e){
+ slideLi.on('mousemove', function(e){
    // 마우스 위치파악
+               var ha = $(this).hasClass('active');
+               if(ha){
                var mouseX = e.originalEvent.offsetX;
-               var cardHalfWidth = $(this).outerWidth() / 2;
+               var cardHalfWidth = $(this).outerWidth() / 2; 
+               console.log(mouseX);
 
                if(mouseX <= cardHalfWidth){
-                      $(this).css({transform:'rotateY(15deg)', transition:'all 300ms ease'});
+                         $(this).css({transform:'rotateY(-15deg)', transition:'all 300ms ease'});
+                         $(this).find('p').css({transform:'rotateY(10deg) perspective(500px)',
+                                                transformOrigin:'50% 50%', transition:'all 350ms ease 50ms'})
                 }else{
-                      $(this).css({transform:'rotateY(15deg)', transition:'all 300ms ease'});
+                         $(this).css({transform:'rotateY(15deg)', transition:'all 300ms ease'});
+                         $(this).find('p').css({transform:'rotateY(-10deg) perspective(500px)',
+                                               transformOrigin:'50% 50%', transition:'all 350ms ease 50ms'});
                 }
-
+              }
  });
 
-
+    slideLi.on('mouseleave', function(){
+      var ha = $(this).hasClass("active");
+      if(ha){ $(this).css({transform:'rotateY(0)'})}
+    });
 
 
 
