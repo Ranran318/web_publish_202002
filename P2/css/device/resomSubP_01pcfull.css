@@ -11,6 +11,8 @@
     text-align: justify;
   }
 
+  h2{font-size: 2rem;}
+
 #wrap{
   width: 100%; height: auto;
   margin: auto;
@@ -142,25 +144,25 @@
   border-radius: 10px;
 }
 
-.quickBox a{
+.quickBox button{
  float: left;
  padding:10px; box-sizing: border-box;
  width: 160px; height: 44px;
  text-align: center;
 }
 
-.quick_01 a{
+.quick_01 button{
   margin-right:2px;
   border-right: 1px solid #bcc;
 
 }
 
 
-.quick_01 a:hover, 
-.quick_01 a:focus{
+.quick_01 button:hover, 
+.quick_01 button:focus{
   box-shadow: 0.1rem 0.3rem 0.3rem 0 #bcc;
   }
-.quick_02 a:hover,.quick_02 a:focus{
+.quick_02 button:hover,.quick_02 a:focus{
   box-shadow: 0.1rem 0.3rem 0.3rem 0 #bcc;
   }
 /* quickBox ====================================================== */
@@ -176,41 +178,69 @@
 }
 
 #introBox > h2{
+  margin-left:296px;
   width: 160px; height: 44px;
+  
 }
 
 .intro_container{
   position: relative;
-  width:1326px; height:970px;
+  margin:auto;
+  width:1330px; height:978px;
 }
 
 .introtext_01{
-  position: absolute; z-index: 100;
-  width:700px; height:374px;
+  position: absolute; top:100px; z-index: 100;
+  width:700px; height:400px;
+  padding:20px; box-sizing: border-box;
+  border-radius: 10px;
   background-color: rgba(255,255,255,0.7);
 }
 
 .introtext_02{
-  position: absolute; top:30px; right:0; z-index: 200;
+  position: absolute; top:230px; right:0; z-index: 200;
   float: right;
-  width:480px; height:300px;
-  background-color:rgba(255,255,255,0.9);
+  width:500px; height:260px;
+  padding:20px; box-sizing: border-box;
+  background-color:rgba(255, 255, 255,0.7);
   border-radius: 10px;
 }
 
 .introtext_02 dt{
-  width: 140px; height: 30px;
+  width: 500px; height: 30px;
   font-weight: bold;
 }
 
-.introtex_02 dd{
-  width:140px; height: 60px;
+.introtext_02 dd{
+  width:480px; height: 50px;
 }
 
+.introtext dt{
+  width: 40px; height: 40px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.introimg_01 > a{
+  display: block;
+  background-image: url('../../img/forest_intro/forest_resom_infoimage/icon_bg01.gif');
+}
+.introimg_02 > a{
+  display: block;
+  background-image: url('../../img/forest_intro/forest_resom_infoimage/icon_bg02.gif');
+}
+.introimg_03 > a{
+  display: block;
+  background-image: url('../../img/forest_intro/forest_resom_infoimage/icon_bg03.gif');
+}
+
+
+
 .intropic{
- position: absolute; top:0; left:0; right:0; bottom:0;
+ position: absolute; top:254px; left:0; right:0; bottom:0;
  margin: auto;
  width: 1060px; height: 600px;
+ background-size: 1060px 600px;
  background-image: url('../../img/forest_intro/forest_resom_infoimage/forest_concept_01.jpg');
  background-repeat: no-repeat;
  background-position: 0 0;
