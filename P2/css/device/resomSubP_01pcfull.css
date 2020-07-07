@@ -7,9 +7,7 @@
     font-family: sans-serif, 'nanumbarungodic';
   }
 
-  p{
-    text-align: justify;
-  }
+  p{text-align: justify;}
 
   h2{font-size: 2rem;}
 
@@ -144,11 +142,13 @@
   border-radius: 10px;
 }
 
+
 .quickBox button{
  float: left;
  padding:10px; box-sizing: border-box;
  width: 160px; height: 44px;
  text-align: center;
+ font-size:1rem;
 }
 
 .quick_01 button{
@@ -171,26 +171,34 @@
 /* #introBox ====================================================== */
 
 
+
 #introBox {
+  position: relative;
   margin: auto;
   width:100%; height:1052px;
-  padding: 56px 90px 56px 90px; box-sizing: border-box;
+  padding: 56px 90px 56px 90px; 
+  box-sizing: border-box;
+
 }
 
-#introBox > h2{
-  margin-left:296px;
+.intro_container00{
+  margin:auto;
+  width: 1330px; height:978px;
+  overflow: hidden;
+}
+.intro_container00 > h2{
   width: 160px; height: 44px;
-  
+  font-size:3rem;
 }
 
-.intro_container{
+.intro_container01{
   position: relative;
   margin:auto;
-  width:1330px; height:978px;
+  width:1330px; height:872px;
 }
 
 .introtext_01{
-  position: absolute; top:100px; z-index: 100;
+  position: absolute; top:80px; z-index: 100;
   width:700px; height:400px;
   padding:20px; box-sizing: border-box;
   border-radius: 10px;
@@ -198,48 +206,46 @@
 }
 
 .introtext_02{
-  position: absolute; top:230px; right:0; z-index: 200;
+  position: absolute; top:200px; right:0; z-index: 200;
   float: right;
-  width:500px; height:260px;
+  width:500px; height:300px;
   padding:20px; box-sizing: border-box;
   background-color:rgba(255, 255, 255,0.7);
   border-radius: 10px;
 }
 
 .introtext_02 dt{
-  width: 500px; height: 30px;
+  width: 500px; height: 40px;
+  padding:4px;
   font-weight: bold;
+  font-size:1.1rem;
+  line-height: 4px;
 }
 
 .introtext_02 dd{
   width:480px; height: 50px;
 }
 
-.introtext dt{
+
+
+.introtext dt > img{
   width: 40px; height: 40px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
+border-radius: 100%;
+
 }
 
-.introimg_01 > a{
-  display: block;
-  background-image: url('../../img/forest_intro/forest_resom_infoimage/icon_bg01.gif');
+.introtext > span{
+  width: 100px; height: 40px;
+  padding:10px; box-sizing: border-box;
 }
-.introimg_02 > a{
-  display: block;
-  background-image: url('../../img/forest_intro/forest_resom_infoimage/icon_bg02.gif');
-}
-.introimg_03 > a{
-  display: block;
-  background-image: url('../../img/forest_intro/forest_resom_infoimage/icon_bg03.gif');
-}
+
 
 
 
 .intropic{
- position: absolute; top:254px; left:0; right:0; bottom:0;
- margin: auto;
- width: 1060px; height: 600px;
+margin: auto;
+ position: absolute; top:254px; left:10%; right:0; bottom:0;
+ width: 100%; height: 600px;
  background-size: 1060px 600px;
  background-image: url('../../img/forest_intro/forest_resom_infoimage/forest_concept_01.jpg');
  background-repeat: no-repeat;
@@ -247,23 +253,84 @@
 }
 
 
+/* ============================= */
+.intro_container02{
+  display: none;
+ 
+  margin:auto;
+  width:1330px; height:auto;
+ 
+}
+
+.introcon_Box{
+  position: relative;
+  margin: auto;
+  width: 1060px; height: auto;
+}
+
+.introcon_Box > p{
+  position: absolute; top: 80px; left:0; right:0; bottom: 0;
+  width:1060px; height: auto;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.introcon_Box  > ul{
+  margin: auto;
+  position: absolute; top:100px; left:0; right:0; bottom:0;
+  width: 1060px; height: auto;
+
+}
+
+.introcon_Box li{
+  width:1060px; height:600px;
+}
+
+
+.load_01{
+  margin: auto;
+  margin-top:90px;
+  background-size:1060px 600px;
+  background-image: url('../../img/forest_intro/resort_concept_map1.jpg');
+}
+
+.load_02{
+  margin-top:60px;
+  background-size:100%;
+  background-image: url('../../img/forest_intro/resort_concept_map2.jpg');
+  
+}
 
 /* topjoneBox ================================================*/
 
 
 
 #topjoneBox{
-  position: relative;
+ 
   width:100%;
   height: 150px;
  
   background-color:#fff;
   border-top: 1px solid #416200;
-  
-  
 }
 
-.topbtn_Box01 {
+.topbtnBox{
+  position: relative; top:0px; left:0; right:100px; bottom:0;
+  float: right;
+  width: 76px; height:76px;
+}
+
+
+.arrowbtn_Box {
+  position: absolute; top:14px;
+  width:20px; height:12px;
+  background-image:url('../../img/1x/topbtn_02.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.topbtn_Box {
   
   float: right;
   width:76px; height:76px;
@@ -271,20 +338,10 @@
   background-image: url('../../img/1x/topbtn_01.png');
   background-repeat: no-repeat;
   background-position: center;
- 
   
 }
 
 
-
-.topbtn_Box02 {
-  position: absolute;
-  margin: auto; margin-top: 14px;
-  width:20px; height:12px;
-  background-image:url('../../img/1x/topbtn_02.png');
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 
 /* topjoneBox ================================================*/
@@ -308,17 +365,21 @@
 /*=============================*/
 .infoBox_01{
   margin: auto;
-  width: 990px; height: 46px;
+  width: 1100px; height: 46px;
   color:#1D1D1D;
+  border:1px solid #5aa;
+  border-radius: 10px;
 }
+
 
 .infoBox_01 > li{
   float: left;
-  margin-right:14px;
-  border-right:1px solid #416200;
+  margin-top:2px; margin-right:14px;
   padding-top:8px; box-sizing:border-box;
+
 }
 
+.info_01{margin-left:80px;}
 .info_01,.info_02,.info_05{
   width:100px; 
   width:6.25rem; 
@@ -366,7 +427,7 @@
   width:228px; height: 130px;}
 
 .famsite_Box{
-  float: left;
+  float: right;
   width:128px; height:46px;
   width:14.25rem; height:8.125rem;
   color:#1D1D1D;

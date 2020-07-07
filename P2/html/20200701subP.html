@@ -112,8 +112,8 @@
        <h2 class="hidden">퀵메뉴</h2>
           <div class="quickBox">
             <ul>
-              <li class="quick_01"><button type="button">컨셉</button></li>
-              <li class="quick_02"><button type="button">안내</button></li>
+              <li class="quick_01"><button type="button" class="conbtn">컨셉</button></li>
+              <li class="quick_02"><button type="button" class="guidebtn">단지안내</button></li>
             </ul>
           </div>
      </article>
@@ -125,45 +125,64 @@
 
     <!-- introBox ====================================================== -->
       <article id="introBox">
-           
-                <h2>소개</h2>
-                <div class="intro_container">
+             
         
-                        <div class="introtext_01 intro_01">
-                           <h3>대자연에 둘러싸인 프라이빗 산장 빌라</h3>
-                           <br />
-                           <p>속도가 우선시되고 있는 현대사회에서 '빨리빨리'를 외치던 
-                             사람들이 이제 <b>'느리게 살기'</b>를 이야기합니다. 
-                             이는 속도에 밀려 잃어가던 것들의 소중함을 깨닫고, 비로소 느린 속도로 살아가기 위한 노력입니다. 
-                             이러한 흐름에 따라 우리의 여가 문화도 바뀌어 가고 있습니다. 놀고, 먹고, 즐기기만 하던 소모형 휴식에서
-                             벗어나 몸과 마음의 <b>'쉼'</b>을 통해 에너지를 얻는 충전형 휴식으로 변화하고 있는 것입니다.</p>
-                             <br />
-                            <p>울창한 원시림의 아름다운 사계를 즐길 수 있는 포레스트 리솜은 자연을 훼손하지 않는 방식으로 개발된 <b>'친환경 리조트'</b>입니다. 
-                              자연지형과 식생을 그대로 보존하고 친환경 자재를 사용하여 자연과 인간이 함께 휴식을 누릴 수 있도록 설계하였습니다. 
-                              단지 내에서는 전깃줄과 자동차를 찾아볼 수 없으며 친환경 에너지 이용 및 재활용품 사용을 권장하고 있습니다. 
-                              포레스트 리솜에서는 사계절 아름다운 야생화와 다람쥐, 청솔모를 만날 수 있습니다.</p>
-                             <br /> 
-                              <p>구학산, 주론산에 아늑하게 안겨 있는 분지형 구조의 포레스트 리솜은 대한민국에서 
-                                손꼽히는 명당입니다. 숲에서 뿜어져 나오는 음이온과 피톤치드는 지친 몸과 마음을 건강하게 합니다.</p>
+            <div class="intro_container00">
+                        <h2>소개</h2>   
+                        <div class="intro_container01">  
+                             <div class="introtext_01 intro_01">
+                                <h3>대자연에 둘러싸인 프라이빗 산장 빌라</h3>
+                                <br />
+                                <p>속도가 우선시되고 있는 현대사회에서 '빨리빨리'를 외치던 
+                                  사람들이 이제 <b>'느리게 살기'</b>를 이야기합니다. 
+                                  이는 속도에 밀려 잃어가던 것들의 소중함을 깨닫고, 비로소 느린 속도로 살아가기 위한 노력입니다. 
+                                  이러한 흐름에 따라 우리의 여가 문화도 바뀌어 가고 있습니다. 놀고, 먹고, 즐기기만 하던 소모형 휴식에서
+                                  벗어나 몸과 마음의 <b>'쉼'</b>을 통해 에너지를 얻는 충전형 휴식으로 변화하고 있는 것입니다.</p>
+                                  <br />
+                                 <p>울창한 원시림의 아름다운 사계를 즐길 수 있는 포레스트 리솜은 자연을 훼손하지 않는 방식으로 개발된 <b>'친환경 리조트'</b>입니다. 
+                                   자연지형과 식생을 그대로 보존하고 친환경 자재를 사용하여 자연과 인간이 함께 휴식을 누릴 수 있도록 설계하였습니다. 
+                                   단지 내에서는 전깃줄과 자동차를 찾아볼 수 없으며 친환경 에너지 이용 및 재활용품 사용을 권장하고 있습니다. 
+                                   포레스트 리솜에서는 사계절 아름다운 야생화와 다람쥐, 청솔모를 만날 수 있습니다.</p>
+                                  <br /> 
+                                   <p>구학산, 주론산에 아늑하게 안겨 있는 분지형 구조의 포레스트 리솜은 대한민국에서 
+                                     손꼽히는 명당입니다. 숲에서 뿜어져 나오는 음이온과 피톤치드는 지친 몸과 마음을 건강하게 합니다.</p>
+                             </div>
+
+                             <div class="introtext_02 intro_02">
+                                   <dl>
+                                     <dt class="introimg_01"><img src="../../img/forest_intro/forest_resom_infoimage/icon_bg01.gif" /><span> 에코힐링 리조트</span></dt>
+                                     <dd>자연과의 살아있는 교감을 통해 
+                                       건강한 삶의 방식을 배우고 누릴 수 있는 곳</dd>
+      
+                                     <dt class="introimg_02"><img src="../../img/forest_intro/forest_resom_infoimage/icon_bg02.gif" /><span> 스파 리조트</span></dt>
+                                     <dd>해발고도 500m 숲 한가운데서 노천 스파를 즐길 수 있는 곳</dd>
+      
+                                     <dt class="introimg_03"><img src="../../img/forest_intro/forest_resom_infoimage/icon_bg03.gif" /><span> 멤버십 리조트</span></dt>
+                                     <dd>차별화된 쉼의 가치를 경험하고 프리미엄을 느낄 수 있는 곳</dd>
+                                   </dl>
+                              </div>
+                        
+                            <div class="intropic intro_03">
+
+                            </div>
+                          </div>
+
+              
+       
+        
+                <div class="intro_container02">
+                        <h3 class="hidden">단지안내</h3>
+                        <div class="introcon_Box">
+                             <p>포레스트 리솜에는 곧은 길이 없습니다. 자연 그대로의 모습을 느낄 수 있도록 평지가 아닌 산속에, 쭉 뻗은 넓은 길이 아닌 오솔길 위에 길을 얹어 두었습니다. 포레스트 리솜의 
+                               산책로를 따라 걸으며 마음의 여유와 건강을 되찾아보세요.</p>
+                             <ul>
+                               <li class="load_01"></li>
+                               <li class="load_02"></li>
+                             </ul>
                         </div>
 
-                        <div class="introtext_02 intro_02">
-                             <dl>
-                               <dt class="introimg_01"><a href="#"></a>에코힐링 리조트</dt>
-                               <dd>자연과의 살아있는 교감을 통해 
-                                 건강한 삶의 방식을 배우고 누릴 수 있는 곳</dd>
-
-                               <dt class="introimg_02"><a href="#"></a>스파 리조트</dt>
-                               <dd>해발고도 500m 숲 한가운데서 노천 스파를 즐길 수 있는 곳</dd>
-
-                               <dt class="introimg_03"><a href="#"></a>멤버십 리조트</dt>
-                               <dd>차별화된 쉼의 가치를 경험하고 프리미엄을 느낄 수 있는 곳</dd>
-                             </dl>
-                        </div>
-                
-                        <div class="intropic intro_03"></div>
                 </div>
-            
+         </div>
       </article>
     <!-- introBox ====================================================== -->
     
@@ -172,10 +191,12 @@
       
     <!-- topjoneBox ====================================================== -->
       <aside id ="topjoneBox" class="hidden_wrap">
-        <h2 class="hidden">topjone</h2>
-        <button type="button" class="topbtn_Box01 hidden_wrap"><a href="#"><span>top</span></a></button>
-        <a href="#" class="topbtn_Box02"><span>arrow</span></a>
-  
+            <h2 class="hidden">topjone</h2>
+            <ul class="topbtnBox">
+                   <li class="arrowbtn_Box"><span class="hidden">arrow</span></li>
+                   <li><button type="button" class="topbtn_Box01 hidden_wrap"><span class="hidden">top</span></button></li>
+            </div>
+      
       </aside>
       <!-- topjoneBox ====================================================== -->
  .   

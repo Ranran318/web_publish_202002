@@ -33,11 +33,27 @@
  var intOff = intBox.offset().top;
   
  //console.log(intOff);
+ var conbtn = $('.conbtn');
+ var guidebtn = $('.guidebtn');
+ var intConCont = $('.intro_container01');
+ var intGCont = $('.intro_container02');
+ 
+ 
+ //==============================
+ //컨셉(.conbtn),안내(.guidebtn) 클릭시
+ conbtn.on('click', function(){
+   intGCont.hide();
+   intConCont.show();
+});
 
- var intcon = $('.intro_container');
- var int01 = $('.intro_01');
- var int02 = $('.intro_02');
- var int03 = $('.intro_03');
+guidebtn.on('click', function(){
+    if(intGCont.css('display') === 'none'){ 
+      intConCont.hide();     
+      intGCont.css('display','block');
+      intGCont.show();
+ 
+      }}
+      );
 
 
 
