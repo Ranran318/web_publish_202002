@@ -47,13 +47,12 @@
 });
 
 guidebtn.on('click', function(){
-    if(intGCont.css('display') === 'none'){ 
+   
       intConCont.hide();     
       intGCont.css('display','block');
       intGCont.show();
  
-      }}
-      );
+      });
 
 
 
