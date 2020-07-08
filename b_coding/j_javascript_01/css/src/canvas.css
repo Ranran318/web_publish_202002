@@ -21,14 +21,42 @@ h2{
 	background-color: #acc;
 }
 
+dl{
+	width: 80%; height:auto;
+	border:5px solid #ddd;
+	margin:10px auto;
+	border-radius:0.5rem;
+}
+
+dl:after{content:""; display:block; clear:both;}
+dt{
+		float:left;
+		width: 100px; height:30px; margin-bottom:0.5rem;
+		background-color: #ddd;
+		font-size:1.1rem; font-weight:bold; text-align:center;
+		line-height: 30px;
+}
+
+dt:last-of-type, dd:last-of-type{margin-bottom:0;}
+dd{
+		float:left;
+		width:500px; height:30px;
+		margin-bottom:0.5rem; padding-left:1rem;
+		line-height:30px;
+}
+
 #viewBox{
 	width: 400px; height: 400px;
 	margin:auto; margin-top:2rem;
-	background-color: #dfdfdf;
-	/* border:1px solid var(--black); */
+	/*background-color: #dfdfdf;*/
+	border:1px solid var(--black); 
 }
 
 .paper{
 	width: 100%; height: 100%;
-	background-color: #caa;
+	background-color: #fdd;
+}
+
+.canvas_to_img{
+	 width: 100%; height: auto;
 }

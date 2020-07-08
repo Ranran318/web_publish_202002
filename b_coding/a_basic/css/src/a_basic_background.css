@@ -254,7 +254,7 @@ overflow:hidden;
 .clip_01{background-clip:border-box;}
 .clip_02{background-clip:padding-box;}
 .clip_03{background-clip:content-box;}
-.clip_04{-webkit-background-clip:text;
+.clip_04{background-clip:text;
          color:transparent;}
 
 
