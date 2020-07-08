@@ -11,7 +11,7 @@
 
   $(document).ready(function(){
 
-      ViewPic.animate({'backgroundPosition':'50% 50%'}, 300);
+      ViewPic.animate({'backgroundPosition':'0 0'}, 300);
    
     });
 
@@ -24,7 +24,8 @@
  // });
     
    
-     //소개 - 글귀 parallox , scroll 시 
+     //소개 - scroll 시, 사진 제외 글귀는 위에서 아래로 
+     //스르륵 나타나고 /사진과 어울려서 parallox되기. 
 
  var win = $(document).scrollTop();
    
@@ -33,18 +34,27 @@
  var intOff = intBox.offset().top;
   
  //console.log(intOff);
+ var conbtn = $('.conbtn');
+ var guidebtn = $('.guidebtn');
+ var intConCont = $('.intro_container01');
+ var intGCont = $('.intro_container02');
+ 
+ 
+ //==============================
+ //컨셉(.conbtn),안내(.guidebtn) 클릭시
+ conbtn.on('click', function(){
+   intGCont.hide();
+   intConCont.show();
+});
 
- var intcon = $('.intro_container');
- var int01 = $('.intro_01');
- var int02 = $('.intro_02');
- var int03 = $('.intro_03');
+guidebtn.on('click', function(){
+   
+      intConCont.hide();     
+      intGCont.css('display','block');
+      intGCont.show();
+ 
+      });
 
-
-
-// console.log(win);
-
-     //이건 할 수 있으면 .. 사진 - 마우스 올리면 마우스 위치값에 따라 
-     //사진 positionX/Y위치값 위아래 혹은 좌우로 변동
 
 
 
