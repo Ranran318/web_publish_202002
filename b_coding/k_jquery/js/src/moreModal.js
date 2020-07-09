@@ -1,8 +1,8 @@
 //moreModal.js
 // var listView;
+var listData; 
 var colorArr = [];
 var NowListLen;
-var listData; 
 
 (function($){
 		listView = $('#listViewBox');

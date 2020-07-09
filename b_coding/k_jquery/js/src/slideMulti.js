@@ -6,12 +6,26 @@
    var slideLi     = slideUl.find('li');
 
    //------------------------------------------------
+    var backImg = $('.back_img');
+    var backImgUl = backImg.children('ul');
+    var backLi = backImgUl.find('li');
+    
+
    // Li 순서 변경, .active 삭제 및 재설정
 
   slideLi.removeClass('active');
   slideLi.eq(-1).prependTo(slideUl);
   slideLi     = slideUl.find('li');
   slideLi.eq(1).addClass('active');
+
+//배경배너 순서
+
+backLi.eq(-1).prependTo(backImgUl);
+backLi = backImgUl.finid('li');
+backLi.css({filter:'blur(20px) grayscale(0.5)'});
+
+
+
   
   
   // 정면에 보이는 배너순서 찾기(.active 찾기)
@@ -72,7 +86,18 @@
                                 btnTrue = true;
                         //WhereActive();
                       },500);
+
+                      //배경 이미지 배치
+                      backImgUl.stop().animate({marginLeft:-200 + '%'}, function(){
+                                backLi.eq(0).appendTo(backImgUl);
+                                backLi    = backImgUl.find('li');
+                                backImgUl.css({marginLeft:-100 + '%'});
+                      });
             
+
+
+
+
             
                //slideLi   = slideUl.find('li');
       
@@ -110,6 +135,14 @@
                         btnTrue = true;
                        // WhereActive();
               },500);
+
+              // 배경 이미지 배치
+              backImgUl.stop().animate({marginLeft:0}, function(){
+                backLi.eq(-1).prependTo(backImgUl);
+                backLi    = backImgUl.find('li');
+                backImgUl.css({marginLeft:-100 + '%'});//틀어지는 거 눈속임으로 가려주기위함.
+      });
+
       
   }
  });
@@ -144,6 +177,7 @@
       if(ha){ $(this).css({transform:'rotateY(0)'})}
     });
 
+//-------------------------------------------------------
 
 
 

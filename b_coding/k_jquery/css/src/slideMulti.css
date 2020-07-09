@@ -104,9 +104,9 @@ h1{
 
 /* =============================== */
 
-.banner_01{background-image:url('../../img/background/starrynight.jpg');}
-.banner_02{background-image:url('../../img/background/tree.jpg');}
-.banner_03{background-image:url('../../img/background/sunset.jpg');}
+.banner_01, .back_01{background-image:url('../../img/background/starrynight.jpg');}
+.banner_02, .back_02{background-image:url('../../img/background/tree.jpg');}
+.banner_03, .back_03{background-image:url('../../img/background/sunset.jpg');}
 
 
 /* =============================== */
@@ -201,8 +201,24 @@ h1{
 /*----------------------------------*/
 
 .back_img{
+  position: absolute; top:0; left:0; z-index: -1;
   width: 100%; height: 100%;
   background-color:#aca;
+}
+
+.back_img > ul{
+     width: 300%; height: 100%;
+     margin-left:-100%;
+     background-color: #acf; 
+}
+
+.back_img li{
+  float: left;
+   width:calc(100%/3); height: 100%;
+   background-repeat:no-repeat;
+   background-position: 50% 50%;
+   background-size: cover;
+
 }
 
 
