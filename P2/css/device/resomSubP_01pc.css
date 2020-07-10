@@ -1,0 +1,514 @@
+/* resomSubP_01pcfull.css*/
+/* device : pcfull ( 1440px - )기준입니다.*/
+
+@media all and (min-width:1024px) and (max-width:1439px){
+
+  :root{
+    font-family: sans-serif, 'NanumBarunGothic';
+  }
+
+  p{
+    height: auto;
+    text-align: justify;}
+
+  h2{
+    height:2rem;
+    font-size: 2rem;}
+
+#wrap{
+  width: 100%; height: auto;
+  margin: auto;
+}
+
+#headBox{
+  width: 100%; height: 240px;
+ background-color: #fff;
+}
+
+
+
+
+/* navigation =================== */
+
+#navi { 
+  width:100%;
+  height:120px;
+  
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+}
+
+#navi > button {
+  display: none;
+}
+
+/* ============================== */
+.gnbBox{
+  float: right;
+  margin-top:8px; padding-left:10px; box-sizing: border-box;
+  width: 520px; height: 34px;
+}
+.gnbBox:hover, .gnbBox:focus{
+  border-left:1px solid #5aa;
+  border-right:1px solid #5aa;
+}
+
+.gnbBox li{
+  float:left;
+  margin-right:10px; padding-top:6px;
+  text-align:center;
+}
+
+.gnbtn_01{width: 150px; height:34px;}
+
+.gnbtn_02,.gnbtn_03,
+.gnbtn_04,.gnbtn_05{width:76px; height:34px;}
+
+
+
+.gnbBox li:hover,
+.gnbBox li:focus{
+  color:#416200;
+  border-bottom: 2px solid #416200;
+}
+
+/*user nbBox======= */
+
+.unbBox{
+  margin:auto;
+  width:900px;
+  height:40px;
+  margin-top:64px;
+  border:1px solid #5aa;
+  padding:8px 0px 8px 8px; box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.unbBox > ul{
+  margin: auto;
+}
+
+.unbBox dl {
+  float: left;
+}
+
+.unbtn_01, .unbtn_02, .unbtn_03, 
+.unbtn_04,.unbtn_05{
+  width:110px; height:34px;
+  margin-right:40px;
+  text-align: center;
+}
+
+.unbtn_06{
+  width:110px; height:34px;
+  
+  text-align: center;
+}
+
+.unbBox dd{
+  display:none;
+}
+
+.unbBox dt:hover,
+.unbBox dt:focus{
+  color:#416200;
+  border-bottom: 2px solid #416200;
+}
+
+
+
+
+/* viewBox ================================================*/
+#viewBox{
+  width:100%;
+  height:522px;
+  background-color: #fff;
+}
+
+.pic_container{
+  width: 100%; height:522px;
+  background-size: 100%;
+  background-image: url('../../img/forest_intro/intro_mountain05.jpg');
+  /*background-position: 10% 30%;*/
+  /*background-position: 90% 60%;*/
+  background-position: 70% 50%;
+  background-repeat: no-repeat;
+}
+
+
+
+
+/* viewBox ================================================*/
+
+/* quickBox ====================================================== */
+
+#quickmenuBox{
+  position: relative;
+  width: 100%; height: 96px;
+  border-bottom: 1px solid #bcc;
+}
+
+.quickBox{
+  position: absolute; top:50px; left:0; right:0;
+  margin:auto;
+  width: 324px; height:45px;
+  border:1px solid #bcc;
+  border-radius: 10px;
+}
+
+
+.quickBox button{
+ float: left;
+ padding:10px; box-sizing: border-box;
+ width: 160px; height: 44px;
+ text-align: center;
+ font-size:1rem;
+}
+
+.quick_01 button{
+  margin-right:2px;
+  border-right: 1px solid #bcc;
+
+}
+
+
+.quick_01 button:hover, 
+.quick_01 button:focus{
+  box-shadow: 0.1rem 0.3rem 0.3rem 0 #bcc;
+  }
+.quick_02 button:hover,.quick_02 a:focus{
+  box-shadow: 0.1rem 0.3rem 0.3rem 0 #bcc;
+  }
+/* quickBox ====================================================== */
+
+
+/* #introBox ====================================================== */
+
+
+
+#introBox {
+  position: relative;
+  margin: auto;
+  width:100%; height:1052px;
+  padding: 56px 90px 56px 90px; 
+  box-sizing: border-box;
+
+}
+
+.intro_container00{
+  margin:auto;
+  width: 1024px; height:978px;
+  overflow: hidden;
+}
+.intro_container00 > h2{
+  width: 160px; height: 44px;
+  font-size:3rem;
+}
+
+.intro_container01{
+  position: relative;
+  margin:auto;
+  width:1330px; height:872px;
+}
+
+.introtext_01{
+  position: absolute; top:80px; z-index: 100;
+  width:700px; height:400px;
+  padding:20px; box-sizing: border-box;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.7);
+}
+
+.introtext_02{
+  position: absolute; top:200px; right:0; z-index: 200;
+  float: right;
+  width:500px; height:300px;
+  padding:20px; box-sizing: border-box;
+  background-color:rgba(255, 255, 255,0.7);
+  border-radius: 10px;
+}
+
+.introtext_02 dt{
+  width: 500px; height: 40px;
+  padding:4px;
+  font-weight: bold;
+  font-size:1.1rem;
+  line-height: 4px;
+}
+
+.introtext_02 dd{
+  width:480px; height: 50px;
+}
+
+
+
+.introtext dt > img{
+  width: 40px; height: 40px;
+border-radius: 100%;
+
+}
+
+.introtext > span{
+  width: 100px; height: 40px;
+  padding:10px; box-sizing: border-box;
+}
+
+
+
+
+.intropic{
+ position: absolute; top:300px; left:10%; right:0; bottom:0;
+ margin: auto;
+ width: 100%; height: 600px;
+ background-size: 100% 600px;
+ background-image: url('../../img/forest_intro/forest_resom_infoimage/forest_concept_01.jpg');
+ background-repeat: no-repeat;
+ background-position: 0 0;
+}
+
+
+/* ============================= */
+.intro_container02{
+  margin:auto;
+  width:1330px; height:10000px;
+ 
+}
+
+.introcon_Box{
+  margin: auto;
+  width: 1060px; height: 10000px;
+}
+
+.introcon_Box > p{
+  margin-top: 100px;
+  width:1060px; height: 40px;
+  text-align: justify;
+}
+
+.introcon_Box  > ul{
+  margin: auto;
+  margin-top:50px;
+  width: 1060px; height: 10000px;
+
+}
+
+.introcon_Box li{
+  width:1060px; height:10000px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+.load_01{
+  margin: auto;
+  background-size:1060px 600px;
+  background-image: url('../../img/forest_intro/resort_concept_map1.jpg');
+}
+
+.load_02{
+  margin-top:60px;
+  background-size:100%;
+  background-image: url('../../img/forest_intro/resort_concept_map2.jpg');
+  
+}
+
+/* topjoneBox ================================================*/
+
+
+
+#topjoneBox{
+ 
+  width:100%;
+  height: 150px;
+ 
+  background-color:#fff;
+  border-top: 1px solid #416200;
+}
+
+.topbtnBox{
+  position: relative;
+  margin-right:100px;
+  float: right;
+  width: 76px; height:76px;
+}
+
+
+
+.arrowbtn_Box {
+  position: absolute; top:50px; left:26px;
+  margin: auto;
+  width:20px; height:12px;
+  background-image:url('../../img/1x/topbtn_02.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.topbtn_Box {
+  
+  float: right; margin-right:50px;
+  width:76px; height:76px;
+  background-size: 76px 76px;
+  background-image: url('../../img/1x/topbtn_01.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+
+
+
+/* topjoneBox ================================================*/
+
+
+
+/* footBox ===============================================*/
+#footBox{
+  position: relative;
+  float: left;
+  padding:40px 50px 20px 20px; box-sizing:border-box;
+  width:100%;
+  height: 340px;
+  background-color: #fff;
+  border-top: 1px solid #333;
+  color:#1D1D1D;
+  /*padding-bottom: 50px; box-sizing: border-box;*/
+}
+
+/*=============================*/
+.infoBox_01{
+  margin: auto;
+  width: 1090px; height: 46px;
+  color:#1D1D1D;
+  border:1px solid #5aa;
+  border-radius: 10px;
+}
+
+
+.infoBox_01 > li{
+  float: left;
+  margin-top:2px; margin-right:14px;
+  padding-top:8px; box-sizing:border-box;
+
+}
+
+.info_01{margin-left:80px;}
+.info_01,.info_02,.info_05{
+  width:100px; 
+  width:6.25rem; 
+  height: 46px;
+  height: 2.875rem;
+}
+
+.info_03,.info_06 {
+  width:170px; 
+  width:10.625rem; 
+  height: 46px;
+  height: 2.875rem;
+}
+
+.info_04{
+  width: 260px; 
+  height: 46px;
+  height: 2.875rem;
+
+}
+
+#fooBox > address > p:nth-child(2){
+  text-transform: uppercase;
+}
+
+/*===============================*/
+
+
+#footBox > address { 
+  margin: auto;
+  width:1170px;
+  height: 200px; 
+  color:#1D1D1D;
+ 
+}
+
+
+
+.padd_01 { 
+ padding:20px;
+ margin:auto;
+}
+
+/*famsite and snsBox==========*/
+.famsnsBox{
+  position: absolute; top:120px; right:194px;
+  width: 274px; height: 130px;
+}
+
+.footgnbBox{
+  position: relative;
+  margin:auto;
+  width:274px; height: 46px;
+}
+
+.footgnbBox dt{
+  border:1px double #416200;
+  border-radius: 4px;
+}
+
+.footgnbBox dt > i{
+  float: right; margin-top:4px;
+  width: 40px; height: 40px;
+}
+
+.footgnbBox dt, .footgnbBox dd{
+  padding:10px; box-sizing: border-box;
+  width:200px; height: 46px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.footgnbBox  dd{
+ display: none;
+}
+
+.footgnbBox > button{
+  position:absolute; top:0; right:1px;
+  width: 46px; height: 46px;
+  border-radius: 4px;
+  background-color: #416200; 
+  color: #fff;
+  font-size: 1rem;
+}
+
+
+.fb,.insta,.naver,.youtube{
+
+  float: left;
+  margin-top:40px;
+  margin-right:30px;
+  width:46px; height: 46px;
+  width:2.875rem; height: 2.875rem;
+  background-size: 46px 46px;
+  background-repeat: no-repeat;
+}
+
+
+
+.fb     {
+ margin-top:48px;
+ /* position: absolute; bottom:0;*/
+  background-image: url('../../img/sns_icon/f_logo_RGB-Blue_72.png');}
+.insta{
+  
+  /*position: absolute; left:90px; bottom:0;*/
+  background-image: url('../../img/sns_icon/insta_logo.png');}
+.naver{
+  
+  /*position: absolute; left:180px; bottom:0;*/
+  background-image: url('../../img/sns_icon/never_icon.png');}
+
+  .youtube{
+    /*position: absolute; left:180px; bottom:0;*/
+    background-image: url('../../img/sns_icon/youtube_social_icon_dark.png');}
+  
+};
+
+/*media end*/
