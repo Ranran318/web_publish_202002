@@ -1,0 +1,87 @@
+
+
+@media all and (min-width:1024px){
+
+#wrap{
+  width: 100%; height: auto;
+  margin:auto;
+  background-color: #ccc;
+}
+
+#headBox{
+  width:100%; height: 240px;
+  background-color: #f04;
+
+
+}
+
+h1{
+  width: 120px; height:40px;
+  background-color: #fff;
+}
+
+#naviBox{
+width: 100%; height: 900px;
+background-color: #fe4;
+}
+
+.unbBox{
+       width: 100%; height:120px;
+      background-color: #fff;
+}
+
+/* =============================== */
+
+/* =============================== */
+#viewBox{
+  width:100%; height:900px;
+  background-color: #aaa;
+}
+/* =============================== */
+
+/* =============================== */
+#container01{
+  width: 100%; height:800px;
+  padding-left:30px; padding-right:30px;
+  box-sizing: border-box;
+  background-color: #888;
+}
+/* =============================== */
+
+/* =============================== */
+#container02{
+width: 100%; height:800px;
+padding-left:30px; padding-right:30px;
+box-sizing: border-box;
+background-color: #fff;
+}
+/* =============================== */
+
+/* =============================== */
+#footBox{
+  width: 100%; height: 300px;
+  background-color: #333;
+  padding:5px; box-sizing:border-box;
+}
+
+.foot_Box{
+  width:90%; height:250px;
+}
+
+address{
+  width: 70%; height: 240;
+  border: 1px solid #73bb37;
+}
+
+address > p { 
+  color:#fff;
+  font-size:1.3rem;
+}
+/* =============================== */
+
+
+
+
+
+/*media end ===============================*/
+};

@@ -1,0 +1,9 @@
+/*home.css*/
+
+@charset "UTF-8";
+
+
+@import url("../device/homebase.css");
+@import url("../device/home_mob.css");
+@import url("../device/home_tablet.css");
+@import url("../device/home_pc.css");
