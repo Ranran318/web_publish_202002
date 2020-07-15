@@ -50,10 +50,28 @@
 guidebtn.on('click', function(){
    
       intConCont.hide();     
-      intGCont.css('display','block');
+      intGCont.css({'display':'block'});
       intGCont.show();
  
       });
+//-----top버튼
+
+//========================
+//famsite-----------------
+
+var famBox = $('.famsnsBox');
+var fgnbBox = $('.footgnbBox');
+var famDl = fgnbBox.children('dl');
+var famDt = famDl.children('dt');
+var famDd = famDl.children('dd');
+var famDd;
+
+
+
+
+
+
+
 
 
 

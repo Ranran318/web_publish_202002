@@ -31,9 +31,11 @@
 /* navigation =================== */
 
 #navi { 
+
   width:100%;
   height:120px;
   padding-left:40px; padding-top:30px;
+  box-sizing: border-box;
   border-top: 1px solid #444;
   border-bottom: 1px solid #444;
 
@@ -42,7 +44,7 @@
 .gnbtn_bar{
   display: block;
   float:left;
-  width:52px;height: 52px;
+  width:52px; height: 52px;
   background-size: 52px 52px;
   background-image: url('../../img/1x/close_btn01.png');
   background-repeat: no-repeat;
@@ -88,7 +90,7 @@
 
 .unbBox{
   display: none;
-  width:1200px;
+  width:640px;
   height:40px;
    margin-top:64px;
   border:1px solid #5aa;
@@ -144,7 +146,7 @@
 
 .pic_container{
   width: 100%; height:522px;
-  background-size: 100%;
+  background-size: 100% 522px;
   background-image: url('../../img/forest_intro/intro_mountain05.jpg');
   /*background-position: 10% 30%;*/
   /*background-position: 90% 60%;*/
@@ -206,15 +208,15 @@
 #introBox {
   position: relative;
   margin: auto;
-  width:100%; height:1052px;
-  padding: 56px 90px 56px 90px; 
+  width:100%; height:1224px;
+  padding: 56px 2px 0px 2px; 
   box-sizing: border-box;
 
 }
 
 .intro_container00{
   margin:auto;
-  width: 1330px; height:978px;
+  width: 640px; height:1224px;
   overflow: hidden;
 }
 .intro_container00 > h2{
@@ -225,32 +227,34 @@
 .intro_container01{
   position: relative;
   margin:auto;
-  width:1330px; height:872px;
+  width:640px; height:872px;
 }
 
 .introtext_01{
-  position: absolute; top:80px; z-index: 100;
-  width:700px; height:400px;
-  padding:20px; box-sizing: border-box;
+  position: absolute; top:20px; left:0; right:0; z-index: 100;
+  width:640px; height:400px;
+  padding: 2px 20px 2px 20px; box-sizing: border-box;
   border-radius: 10px;
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255,255,215,0.7);
+  text-align: justify;
 }
 
 .introtext_02{
-  position: absolute; top:200px; right:0; z-index: 200;
-  float: right;
+  position: absolute; top:820px; left:0; right:0; z-index: 200;
+  margin:auto;
   width:500px; height:300px;
-  padding:20px; box-sizing: border-box;
+  padding:1px; box-sizing: border-box;
   background-color:rgba(255, 255, 255,0.7);
   border-radius: 10px;
+  text-align: justify;
 }
 
 .introtext_02 dt{
   width: 500px; height: 40px;
-  padding:4px;
+  padding:4px; 
   font-weight: bold;
   font-size:1.1rem;
-  line-height: 4px;
+  line-height: 2px;
 }
 
 .introtext_02 dd{
@@ -274,10 +278,10 @@ border-radius: 100%;
 
 
 .intropic{
- position: absolute; top:300px; left:10%; right:0; bottom:0;
+ position: absolute; top:350px; left:0; right:0; bottom:0;
  margin: auto;
  width: 100%; height: 600px;
- background-size: 1060px 600px;
+ background-size: 100% 500px;
  background-image: url('../../img/forest_intro/forest_resom_infoimage/forest_concept_01.jpg');
  background-repeat: no-repeat;
  background-position: 0 0;
@@ -286,46 +290,52 @@ border-radius: 100%;
 
 /* ============================= */
 .intro_container02{
+  
   margin:auto;
-  width:1330px; height:10000px;
+  padding:1px; box-sizing: border-box;
+  width:100%; height:1224px;
  
 }
 
 .introcon_Box{
   margin: auto;
-  width: 1060px; height: 10000px;
+  width: 100%; height: 90000px;
 }
 
 .introcon_Box > p{
   margin-top: 100px;
-  width:1060px; height: 40px;
+  width:100%; height: 40px;
   text-align: justify;
 }
 
 .introcon_Box  > ul{
   margin: auto;
   margin-top:50px;
-  width: 1060px; height: 10000px;
+  width: 100%; height: 1500px;
 
 }
 
 .introcon_Box li{
-  width:1060px; height:10000px;
+  width:100%; height:10000px;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 100 100;
 }
 
 
 .load_01{
   margin: auto;
-  background-size:1060px 600px;
+  width:100%; height:450px;max-height: 800px;
+  background-size:100%;
   background-image: url('../../img/forest_intro/resort_concept_map1.jpg');
+  background-repeat: no-repeat;
 }
 
 .load_02{
-  margin-top:60px;
+  margin: auto;
+  width: 100%; height: 600px; max-height: 800px;
   background-size:100%;
   background-image: url('../../img/forest_intro/resort_concept_map2.jpg');
+  background-repeat: no-repeat;
   
 }
 
@@ -334,12 +344,12 @@ border-radius: 100%;
 
 
 #topjoneBox{
- 
+  margin-top: 100px;
   width:100%;
   height: 150px;
  
   background-color:#416200;
-  border-top: 1px solid #416200;
+
 }
 
 .topbtnBox{
@@ -382,10 +392,9 @@ border-radius: 100%;
 /* footBox ===============================================*/
 #footBox{
   position: relative;
-  float: left;
-  padding:40px 50px 20px 20px; box-sizing:border-box;
+  padding:40px 10px 10px 10px; box-sizing:border-box;
   width:100%;
-  height: 340px;
+  height: 510px;
   background-color: #fff;
   border-top: 1px solid #333;
   color:#1D1D1D;
@@ -395,7 +404,7 @@ border-radius: 100%;
 /*=============================*/
 .infoBox_01{
   margin: auto;
-  width: 1090px; height: 46px;
+  width: 570px; height: 80px;
   color:#1D1D1D;
   border:1px solid #5aa;
   border-radius: 10px;
@@ -404,58 +413,84 @@ border-radius: 100%;
 
 .infoBox_01 > li{
   float: left;
-  margin-top:2px; margin-right:14px;
-  padding-top:8px; box-sizing:border-box;
-
+  padding:4px; 
+  box-sizing: border-box;
+  height:46px;
+  font-size:1.1rem;
 }
 
 .info_01{margin-left:80px;}
 .info_01,.info_02,.info_05{
-  width:100px; 
+  margin-right:14px;
+  width:90px; 
   width:6.25rem; 
   height: 46px;
   height: 2.875rem;
 }
 
-.info_03,.info_06 {
+.info_01,.info_02{padding-bottom:20px; box-sizing: border-box;}
+
+
+.info_03{width:154px; height:46px;padding-bottom: 20px; box-sizing: border-box;}
+
+.info_06 {
   width:170px; 
   width:10.625rem; 
   height: 46px;
   height: 2.875rem;
+  margin-right:4px; 
 }
+
+
 
 .info_04{
   width: 260px; 
   height: 46px;
   height: 2.875rem;
-
+  margin-left:4px; 
+  margin-right:14px;
 }
 
-#fooBox > address > p:nth-child(2){
-  text-transform: uppercase;
-}
 
 /*===============================*/
 
 
 #footBox > address { 
   margin: auto;
-  width:1170px;
+  padding-top:20px; padding-bottom:20px; box-sizing: border-box;
+  width:100%;
   height: 200px; 
   color:#1D1D1D;
- 
+}
+
+address > ul{
+  margin: auto;
+}
+
+
+#footBox > address > p{
+  float: left;
+}
+
+#footBox > address > p:last-child{
+  text-transform: uppercase;
+}
+
+
+address > ul > li{
+  float: left;
+  padding:1px; box-sizing: border-box;
+  margin-right:20px;
+  
 }
 
 
 
-.padd_01 { 
- padding:20px;
- margin:auto;
-}
+
 
 /*famsite and snsBox==========*/
 .famsnsBox{
-  position: absolute; top:120px; right:194px;
+ margin:auto; 
   width: 274px; height: 130px;
 }
 
@@ -529,5 +564,5 @@ border-radius: 100%;
     background-image: url('../../img/sns_icon/youtube_social_icon_dark.png');}
   
   
-};
+  }
 /*media end*/

@@ -33,7 +33,6 @@
 #navi { 
   width:100%;
   height:120px;
-  
   border-top: 1px solid #444;
   border-bottom: 1px solid #444;
 }
@@ -198,7 +197,7 @@
 .intro_container00{
   margin:auto;
   width: 1024px; height:978px;
-  overflow: hidden;
+
 }
 .intro_container00 > h2{
   width: 160px; height: 44px;
@@ -220,7 +219,7 @@
 }
 
 .introtext_02{
-  position: absolute; top:200px; right:0; z-index: 200;
+  position: absolute; top:670px; right:0; z-index: 200;
   float: right;
   width:500px; height:300px;
   padding:20px; box-sizing: border-box;
@@ -257,7 +256,7 @@ border-radius: 100%;
 
 
 .intropic{
- position: absolute; top:300px; left:10%; right:0; bottom:0;
+ position: absolute; top:300px; left:0; right:0; bottom:0;
  margin: auto;
  width: 100%; height: 600px;
  background-size: 100% 600px;
@@ -270,13 +269,15 @@ border-radius: 100%;
 /* ============================= */
 .intro_container02{
   margin:auto;
-  width:1330px; height:10000px;
+  width:100%; height:1052px;
+
  
 }
 
 .introcon_Box{
   margin: auto;
-  width: 1060px; height: 10000px;
+  width: 1060px; height: 2000px;
+  background-color: #bcc;
 }
 
 .introcon_Box > p{
@@ -288,12 +289,13 @@ border-radius: 100%;
 .introcon_Box  > ul{
   margin: auto;
   margin-top:50px;
-  width: 1060px; height: 10000px;
+  width: 1060px; height: 1000px;
+  background-color: #5aa;
 
 }
 
 .introcon_Box li{
-  width:1060px; height:10000px;
+  width:1060px; height:2000px;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
