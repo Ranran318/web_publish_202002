@@ -1,0 +1,155 @@
+
+ 
+  [
+    {
+       "thumb":{
+         "img":{
+           "src":"../img/minicake.jpg",
+           "alt":"마카롱01_이미지 요약 설명",
+           "narr": "마카롱이미지 상세설명"
+          },
+          "title":"card 01 제목",
+          "content":"card 01 요약설명"
+       }, 
+       "gallery":{
+         "image":"minicake.jpg",
+         "title": "gallery 01 title",
+         "content": "gallery 01 상세설명"
+       },
+       "detail":{
+          "img":["minicake.jpg"],
+          "title":"detail title 01",
+          "point":"detail Point", 
+          "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum assumenda",
+          "link":"./01_content.html",
+          "more":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum assumenda"
+
+       }
+     },
+
+    {
+      "thumb":{
+        "img":{
+          "src":"../img/minicake.jpg",
+          "alt":"마카롱01_이미지 요약 설명",
+          "narr": "마카롱이미지 상세설명"
+         },
+         "title":"card 01 제목",
+         "content":"card 01 요약설명"
+      }, 
+      "gallery":{
+        "image":"minicake.jpg",
+        "title": "gallery 01 title",
+        "content": "gallery 01 상세설명"
+      },
+      "detail":{
+         "img":["minicake.jpg"],
+         "title":"detail title 01",
+         "point":"detail Point", 
+         "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum assumenda ut",
+         "link":"./01_content.html",
+         "more":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum assumenda ut"
+
+      }
+    },
+    {
+      "thumb":{
+        "img":{
+          "src":"../img/minicake.jpg",
+          "alt":"마카롱01_이미지 요약 설명",
+          "narr": "마카롱이미지 상세설명"
+         },
+         "title":"card 01 제목",
+         "content":"card 01 요약설명"
+      }, 
+      "gallery":{
+        "image":"minicake.jpg",
+        "title": "gallery 01 title",
+        "content": "gallery 01 상세설명"
+      },
+      "detail":{
+         "img":["minicake.jpg"],
+         "title":"detail title 01",
+         "point":"detail Point", 
+         "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum assumenda ut",
+         "link":"./01_content.html",
+         "more":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum assumenda ut"
+
+      }
+    },
+    {
+      "thumb":{
+        "img":{
+          "src":"../img/minicake.jpg",
+          "alt":"마카롱01_이미지 요약 설명",
+          "narr": "마카롱이미지 상세설명"
+         },
+         "title":"card 01 제목",
+         "content":"card 01 요약설명"
+      }, 
+      "gallery":{
+        "image":"minicake.jpg",
+        "title": "gallery 01 title",
+        "content": "gallery 01 상세설명"
+      },
+      "detail":{
+         "img":["minicake.jpg"],
+         "title":"detail title 01",
+         "point":"detail Point", 
+         "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum assumenda",
+         "link":"./01_content.html",
+         "more":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum assumenda"
+
+      }
+    },
+    {
+      "thumb":{
+        "img":{
+          "src":"../img/minicake.jpg",
+          "alt":"마카롱01_이미지 요약 설명",
+          "narr": "마카롱이미지 상세설명"
+         },
+         "title":"card 01 제목",
+         "content":"card 01 요약설명"
+      }, 
+      "gallery":{
+        "image":"minicake.jpg",
+        "title": "gallery 01 title",
+        "content": "gallery 01 상세설명"
+      },
+      "detail":{
+         "img":["minicake.jpg"],
+         "title":"detail title 01",
+         "point":"detail Point", 
+         "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum assumenda",
+         "link":"./01_content.html",
+         "more":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum assumenda"
+
+      }
+    },
+    {
+      "thumb":{
+        "img":{
+          "src":"../img/minicake.jpg",
+          "alt":"마카롱01_이미지 요약 설명",
+          "narr": "마카롱이미지 상세설명"
+         },
+         "title":"card 01 제목",
+         "content":"card 01 요약설명"
+      }, 
+      "gallery":{
+        "image":"minicake.jpg",
+        "title": "gallery 01 title",
+        "content": "gallery 01 상세설명"
+      },
+      "detail":{
+         "img":["minicake.jpg"],
+         "title":"detail title 01",
+         "point":"detail Point", 
+         "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum assumenda",
+         "link":"./01_content.html",
+         "more":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum assumenda"
+
+      }
+    }  
+  ]

@@ -20,6 +20,8 @@ h1{
   position: relative;
   width:100%; height:auto;
   background-color: #faa;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 #conBox > .thum_list{
@@ -197,7 +199,6 @@ h1{
   display: none;
   position:fixed; top:0; left: 0; z-index: 700;
   width: 100%; height: 100%; 
-  background-color: rgba(0,0,0,0.7);
   overflow: auto;
 }
 
@@ -244,4 +245,11 @@ h1{
 
 .detail_area .more_content{
     width: 100%; height: 400px;
+}
+
+.detail_background{
+  position: absolute; top:0; left:0;
+  z-index: -1;
+  width: 100%; height: 100%;
+  background-color:rgba(0,0,0,0.7);
 }
