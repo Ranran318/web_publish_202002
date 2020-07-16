@@ -9,12 +9,7 @@
 
   var ViewPic = $('.pic_container');
 
-  $(document).ready(function(){
-
-      ViewPic.animate({'backgroundPosition':'0 0'}, 300);
-   
-    });
-
+  
 
 
 
@@ -27,7 +22,7 @@
      //소개 - scroll 시, 사진 제외 글귀는 위에서 아래로 
      //스르륵 나타나고 /사진과 어울려서 parallox되기. 
 
- var win = $(document).scrollTop();
+ 
    
 
  var intBox = $('#introBox');
@@ -64,7 +59,7 @@ var fgnbBox = $('.footgnbBox');
 var famDl = fgnbBox.children('dl');
 var famDt = famDl.children('dt');
 var famDd = famDl.children('dd');
-var famDd;
+
 
 
 

@@ -15,6 +15,9 @@
     height:2rem;
     font-size: 2rem;}
 
+h1 > a{ display:block; width:132px; height:45px;}
+
+
 #wrap{
   width: 100%; height: auto;
   margin: auto;
@@ -266,17 +269,17 @@ border-radius: 100%;
 }
 
 
-/* ============================= */
+/* 단지안내=================================== */
 .intro_container02{
-  margin:auto;
-  width:100%; height:1052px;
-
- 
+  display: none;
+  position: absolute; top:74px;
+  width:100%; height:978px; 
+  overflow:hidden;
 }
 
 .introcon_Box{
   margin: auto;
-  width: 1060px; height: 2000px;
+  width: 1060px; height: 978px;
   background-color: #bcc;
 }
 
@@ -289,15 +292,16 @@ border-radius: 100%;
 .introcon_Box  > ul{
   margin: auto;
   margin-top:50px;
-  width: 1060px; height: 1000px;
+  width: 1060px; height: 978px;
   background-color: #5aa;
 
 }
 
 .introcon_Box li{
-  width:1060px; height:2000px;
+  width:1060px; height:600px;
   background-repeat: no-repeat;
   background-position: 0 0;
+  margin-bottom:20px; box-sizing: border-box;
 }
 
 
