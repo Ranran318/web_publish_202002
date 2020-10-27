@@ -13,12 +13,12 @@
 	<script>
 		//$(fuction(){})(); <=과거에 이렇게 쓰이지만
 		// $.ready(function(){}); //현재는 이렇게 쓰임
-		(funciton($){
+		(function($){
 			var body = $('body');
 
 			body.css({'backgroundColor':'#acc'});
 
-			bopy.on('click',function(){
+			body.on('click',function(){
 				body.animate({'backgroundColor':'#fac'});
 			});
 
