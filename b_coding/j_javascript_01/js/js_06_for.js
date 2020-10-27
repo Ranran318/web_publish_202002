@@ -90,12 +90,12 @@ console.log('i가 바깥에서 나올까?', i);
 //-------------------------
 //
 
-//var arr = ['월', '화', '수', '목', '금', '토', '일'];
-//var obj = {
-//  'kf94' : '한국인증 초미세먼지용 마스크'
-//  'kn95' : '중국인증 마스크'
-//  'kf80' : '한국인증 미세먼지용 마스크'
-//};
+var arr = ['월', '화', '수', '목', '금', '토', '일'];
+var obj = {
+  'kf94' : '한국인증 초미세먼지용 마스크',
+  'kf80' : '중국인증 마스크',
+  'kn95' : '한국인증 미세먼지용 마스크',
+};
 
 
 
@@ -109,17 +109,20 @@ console.log('i가 바깥에서 나올까?', i);
 //}
 //
 //------------------------------------------
-var j;
-for(j = 0; j < arr.length ; j++){
-  console.log( arr[j] + '요일' );}
-
-
-console.log(arr[0]);
-console.log(arr[1]);
-console.log(arr[2]);
-console.log(arr[3]);
+//var j;
+//for(j = 0; j < arr.length ; j++){
+//  console.log( arr[j] + '요일' );};
+//
+//
+//console.log(arr[0]);
+//console.log(arr[1]);
+//console.log(arr[2]);
+//console.log(arr[3]);
+//arr.forEach(function(a){
+//  console.log(a)
+//});
 arr.forEach(function(a){
-  console.log(a)
+    console.log(a)
 });
 
 // for      - 반복(언제든 사용가능)
