@@ -38,11 +38,10 @@ domDropDown.addEventListener('click', function(){DomDdFn('block');
 	//for(; j< domDd.length; j++){
 	//	domDd[j].style.display = 'block';
 	// }
-}
-)
+});
 
 
-domDropDown.addEventListener('mouseleave', function(){DomDdFn=('none');
+domDropDown.addEventListener('mouseleave', function(){DomDdFn('none');
 
 //	domDd[0].style.display = 'none';
 //	domDd[1].style.display = 'none';
@@ -53,12 +52,12 @@ domDropDown.addEventListener('mouseleave', function(){DomDdFn=('none');
 //	for(; j<domDd.length; j++){
 //		domDd[j].style.display = 'none';
 //	}
-})
+});
 
 //domDt[0].addEventListener('focus',function(){
 //	domDt[0].style.display = 'none';
 //})
 
 domDt[0].addEventListener('focus', function(){
-domDd('block');
+    DomDdFn('block');
 });
